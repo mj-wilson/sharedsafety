@@ -1,0 +1,67 @@
+/* =Structure/Scaffolding
+-------------------------------------------------------------- */
+html {
+
+}
+@include ltr {
+		body {
+			background-color: #fff;
+			color: $primary-font-color;
+			font-family: $nunito;
+			line-height: 1.5em;
+			word-break: break-word;
+		}
+}
+
+@include rtl {
+	body {
+		background-color: #fff;
+		color: $primary-font-color;
+		font-family: $nunito;
+		line-height: 1.5em;
+		word-break: break-word;
+		direction: rtl;
+	  unicode-bidi: embed;
+	}
+}
+
+#main {
+}
+.content {
+	max-width: 1200px;
+	margin: auto;
+	position: relative;
+}
+
+
+#primary {
+	@include clearfix;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 20px;
+	ol {
+		li {
+			@include margin-left(10px);
+		}
+	}
+	ul {
+		list-style: none;
+		li {
+			list-style-type: square;
+			ul {
+				li {
+					list-style-type: disc;
+					ul {
+						li {
+							list-style-type: circle;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+p {
+	margin: 0 0 20px;
+}

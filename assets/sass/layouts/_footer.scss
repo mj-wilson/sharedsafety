@@ -1,0 +1,105 @@
+footer {
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
+    background: $turquoise;
+    font-size: 15px;
+    line-height: 1em;
+    overflow: hidden;
+    .content {
+        @include display(flex);
+        @include justify-content(space-between);
+        padding: 0 50px;
+    }
+    .lower-footer-content {
+        background: $dark-blue;
+        padding: 18px 0 18px;
+        font-family: $biryani;
+        font-size: 12px;
+    }
+    .footer-content {
+        padding: 40px 0 50px;
+        .logo {
+            width: 230px;
+            height:62px;                               
+            background: url('../images/sprites.svg') 0 -60px  no-repeat;
+        }
+        .sub-logo {
+            color: $dark-blue;
+            border-top: 1px solid $dark-blue;
+            padding: 15px 0 0;
+            margin: 25px 0 0;
+            font-family: $biryani;
+            line-height: 1.1em;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            display: inline-block;
+            span {
+                font-size: 13px;
+                font-weight: 900;
+            }
+        }
+    }
+    .footer-nav {
+        padding: 12px 0 0;
+        @include display(flex);
+        ul.links {
+            li {
+                display: inline-block;
+                margin: 0 18px 0 0;
+                font-family: $biryani;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 36px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                &:not(:last-child):after {
+                    content: '/';
+                    color: $dark-blue;
+                }
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    margin: 0 20px 0 0;
+                }
+                &:last-child {
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+        ul.social {
+            li {
+                display: inline-block;
+                margin: 0 24px 0 0;
+                a {
+                    width: 32px;
+                    height: 32px;
+                    display: block;
+                    background: #fff;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    &:after {
+                        content:'';
+                        display: block;
+                        margin: 8px auto 0;
+                        width: 20px;
+                        height: 20px;
+                        background: url('../images/sprites.svg') 0 -580px  no-repeat;
+                    }
+                    &.facebook:after {
+                        background: url('../images/sprites.svg') 0 -600px  no-repeat;
+                        margin: 6px auto 0;
+                        width: 14px;
+                        height: 22px;
+
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        position: relative;
+    }
+    
+}

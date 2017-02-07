@@ -1,0 +1,124 @@
+header {
+    position: fixed;
+    z-index:9999;
+    top: 0;
+    right: 0;
+    left: 0;
+    #mini_logo {
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        a {
+            display: block;
+            width: 24px;
+            height: 56px;
+            background: url(../images/sprites.svg) 0 0 no-repeat;
+        }
+    }
+    #primary-nav {
+        position: absolute;
+        right: 55px;
+        top: 40px;
+        .nav-toggle-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 37px;
+            z-index: 99999;
+            cursor: pointer;
+            &:before, &:after, span {
+                display: block;
+                height: 4px;
+                width: 100%;
+                background: #fff;
+                border-radius: 8px;
+                margin-bottom: 7px;
+                @include transition(all 0.3s);
+            }
+            &:before, &:after {
+                content: '';
+            }
+        }
+        .sidenav {
+            z-index: 99998;
+            width: 348px;
+            top: 0;
+            bottom: 0;
+            right:-350px;
+            padding: 110px 60px 0 50px;
+            position: fixed;
+            background: $dark-gray;
+            @include transition(right 0.3s);
+            ul {
+                li {
+                    color: $turquoise;
+                    font-family: $biryani;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 900;
+                    letter-spacing: 0.08em;
+                    line-height: 1.3em;
+                    border-bottom: 1px solid $turquoise;
+                    padding: 15px 20px 10px 0;
+                    a {
+                        color: #fff;
+                        font-size: 11px;
+                        text-decoration: none;
+                        display: block;
+                    }
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                    &:nth-child(2) {
+                        a:hover, a:focus  {
+                            color: $green;
+                        }
+                    }
+                    &:nth-child(3) {
+                        a:hover, a:focus  {
+                            color: $purple;
+                        }
+                    }
+                    &:nth-child(4) {
+                        a:hover, a:focus  {
+                            color: $navy;
+                        }
+                    }
+                    &:nth-child(5) {
+                        a:hover, a:focus  {
+                            color: $gold;
+                        }
+                    }
+                    &:nth-child(6) {
+                        a:hover, a:focus  {
+                            color: $teal;
+                        }
+                    }
+                }
+            }
+        }
+        &.open {
+            .sidenav {
+                right: 0;
+            }
+            .nav-toggle-button {
+                span {
+                    opacity: 0;
+
+                }
+                &:before {
+                    @include transform(rotate(45deg));
+                    position: absolute;
+                    top: 50%;
+                }
+                &:after {
+                    @include transform(rotate(-45deg));
+                    position: absolute;
+                    top: 50%;
+                }
+            }
+        }
+        
+    }
+}
+
