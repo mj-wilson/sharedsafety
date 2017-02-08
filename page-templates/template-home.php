@@ -12,7 +12,7 @@ get_header(); ?>
 			
 				<div class="panel_content">
 					<div class="bp_intro">
-						<h1>Blueprint <span>for</span> Shared Safty</h1>
+						<h1>Blueprint <span>for</span> Shared Safety</h1>
 					</div>
 					<div class="bp_sub_intro">
 						A guide for building a safer California. <br>
