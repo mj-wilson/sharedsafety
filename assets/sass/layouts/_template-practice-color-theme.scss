@@ -1,0 +1,337 @@
+
+.page-wrapper.purple {
+	header#secondary {
+		background: $purple;
+	}
+	.sticky_subnav {
+		background: $light-purple;
+		.section_header {
+			color: $purple;
+		}
+	}
+	.step_panel {
+		.step_nav {
+			li {
+				.step_label {
+					color: $purple;
+				}
+				.link_to_section {
+					border: 1px solid $purple;
+					&:hover {
+						background: $purple;
+					}
+				}
+				&.active {
+					.link_to_section {
+						background: $purple;
+					}
+				}	
+			}
+		}
+		.step_content {
+			h1, h2 {
+				&:before, &:after {
+					background: $purple;
+				}
+			}
+			.intro_paragraph {
+				color: $purple;
+			}
+			.cols {
+				.right {
+					ul {
+						li {
+							&:before {
+								color: $purple;
+							}
+						}
+					}
+				}
+				.questions {
+					background: $purple;
+					h3	{
+						color: $light-purple;
+					}
+					ul li {
+						&:before {
+							color: $light-purple;
+						}
+					}
+				}
+				.stats p {
+					color: $purple;
+				}
+				.btn {
+					border: 3px solid $purple;
+				}
+			}
+			.modal {
+				.modal-backdrop {
+					background: rgba($purple,0.97);
+				}
+				.modal-container {
+					.modal-content {
+						h3 {
+							color: $light-purple;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.page-wrapper.navy {
+	header#secondary {
+		background: $navy;
+	}
+	.sticky_subnav {
+		background: $light-navy;
+		.section_header {
+			color: $navy;
+		}
+	}
+	.step_panel {
+		.step_nav {
+			li {
+				.step_label {
+					color: $navy;
+				}
+				.link_to_section {
+					border: 1px solid $navy;
+					&:hover {
+						background: $navy;
+					}
+				}
+				&.active {
+					.link_to_section {
+						background: $navy;
+					}
+				}	
+			}
+		}
+		.step_content {
+			h1, h2 {
+				&:before, &:after {
+					background: $navy;
+				}
+			}
+			.intro_paragraph {
+				color: $navy;
+			}
+			.cols {
+				.right {
+					ul {
+						li {
+							&:before {
+								color: $navy;
+							}
+						}
+					}
+				}
+				.questions {
+					background: $navy;
+					h3	{
+						color: $light-navy;
+					}
+					ul li {
+						&:before {
+							color: $light-navy;
+						}
+					}
+				}
+				.stats p {
+					color: $navy;
+				}
+				.btn {
+					border: 3px solid $navy;
+				}
+			}
+			.modal {
+				.modal-backdrop {
+					background: rgba($navy,0.97);
+				}
+				.modal-container {
+					.modal-content {
+						h1 {
+							&:before, &:after {
+								background: $gold;
+							}
+						}
+						h2 {
+							color: $gold;
+						}						
+						h3 {
+							color: $light-navy;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-wrapper.gold {
+	header#secondary {
+		background: $gold;
+	}
+	.sticky_subnav {
+		background: $light-gold;
+		.section_header {
+			color: $gold;
+		}
+	}
+	.step_panel {
+		.step_nav {
+			li {
+				.step_label {
+					color: $gold;
+				}
+				.link_to_section {
+					border: 1px solid $gold;
+					&:hover {
+						background: $gold;
+					}
+				}
+				&.active {
+					.link_to_section {
+						background: $gold;
+					}
+				}	
+			}
+		}
+		.step_content {
+			h1, h2 {
+				&:before, &:after {
+					background: $gold;
+				}
+			}
+			.intro_paragraph {
+				color: $gold;
+			}
+			.cols {
+				.right {
+					ul {
+						li {
+							&:before {
+								color: $gold;
+							}
+						}
+					}
+				}
+				.questions {
+					background: $gold;
+					h3	{
+						color: $light-gold;
+					}
+					ul li {
+						&:before {
+							color: $light-gold;
+						}
+					}
+				}
+				.stats p {
+					color: $gold;
+				}
+				.btn {
+					border: 3px solid $gold;
+				}
+			}
+			.modal {
+				.modal-backdrop {
+					background: rgba($gold,0.97);
+				}
+				.modal-container {
+					.modal-content {
+						h3 {
+							color: $light-gold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-wrapper.teal {
+	header#secondary {
+		background: $teal;
+	}
+	.sticky_subnav {
+		background: $light-teal;
+		.section_header {
+			color: $teal;
+		}
+	}
+	.step_panel {
+		.step_nav {
+			li {
+				.step_label {
+					color: $teal;
+				}
+				.link_to_section {
+					border: 1px solid $teal;
+					&:hover {
+						background: $teal;
+					}
+				}
+				&.active {
+					.link_to_section {
+						background: $teal;
+					}
+				}	
+			}
+		}
+		.step_content {
+			h1, h2 {
+				&:before, &:after {
+					background: $teal;
+				}
+			}
+			.intro_paragraph {
+				color: $teal;
+			}
+			.cols {
+				.right {
+					ul {
+						li {
+							&:before {
+								color: $teal;
+							}
+						}
+					}
+				}
+				.questions {
+					background: $teal;
+					h3	{
+						color: $light-teal;
+					}
+					ul li {
+						&:before {
+							color: $light-teal;
+						}
+					}
+				}
+				.stats p {
+					color: $teal;
+				}
+				.btn {
+					border: 3px solid $teal;
+				}
+			}
+			.modal {
+				.modal-backdrop {
+					background: rgba($teal,0.97);
+				}
+				.modal-container {
+					.modal-content {
+						h3 {
+							color: $light-teal;
+						}
+					}
+				}
+			}
+		}
+	}
+}

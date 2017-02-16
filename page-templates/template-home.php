@@ -129,7 +129,7 @@ Each principle has a set of <a href="">practices</a> that support an integrated 
 				</div>
 			</div>
 			<div  class="right_arrow">
-				<?php get_template_part( 'page-templates/template-parts/svg/right_arrow.svg' ) ?>
+				<a href="/shifting-to-a-public-health-frame/"><?php get_template_part( 'page-templates/template-parts/svg/right_arrow.svg' ) ?></a>
 			</div>
 			
 			<?php endwhile; // end of the loop. ?>
@@ -145,31 +145,31 @@ Each principle has a set of <a href="">practices</a> that support an integrated 
 					<p>Each Blueprint principle is supported by five action steps and <a href="">practices</a> the building blocks for a responsive and restorative safety infrastructure.</p>
 					<ul class="steps">
 						<li>
-							<a href="">
+							<a href="/shifting-to-a-public-health-frame/#envision_step">
 								<h2>envision <span>Safety</span></h2>
 								<p>Developing a shared understanding of what safety means for your community and how to get there.</p>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/shifting-to-a-public-health-frame/#plan_step">
 								<h2>plan <span>Safety</span></h2>
 								<p>Establishing a foundation and roadmap for advancing your community’s new safety priorities.</p>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/shifting-to-a-public-health-frame/#invest_step">
 								<h2>invest in <span>Safety</span></h2>
 								<p>Making smart, cost-effective investments in safety policies, programs and practices.</p>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/shifting-to-a-public-health-frame/#restore_step">
 								<h2>restore <span>Safety</span></h2>
 								<p>Repairing breaks and building trust so that the community can move forward together.</p>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/shifting-to-a-public-health-frame/#strengthen_step">
 								<h2>strengthen <span>Safety</span></h2>
 								<p>Building on what works to improve safety in your community, learning from others, and sharing your successes.</p>
 							</a>

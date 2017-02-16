@@ -1,7 +1,7 @@
 body.home {
 	.home_panel{
 		width: 100%;
-		height: calc(100vh + 50px);
+		min-height: calc(100vh + 50px);
 		background-color: #fff;
 		position: relative;
 		&#home_panel1 {
@@ -415,7 +415,7 @@ body.home {
 	.link_to_section {
 		display: inline-block;
 		cursor: pointer;
-		svg {
+		svg, img {
 			  @include animation(bounce 2s infinite);
 
 		}

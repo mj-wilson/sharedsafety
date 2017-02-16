@@ -44,7 +44,7 @@ footer {
     .footer-nav {
         padding: 12px 0 0;
         @include display(flex);
-        ul.links {
+        .links {
             li {
                 display: inline-block;
                 margin: 0 18px 0 0;

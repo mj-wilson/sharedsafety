@@ -18,5 +18,33 @@ jQuery(function( $ ) {
 		   scrollTop: $( target ).offset().top
 		});
 	});	
+
+    $(window).on( "load resize scroll" , function( e ) {
+	    var scrolledPastIntro = $( '.step_panel' ).offset().top - 10;
+        var windscroll = $( window ).scrollTop();
+        
+        if ( windscroll > scrolledPastIntro ) {
+            $( '#secondary' ).addClass( 'showme' );
+        } else {
+            $( '#secondary' ).removeClass( 'showme' );
+            $( '.step_panel' ).removeClass( 'active' );
+        }
+        $( '.step_panel' ).each( function() {
+        	var panelOffset = $( this ).offset().top - 10;
+            if ( windscroll > panelOffset ) {
+                $( '.step_panel' ).removeClass( 'active' );
+                $( this ).addClass( 'active' );
+            }
+        });
+    });
+	$( '.open_modal' ).click( function () {
+  		$( this ).next( '.modal' ).show();
+	});	
+	$( '.close-modal' ).click( function () {
+  		$( '.modal' ).hide();
+	});	
+
+
+
 });
 

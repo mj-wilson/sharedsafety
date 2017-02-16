@@ -41,7 +41,7 @@ and Blueprint http://www.blueprintcss.org/
 
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Biryani:400,800,900|Catamaran:700,900|Nunito+Sans:400,600,800|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Biryani:400,800,900|Catamaran:700,900|Nunito+Sans:400,600,800|Roboto+Slab:300,400');
 @import url('../webfonts/stylesheet.css');
 
 /*--------------------------------------------------------------
@@ -99,7 +99,8 @@ and Blueprint http://www.blueprintcss.org/
     6.4 Page Templates
     --------------------------------------------------------------*/
     @import 'layouts/template-home';
-    @import 'layouts/template-secondary-page';
+    @import 'layouts/template-practice';
+    @import 'layouts/template-practice-color-theme';
 
     /*--------------------------------------------------------------
     6.5 Sidebar

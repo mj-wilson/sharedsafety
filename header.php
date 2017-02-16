@@ -35,21 +35,8 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a>
 			</div>
 
-			<nav id="primary-nav" role="navigation">
-				<div class="nav-toggle-button">
-					<span class="nav-toggle-icon"></span>
-				</div>
-				<div class="sidenav">
-					<ul>
-						<li class="header">5 principles</li>
-						<li><a href="">shifting to a public health frame</a></li>
-						<li><a href="">wellbeing is safety</a></li>
-						<li><a href="">crime survivors at the center</a></li>
-						<li><a href="">breaking the cycle of harm</a></li>
-						<li><a href="">making the system work</a></li>
-					</ul>
-				</div>
-			</nav><!-- #site-navigation -->
+			<?php get_template_part( 'page-templates/template-parts/main-nav' ) ?>
+
 		
 
 	</header><!-- #masthead -->

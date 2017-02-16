@@ -15,19 +15,15 @@
 				<div class="sub-logo">a project of the <span>Tides Center</span></div>
 			</div>
 			<div class="footer-nav">
-				<?php /*
-					wp_nav_menu(
-						array(
-							'menu' => 'Main Nav'
-						)
-					);
-				*/?>
-				<ul class="links">
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">CONTACT US</a></li>
-					<li><a href="">RESOURCES</a></li>
-					<li><a href="">TERMS + PRIVACY</a></li>
-				</ul>
+				<div class="links">
+					<?php 
+						wp_nav_menu(
+							array(
+								'menu' => 'Footer Nav'
+							)
+						);
+					?>
+				</div>
 				<ul class="social">
 					<li><a class="twitter" href=""></a></li>
 					<li><a class="facebook" href=""></a></li>						
