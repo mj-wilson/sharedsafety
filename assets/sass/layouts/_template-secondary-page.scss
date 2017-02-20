@@ -3,6 +3,9 @@
 	margin: auto;
 	position: relative;
 	padding-bottom: 100px;
+	@media all and (max-width: 736px) {
+		padding-bottom: 50px;
+	}
 	.pre-header {
 		h1 {
 			font-family: $nunito;
@@ -19,7 +22,13 @@
 	            font-size: 19px;
 	            letter-spacing: 0.1em;
 				font-style: normal;
+				@media all and (max-width: 736px) {
+					font-size: 16px;
+				}
 
+			}
+			@media all and (max-width: 736px) {
+				font-size: 20px;
 			}
 
 		}
@@ -33,6 +42,9 @@
             font-weight: 900;
             letter-spacing: 0.1em;
             text-transform: uppercase;
+			@media all and (max-width: 736px) {
+				font-size: 20px;
+			}
 		}
 	}
 	.callout {
@@ -42,6 +54,11 @@
 		line-height: 1.5em;
 	    letter-spacing: 0.015em;
 	    margin: 40px 0 50px;
+	    @media all and (max-width: 736px) {
+	    	font-size: 18px;
+	    	line-height: 1.4em;
+	    	margin: 20px 0 30px;
+	    }
 
 	}
 	h2 {
@@ -52,26 +69,42 @@
 		line-height: 1.2em;
         letter-spacing: 0.1em;
         margin: 0 0 20px;
+        @media all and (max-width: 736px) {
+        	font-size: 14px;
+        	margin: 0 0 10px;
+        }
 
 	}
 	.cols {
-		@include column-count(2);
-		@include column-gap(30px);
-		@include column-rule(none);
-		 -webkit-column-count: 2;
-		 -webkit-column-gap: 30px;
+		@media all and (min-width: 801px) {
+			@include column-count(2);
+			@include column-gap(30px);
+			@include column-rule(none);
+			 -webkit-column-count: 2;
+			 -webkit-column-gap: 30px;
+		 }
 		p {
 			font-size: 18px;
 			line-height: 1.6em;
+			@media all and (max-width: 736px) {
+				font-size: 14px;
+			}
 		}
 
 	}
 	.content-container {
 		margin: 50px 0 0;
+		@media all and (max-width: 736px) {
+			margin: 30px 0 0;
+		}
 		p {
 			font-size: 21px;
 			line-height: 1.6em;
 			margin: 0 0 35px;
+			@media all and (max-width: 736px) {
+				font-size: 16px;
+				margin: 0 0 20px;
+			}
 		}
 	}
 }
@@ -86,10 +119,19 @@
 		h2 {
 			font-size: 18px;
 			margin: 0 0 5px;
+
 		}
 		p {
 			font-size: 19px;
 			line-height: 1.6em;
+		}
+		@media all and (max-width: 736px) {
+			h2 {
+				font-size: 15px;
+			}
+			p {
+				font-size: 14px;
+			}
 		}
 	}
 }

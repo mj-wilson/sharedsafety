@@ -1,7 +1,7 @@
 footer {
     margin: 0 auto;
     width: 100%;
-    color: #fff;
+    color: $wheat;
     background: $turquoise;
     font-size: 15px;
     line-height: 1em;
@@ -10,19 +10,47 @@ footer {
         @include display(flex);
         @include justify-content(space-between);
         padding: 0 50px;
+
+        @media all and (max-width: 1024px) {
+            display: block;
+            padding: 0 20px;
+            .footer-logo {
+                display: inline-block;
+                text-align: left;
+            }
+        }
+       @media all and (min-width: 480px) and (max-width: 736px) {
+            
+            text-align:left;
+            .footer-logo {
+                @include display(flex);
+            }
+
+        }
+
     }
     .lower-footer-content {
         background: $dark-blue;
         padding: 18px 0 18px;
         font-family: $biryani;
         font-size: 12px;
+        @media all and (max-width: 480px) {
+            padding-bottom: 45px;
+        }
     }
     .footer-content {
         padding: 40px 0 50px;
+        @media all and (max-width: 736px) {
+            padding: 30px 0;
+        }
         .logo {
             width: 230px;
             height:62px;                               
             background: url('../images/sprites.svg') 0 -60px  no-repeat;
+             @media all and (min-width: 480px) and (max-width: 736px) {
+                border-right: 1px solid $dark-blue;
+                width: 250px;
+            }
         }
         .sub-logo {
             color: $dark-blue;
@@ -39,11 +67,27 @@ footer {
                 font-size: 13px;
                 font-weight: 900;
             }
+            @media all and (min-width: 480px) and (max-width: 736px) {
+                padding: 0 0 0 10px;
+                margin: 0 0 0 10px;
+                border-top:none;
+                @include align-self(center);
+
+            }
         }
     }
     .footer-nav {
         padding: 12px 0 0;
         @include display(flex);
+        @media all and (max-width: 1024px) { 
+            padding-top: 30px;
+            @include justify-content(center);
+        }
+        @media all and (max-width: 736px) {
+            @include justify-content(flex-start);
+            padding-top: 15px;
+        }
+
         .links {
             li {
                 display: inline-block;
@@ -54,14 +98,25 @@ footer {
                 line-height: 36px;
                 letter-spacing: 0.08em;
                 text-transform: uppercase;
+                @media all and (max-width: 800px) { 
+                    font-size: 13px;
+                    line-height: 28px;
+                }
+                @media all and (max-width: 736px) {
+                    font-size: 11px;
+                    margin: 0 10px 0 0;
+                }
                 &:not(:last-child):after {
                     content: '/';
                     color: $dark-blue;
                 }
                 a {
-                    color: #fff;
+                    color: $wheat;
                     text-decoration: none;
                     margin: 0 20px 0 0;
+                    @media all and (max-width: 736px) {
+                        margin: 0 10px 0 0;
+                    }
                 }
                 &:last-child {
                     margin: 0 10px 0 0;
@@ -72,13 +127,23 @@ footer {
             li {
                 display: inline-block;
                 margin: 0 24px 0 0;
+                @media all and (max-width: 736px) {
+                    margin: 0 15px 3px 0;
+                }
+                &:last-child {
+                    margin: 0;
+                }
                 a {
                     width: 32px;
                     height: 32px;
                     display: block;
-                    background: #fff;
+                    background: $wheat;
                     border-radius: 50%;
                     overflow: hidden;
+                    @media all and (max-width: 736px) {
+                        width: 24px;
+                        height: 24px;
+                    }
                     &:after {
                         content:'';
                         display: block;
@@ -86,12 +151,28 @@ footer {
                         width: 20px;
                         height: 20px;
                         background: url('../images/sprites.svg') 0 -580px  no-repeat;
+                        @media all and (max-width: 736px) {
+                            margin: 6px auto 0;
+                            background: url('../images/sprites.svg') 0 -432px  no-repeat;
+                            background-size: 170px auto;
+                            width: 15px;
+                            height: 15px;
+
+                        }
                     }
                     &.facebook:after {
                         background: url('../images/sprites.svg') 0 -600px  no-repeat;
                         margin: 6px auto 0;
                         width: 14px;
                         height: 22px;
+                        @media all and (max-width: 736px) {
+                            margin: 5px auto 0;
+                            background: url('../images/sprites.svg') 0 -447px  no-repeat;
+                            background-size: 170px auto;
+                            width: 10px;
+                            height: 16px;
+
+                        }
 
                     }
                 }

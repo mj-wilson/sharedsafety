@@ -5,7 +5,7 @@ body.page-template-template-practice {
 	.hero-panel{
 		width: 100%;
 		min-height: calc(100vh - 50px);
-		background-color: #fff;
+		background-color: $wheat;
 		position: relative;		
 		background-image: url('../images/public-health_hero.jpg');
 		background-position: center 10% ;
@@ -83,11 +83,15 @@ body.page-template-template-practice {
 			text-align: center;
 			.home_link {
 				display: inline-block;
+				@media all and (max-width: 736px) {
+					margin-top: 34px;
+				}
+
 				a {
 					display: inline-block;
 					border: 2px solid $orange;
 					border-radius: 1px;
-					color: #fff;
+					color: $wheat;
 					font-family: $biryani;
 					font-weight: 900;
 					text-transform: uppercase;
@@ -104,6 +108,10 @@ body.page-template-template-practice {
 						top: -1px;
 						margin: 0 2px;
 					}
+					@media all and (max-width: 736px) {
+						font-size: 11px;
+					}
+
 				}
 			}
 		}
@@ -116,13 +124,17 @@ body.page-template-template-practice {
 			@include align-content(center);
 			@include flex-wrap(wrap);
 			position: relative;
+			@media all and (max-width: 736px) {
+				padding: 100px 20px;
+				text-align: center;
+			}
 			> div {
 				width: 100%;
 				@include align-self(center);
-				color: #fff;
+				color: $wheat;
 			}
 			.practice_title {
-				border: 4px solid #fff;
+				border: 4px solid $wheat;
 				font-family: $biryani;
 				font-weight: 900;
 				text-transform: uppercase;
@@ -132,6 +144,13 @@ body.page-template-template-practice {
 				letter-spacing: 0.125em;
 				border-radius: 4px;
 				text-align: center;
+				@media all and (max-width: 736px) {
+					font-size: 16px;
+					border-width: 3px;
+					line-height: 1.2em;
+					height: auto;
+					padding: 10px 0 6px;
+				}
 			}
 			.hero_text p {
 				font-size: 19px;
@@ -139,20 +158,33 @@ body.page-template-template-practice {
 				margin: 20px 0 0;
 				font-family: $ps;
 				letter-spacing: 0.025em;
+				@media all and (max-width: 736px) {
+					font-size: 14px;
+				}
 			}
 		}
 		.down_arrow {
 			position: absolute;
 			bottom: 80px;
 			width: 100%;
+			@media all and (max-width: 736px) {
+				bottom: 40px;
+			}
+
 		}
 
 	}
 	.previous_practice, .next_practice {
 		position: absolute;
 		top: 13px;
+		@media all and (max-width: 736px) {
+			top: 17px;
+		}
+		@media all and (max-width: 600px) {
+			width: calc(50% - 15px);
+		}
 		a {
-			color: #fff;
+			color: $wheat;
 			font-family: $biryani;
 			font-weight: 900;
 			text-transform: uppercase;
@@ -161,10 +193,28 @@ body.page-template-template-practice {
 			letter-spacing: 0.175em;
 			display: block;
 			text-decoration: none;
+			@media all and (max-width: 736px) {
+				font-size: 9px;
+				letter-spacing: 0.1em;
+				line-height: 24px;
+				white-space: nowrap;
+			    max-width: 180px;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			}
+			@media all and (max-width: 600px) {
+				max-width: 100%;
+			}
 		}
 		&.next_practice {
 			right: 40px;
 			padding: 0 30px 0 0;
+			@media all and (max-width: 1024px) {
+				right: 10px;
+			}
+			@media all and (max-width: 736px) {
+				padding: 0 15px 0 0;
+			}
 			.arrow {
 				position: absolute;
 				right: 0;
@@ -172,12 +222,23 @@ body.page-template-template-practice {
 				svg {
 					height: 30px;
 					width: 15px;
+					@media all and (max-width: 736px) {
+						width: 10px;
+						height: 20px;
+					}
+
 				}
 			}
 		}
 		&.previous_practice {
 			left: 40px;
 			padding: 0 0 0 30px;
+			@media all and (max-width: 1024px) {
+				left: 10px;
+			}
+			@media all and (max-width: 736px) {
+				padding: 0 0 0 15px;
+			}
 			.arrow {
 				position: absolute;
 				left: 0;
@@ -185,6 +246,10 @@ body.page-template-template-practice {
 				svg {
 					height: 30px;
 					width: 15px;
+					@media all and (max-width: 736px) {
+						width: 10px;
+						height: 20px;
+					}
 				}
 			}
 		}
@@ -203,38 +268,56 @@ body.page-template-template-practice {
 		}
 		.page-header {
 			display: inline-block;
-			color: #fff;
+			color: $wheat;
 			font-family: $biryani;
 			font-weight: 900;
 			text-transform: uppercase;
 			font-size: 17px;
 			line-height: 54px;
 			letter-spacing: 0.175em;
+			@media all and (max-width: 800px) { 
+				font-size: 13px;
+            }
+            @media all and (max-width: 736px) {
+            	font-size: 11px;
+            }
+            @media all and (max-width: 600px) {
+            	display:none;
+            }
 		}
 		#text_logo_short {
 			position: absolute;
 			left: 40px;
 			top: 13px;
+			@media all and (max-width: 800px) { 
+				left: 10px;
+            }
 			a {
-			display: inline-block;
-			border: 2px solid $orange;
-			border-radius: 1px;
-			color: #fff;
-			font-family: $biryani;
-			font-weight: 900;
-			text-transform: uppercase;
-			font-size: 12px;
-			letter-spacing: 0.175em;
-			height:28px;
-			line-height: 28px;
-			padding: 0 10px;
-			text-decoration: none;
+				display: inline-block;
+				border: 2px solid $orange;
+				border-radius: 1px;
+				color: $wheat;
+				font-family: $biryani;
+				font-weight: 900;
+				text-transform: uppercase;
+				font-size: 12px;
+				letter-spacing: 0.175em;
+				height:28px;
+				line-height: 28px;
+				padding: 0 10px;
+				text-decoration: none;
+				@media all and (max-width: 736px) {
+					font-size: 10px;
+				}
 			}
 		}
 		#primary-nav {
 			text-align: left;
 		    position: absolute;
 		    right: 40px;
+		    @media all and (max-width: 800px) { 
+            	right: 10px;
+            }
 		    top: 20px;
 			.nav-toggle-button {
             width: 20px;
@@ -258,7 +341,11 @@ body.page-template-template-practice {
 		opacity: 0;
 		z-index: 10;
 		@include transition(0.3s opacity ease-in);
-		
+		@media all and (max-width: 600px) {
+			.previous_practice, .next_practice {
+				top: 28px;
+			}
+		}
 		.section_header {
 			display: inline-block;
 			color: $green;
@@ -271,7 +358,12 @@ body.page-template-template-practice {
 			span {
 				font-weight: 800;
 				font-size: 12px;
-
+			}
+			@media all and (max-width: 736px) {
+				font-size: 14px;
+			}
+			@media all and (max-width: 600px) {
+				line-height: 2em;
 			}
 
 		}
@@ -279,6 +371,13 @@ body.page-template-template-practice {
 	.step_panel {
 		position: relative;
 		padding: 180px 0 0px;
+		@media all and (max-width: 736px) {
+			padding-top: 40px;
+				&#envision_step {
+					padding-top: 120px;
+				}
+		}
+
 		&.active {
 			.sticky_subnav {
 				opacity: 1;
@@ -291,6 +390,12 @@ body.page-template-template-practice {
 		.step_nav {
 			position: absolute;
 			left: 40px;
+			@media all and (max-width: 1024px) {
+				left: 10px;
+			}
+			@media all and (max-width: 736px) {
+				display:none;
+			}
 			top: 340px;
 			z-index: 9;
 			li {
@@ -309,7 +414,7 @@ body.page-template-template-practice {
 					text-transform: uppercase;
 					font-size: 12px;
 					right: auto;
-					background: #fff;
+					background: $wheat;
 					left: 35px;
 					top: 0;
 					height: 20px;
@@ -323,18 +428,18 @@ body.page-template-template-practice {
 						display: block;
 						border-top: 5px solid transparent;
 						border-bottom: 5px solid transparent; 
-						border-right:6px solid #fff; 
+						border-right:6px solid $wheat; 
 						position: absolute;
 						left: -5px;
 						top:5px;
 					}
 				}
 				.link_to_section {
-					color: #fff;
+					color: $wheat;
 					width: 20px;
 					height: 20px;
 					border: 1px solid $green;
-					background: #fff;
+					background: $wheat;
 					border-radius: 50%;
 					text-align: center;
 					font-family: $biryani;
@@ -360,11 +465,21 @@ body.page-template-template-practice {
 		.step_content {
 			max-width: 960px;
 			margin: auto;
+			@media all and (max-width: 1024px) {
+				max-width: 100%;
+				padding: 0 50px;
+			}
+			@media all and (max-width: 736px) {
+				padding: 0 20px;
+			}
 			p, li {
 				font-family: $ps;
 				font-size: 22px;
 				line-height: 1.5em;
 				letter-spacing: 0.02em;
+				@media all and (max-width: 736px) {
+					font-size: 14px;
+				}
 			}
 			h1, h2 {
 				display: block;
@@ -381,10 +496,17 @@ body.page-template-template-practice {
 					display: block;
 					margin: 7px 0 20px;
 				}
+				@media all and (max-width: 736px) {
+					font-size: 22px;
+				}
 			}
 			h2 {
 				font-size: 28px;
 				margin-top: 60px;
+				@media all and (max-width: 736px) {
+					font-size: 18px;
+					margin-top: 30px;
+				}
 				&:before {
 					display:none;
 				}
@@ -397,10 +519,17 @@ body.page-template-template-practice {
 				margin: 40px 0;
 				position: relative;
 				color: $green;
+				@media all and (max-width: 736px) {
+					padding-left: 75px;
+					margin: 20px 0;
+				}
 				p {
 					font-family: $rs;
 					font-size: 30px;
 					line-height: 1.4em;
+					@media all and (max-width: 736px) {
+						font-size: 18px;
+					}
 				}
 				.icon {
 					position: absolute;
@@ -411,6 +540,10 @@ body.page-template-template-practice {
 					margin: auto;
 					background: $green;
 					overflow: hidden;
+					@media all and (max-width: 736px) {
+						width: 60px;
+						height: 60px;
+					}
 					&:before {
 						content:'';
 						width: 71px;
@@ -418,6 +551,13 @@ body.page-template-template-practice {
 						display: block;
 						margin: 15px 0 0 28px;
 						background: url('../images/sprites.svg') 0 -140px  no-repeat;
+						@media all and (max-width: 736px) {
+							width: 36px;
+							height: 43px;
+							background: url('../images/sprites.svg') 0 -70px  no-repeat;
+							background-size: 114px auto;
+							margin: 8px 0 0 14px;
+						}
 					}
 				}
 				&.purple {
@@ -429,6 +569,13 @@ body.page-template-template-practice {
 							height: 67px;
 							margin: 28px auto 0;
 							background: url('../images/sprites.svg') 0 -240px  no-repeat;
+							@media all and (max-width: 736px) {
+								width: 34px;
+								height: 34px;
+								background: url('../images/sprites.svg') 0 -120px  no-repeat;
+								background-size: 114px auto;
+								margin: 15px auto 0;
+							}
 						}
 					}
 				}
@@ -441,6 +588,13 @@ body.page-template-template-practice {
 						    height: 69px;
 						    margin: 25px auto 0;
 							background: url('../images/sprites.svg') 0 -320px  no-repeat;
+							@media all and (max-width: 736px) {
+								width: 22px;
+								height: 35px;
+								background: url('../images/sprites.svg') 0 -160px  no-repeat;
+								background-size: 114px auto;
+								margin: 13px auto 0;
+							}
 						}
 					}
 				}
@@ -453,6 +607,13 @@ body.page-template-template-practice {
 						    height: 76px;
 						    margin: 23px 0 0 24px;
 							background: url('../images/sprites.svg') 0 -400px  no-repeat;
+							@media all and (max-width: 736px) {
+								width: 38px;
+								height: 38px;
+								background: url('../images/sprites.svg') 0 -200px  no-repeat;
+								background-size: 114px auto;
+								margin: 12px 0 0 13px;
+							}
 						}
 					}
 				}
@@ -465,6 +626,13 @@ body.page-template-template-practice {
 						    height: 85px;
 						    margin: 15px auto 0;
 							background: url('../images/sprites.svg') 0 -480px  no-repeat;
+							@media all and (max-width: 736px) {
+								width: 38px;
+								height: 43px;
+								background: url('../images/sprites.svg') 0 -240px  no-repeat;
+								background-size: 114px auto;
+							    margin: 8px auto 0;
+							}
 						}
 					}
 				}
@@ -473,16 +641,36 @@ body.page-template-template-practice {
 			.cols {
 				@include display(flex);
 				margin-top:50px; 
+				@media all and (max-width: 1024px) {
+					display: block;
+					margin-top: 30px; 
+				}
+
 				.left {
 					width: 49%;
 					padding: 0 55px 0 0;
+					@media all and (max-width: 1024px) {
+						width: 100%;
+						padding: 0;
+					}
+				
+
 				}
 				.right {
 					width: 51%;
+					@media all and (max-width: 1024px) {
+						width: 100%;
+					}
 					ul {
 						margin: 0 0 40px;
+						@media all and (max-width: 736px) {
+							margin: 0 0 20px;
+						}
 						li {
 							font-size: 17px;
+							@media all and (max-width: 736px) {
+								font-size: 14px;
+							}
 							line-height: 1.4em;
 							margin: 0 0 10px;
 							position: relative;
@@ -490,9 +678,9 @@ body.page-template-template-practice {
 							&:before {
 								content:'\2022';
 								color: $green;
-							position: absolute;
-							left: 0px;
-							top: 0;
+								position: absolute;
+								left: 0px;
+								top: 0;
 							}
 						}
 					}
@@ -501,6 +689,9 @@ body.page-template-template-practice {
 					background: $green;
 					border-radius: 3px;
 					padding: 50px 50px 20px;
+					@media all and (max-width: 736px) {
+						padding: 25px 20px 20px 40px;
+					}
 					h3	{
 						color: $light-green;
 						font-family: $biryani;
@@ -510,15 +701,23 @@ body.page-template-template-practice {
 						letter-spacing: 0.125em;
 						text-transform: uppercase;
 						margin: 0 0 30px;
+						@media all and (max-width: 736px) {
+							font-size: 18px;
+							margin: 0 0 20px;
+						}
 					}
 					ul li {
 						font-family: $rs;
 						font-weight: 300;
 						font-size: 19px;
 						line-height: 1.4em;
-						color: #fff;
+						color: $wheat;
 						margin: 0 0 25px;
 						position: relative;
+						@media all and (max-width: 736px) {
+							font-size: 14px;
+							margin: 0 0 15px;
+						}
 						&:before {
 							content:'>';
 							color: $light-green;
@@ -541,6 +740,10 @@ body.page-template-template-practice {
 					em {
 						font-weight: 400;
 					}
+					@media all and (max-width: 736px) {
+						margin: 20px 0;
+						font-size: 18px;
+					}
 
 				}
 				h4 {
@@ -551,6 +754,10 @@ body.page-template-template-practice {
 					letter-spacing: 0.125em;
 					text-transform: uppercase;
 					margin: 10px 0 18px;
+					@media all and (max-width: 736px) {
+						font-size: 16px;
+						margin: 30px 0 10px;
+					}
 				}
 				.btn {
 					display: block;
@@ -570,6 +777,16 @@ body.page-template-template-practice {
 					height: 45px;
 					line-height: 45px;
 					cursor: pointer;
+					@media all and (max-width: 736px) {
+						display: inline-block;
+						margin-right: 10px;
+						font-size: 14px;
+						width: auto;
+						height: 32px;
+						line-height: 32px;	
+						padding: 0 20px;
+
+					}
 				}
 			}
 			.modal {
@@ -590,7 +807,7 @@ body.page-template-template-practice {
 					left: 0;
 					bottom: 0;
 					z-index: 9999;
-					color: #fff;
+					color: $wheat;
 					overflow: auto;
 					.modal-content {
 						position: relative;
@@ -598,6 +815,9 @@ body.page-template-template-practice {
 						padding: 50px 0;
 						margin: auto;
 						overflow: auto;
+						@media all and (max-width: 736px) {
+							padding: 30px 40px 0 20px;
+						}
 						h3 {
 							color: $light-green;
 							font-family: $biryani;
@@ -607,9 +827,12 @@ body.page-template-template-practice {
 							letter-spacing: 0.125em;
 							text-transform: uppercase;
 							margin: 0 0 15px;
+							@media all and (max-width: 736px) {
+								font-size: 13px;
+							}
 						}
 						h1 {
-							color: #fff;
+							color: $wheat;
 							font-family: $biryani;
 							font-weight: 900;
 							font-size: 23px;
@@ -622,6 +845,10 @@ body.page-template-template-practice {
 								height: 2px;
 								margin: 8px 0 15px;
 							}
+							@media all and (max-width: 736px) {
+								font-size: 16px;
+								margin: 0 0 20px;
+							}
 						}
 						h2 {
 							font-family: $rs;
@@ -633,11 +860,18 @@ body.page-template-template-practice {
 							&:after {
 								display:none;
 							}
+							@media all and (max-width: 736px) {
+								font-size: 16px;
+								margin: 10px 0;
+							}
 						}
 						p {
 							font-family: $nunito;
 							font-size: 19px;
 							line-height: 1.5em;
+							@media all and (max-width: 736px) {
+								font-size: 14px;
+							}
 						}
 					}
 					.close-modal {
@@ -648,7 +882,13 @@ body.page-template-template-practice {
 						height: 28px;
 						background: url('../images/close.svg') 0 0px  no-repeat;
 						cursor: pointer;
-
+						@media all and (max-width: 736px) {
+							top: 15px;
+							right: 15px;
+							width: 16px;
+							height: 16px;
+							background-size: 100%;
+						}
 					}
 				}
 
@@ -673,7 +913,7 @@ body.page-template-template-practice {
 		letter-spacing: 0.175em;
 		text-transform: uppercase;
 		background: $turquoise;
-		color: #fff;
+		color: $wheat;
 		text-decoration: none;
 		cursor: pointer;
 		&.open-bp-overview {
@@ -691,11 +931,16 @@ body.page-template-template-practice {
 				 bottom: -1px;
 			}
 		}
+		@media all and (max-width: 667px) {
+			height: 30px;
+			line-height: 34px;
+		}
+
 	}
 }
 .grid-overlay {
 	position: fixed;
-	background: #fff;
+	background: $wheat;
 	bottom: -1100px;
 	right: 0;
 	z-index: 9999;
@@ -703,10 +948,21 @@ body.page-template-template-practice {
 	@include transition(0.3s bottom);
 	&.open {
 		bottom: 0;
+		@media all and (max-width: 736px) {
+		    top: 0;
+		    bottom:0;
+		    position:fixed;
+		    overflow-y:scroll;
+		    overflow-x:hidden;
+		}
+		@media all and (max-width: 650px) {
+			left: 0px;
+
+		}
 	}
 	.overlay-header {
 		background: $dark-gray;
-		color: #fff;
+		color: $wheat;
 		padding: 15px;
 		.close-overlay {
 			 width: 13px;
@@ -717,6 +973,9 @@ body.page-template-template-practice {
 			 position: relative;
 			 bottom: -2px;
 			 cursor: pointer;
+			 @media all and (max-width: 650px) {
+			 	margin: 0;
+			 }
 		}
 		.header {
 			display: inline-block;
@@ -728,6 +987,10 @@ body.page-template-template-practice {
 			text-transform: uppercase;
 			line-height: 1em;
 			margin-left: 20px;
+			@media all and (max-width: 650px) {
+				font-size: 10px;
+				margin-left: 5px;
+			}
 		}
 		.download-btn {
 			float: right;
@@ -739,23 +1002,52 @@ body.page-template-template-practice {
 			text-transform: uppercase;
 			line-height: 1em;
 			margin: 0 40px 0 0;
-			&:after {
-				 content:'';
-				 width: 10px;
-				 height: 15px;
-				 background: url('../images/sprites.svg') 0 -720px no-repeat;
-				 display: inline-block;
-				 margin: 0 0 0 15px;
-				 position: relative;
-				 bottom: -3px;
+			a {
+				text-decoration: none;
+				color:#807e7c;
+				&:after {
+					 content:'';
+					 width: 10px;
+					 height: 15px;
+					 background: url('../images/sprites.svg') 0 -720px no-repeat;
+					 display: inline-block;
+					 margin: 0 0 0 15px;
+					 position: relative;
+					 bottom: -3px;
+				}
+				&:hover {
+					color: $turquoise;
+                        &:after {
+                            background: url('../images/sprites.svg') 0 -780px no-repeat;
+                        }
+				}
+
+			}
+			@media all and (max-width: 650px) {
+				position: absolute;
+				right: 15px;
+				top: 17px;
+				font-size:10px;
+				margin:0;
+				&:after {
+					margin-left: 8px;
+				}
 			}
 
 		}
 		
 	}
+	.overlay-content {
+		width: 100%;
+	}
 	.blueprint_grid {
 		box-shadow: none;
 		max-width: 1000px;
+		@media all and (max-width: 650px) {
+			width: 100%;
+			margin: 0;
+
+		}		
 		.column_container {
 			.col {
 				.cell {
@@ -766,7 +1058,7 @@ body.page-template-template-practice {
 			    }
 			}
 			.col1 {
-				min-width: 70px;
+				min-width: 90px;
 				.cell {
 				    padding: 0;
 				    font-family: "Catamaran",sans-serif;

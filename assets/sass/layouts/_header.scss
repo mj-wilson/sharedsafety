@@ -19,7 +19,7 @@ header {
                 display: block;
                 height: 4px;
                 width: 100%;
-                background: #fff;
+                background: $wheat;
                 border-radius: 8px;
                 margin-bottom: 7px;
                 @include transition(all 0.3s);
@@ -35,11 +35,17 @@ header {
             bottom: 0;
             right:-350px;
             padding: 110px 60px 0 50px;
+            @media all and (max-width: 736px) {
+                padding: 30px 60px 0 30px;
+            }
             position: fixed;
             background: $dark-gray;
             @include transition(right 0.3s);
             .download-pdf {
                 margin: 40px 0 0;
+                @media all and (max-width: 736px) {
+                    margin: 20px 0 0;
+                }
                 a {
                     font-family: $biryani;
                     text-transform: uppercase;
@@ -47,8 +53,11 @@ header {
                     font-weight: 900;
                     letter-spacing: 0.08em;
                     line-height: 1.3em;
-                    color: #fff;
+                    color: $wheat;
                     text-decoration: none;
+                    @media all and (max-width: 736px) {
+                        font-size: 10px;
+                    }
                     &:after {
                          content:'';
                          width: 10px;
@@ -58,6 +67,12 @@ header {
                          margin: 0 0 0 8px;
                          position: relative;
                          bottom: -3px;
+                    }
+                    &:hover {
+                        color: $turquoise;
+                        &:after {
+                            background: url('../images/sprites.svg') 0 -780px no-repeat;
+                        }
                     }
                   
                 }
@@ -73,11 +88,19 @@ header {
                     line-height: 1.3em;
                     border-bottom: 1px solid $turquoise;
                     padding: 15px 20px 10px 0;
+                    @media all and (max-width: 736px) {
+                        font-size: 12px;
+                    }
+
                     a {
-                        color: #fff;
+                        color: $wheat;
                         font-size: 11px;
                         text-decoration: none;
                         display: block;
+                        @include transition(0.3s color);
+                        @media all and (max-width: 736px) {
+                            font-size: 10px;
+                        }
                     }
                     &:first-child {
                         padding-top: 0;
@@ -165,7 +188,7 @@ body:not(.home) {
                 display: inline-block;
                 border: 2px solid $orange;
                 border-radius: 1px;
-                color: #fff;
+                color: $wheat;
                 font-family: $biryani;
                 font-weight: 900;
                 text-transform: uppercase;
@@ -182,6 +205,9 @@ body:not(.home) {
                     top: -1px;
                     margin: 0 2px;
                 }
+                @media all and (max-width: 800px) {
+                    font-size:10px;
+                }
             }
         }
        #primary-nav {
@@ -189,6 +215,9 @@ body:not(.home) {
             position: absolute;
             right: 40px;
             top: 20px;
+            @media all and (max-width: 800px) {
+                right: 20px;
+            }
             .nav-toggle-button {
                 width: 20px;
                 &:before, &:after, span {
@@ -200,4 +229,41 @@ body:not(.home) {
         }
     }
 
+}
+@media all and (max-width: 800px) {
+    body.home {
+        header{
+            background: $turquoise;
+            height: 54px;
+            box-shadow: 2px 2px 12px 1px rgba(#000,0.3);
+             #mini_logo {
+                position: absolute;
+                left: 20px;
+                top: 7px;
+                text-indent: -99999px;
+                a {
+                    display: block;
+                    width: 18px;
+                    height: 42px;
+                    background: url(../images/sprites.svg) 0 0 no-repeat;
+                    background-size: 170px auto;
+                }
+            }
+           #primary-nav {
+                text-align: left;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                .nav-toggle-button {
+                    width: 20px;
+                    &:before, &:after, span {
+                        height: 2px;
+                        border-radius: 4px;
+                        margin-bottom: 4px;
+                    }   
+                }   
+            }
+        }
+    }
+   
 }

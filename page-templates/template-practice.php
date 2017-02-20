@@ -167,7 +167,7 @@ get_header(); ?>
 	<div class="overlay-header">
 		<div class="close-overlay"></div>
 		<div class="header">Blueprint Overview</div>
-		<div class="download-btn">download</div>
+		<div class="download-btn"><a href="">download</a></div>
 	</div>
 	<div class="overlay-content">
 					<?php get_template_part( 'page-templates/template-parts/grid-overview' ) ?>
