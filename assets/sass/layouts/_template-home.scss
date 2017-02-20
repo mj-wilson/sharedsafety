@@ -44,11 +44,15 @@ body.home {
 
 		}
 		&#home_panel4 {
-			background-color: #3e4242;
+			background: #3e4242;
+		}
+		&#home_panel5 {
+			background: $turquoise;
 		}
 	}
 	.panel_content {
-		height: 100vh;
+		min-height: 100vh;
+		padding: 40px 0;
 		max-width: 100%;
 		margin: auto;
 		@include display(flex);
@@ -136,6 +140,7 @@ body.home {
 					margin: auto;
 					padding: 50px 70px;
 					box-shadow: 1px 1px 10px 2px rgba(#000,0.3);
+					@include clearfix;
 					h1 {
 						font-family: $biryani;
 						font-weight: 900;
@@ -146,9 +151,10 @@ body.home {
 						padding-bottom: 12px;
 						border-bottom: 2px solid $orange;
 						text-transform: uppercase;
-						span {
+						span, em {
 							text-transform: none;
 							font-weight: 400;
+							text-decoration: none;
 						}
 					}
 					p {
@@ -158,6 +164,10 @@ body.home {
 						font-size: 16px;
 						line-height: 1.6em;
 						letter-spacing: 0.01em;
+					}
+					img {
+						float: right;
+						margin: 0 0 0 20px;
 					}
 					.partner-list {
 						color: $turquoise;
@@ -214,21 +224,26 @@ body.home {
 				margin: 80px 0;
 				li {
 					width: 20%;
+					a {
+						color: inherit;
+						text-decoration: none;
+					}
 					h2 {
-						font-family: $catamaran;
-						font-size: 13px;
-						text-transform: uppercase;
-						line-height: 1.8em;
-						letter-spacing: 0.05em;
-						font-weight: 900;
+						text-transform: none;
+						font-weight: 700;
+						color: $green;
+						font-size: 19px;
+						letter-spacing: 0;
 						margin: 25px 0 0;
 						span {
 							display: block;
-							text-transform: none;
-							font-weight: 700;
-							color: $green;
-							font-size: 19px;
-							letter-spacing: 0;
+							font-family: $catamaran;
+							font-size: 13px;
+							text-transform: uppercase;
+							line-height: 1.8em;
+							letter-spacing: 0.05em;
+							font-weight: 900;
+							color: $dark-gray;
 						}
 					}
 					.icon {
@@ -248,7 +263,7 @@ body.home {
 						}
 					}
 					&.purple {
-						h2 span {
+						h2  {
 							color: $purple;
 						}
 						.icon {
@@ -262,7 +277,7 @@ body.home {
 						}
 					}
 					&.navy {
-						h2 span {
+						h2  {
 							color: $navy;
 						}
 						.icon {
@@ -276,7 +291,7 @@ body.home {
 						}
 					}
 					&.gold {
-						h2 span {
+						h2  {
 							color: $gold;
 						}
 						.icon {
@@ -290,7 +305,7 @@ body.home {
 						}
 					}
 					&.teal {
-						h2 span {
+						h2  {
 							color: $teal;
 						}
 						.icon {
@@ -406,7 +421,239 @@ body.home {
 			}
 		}
 	}
+	#home_panel5 { 
+		.blueprint_overview {
+			padding: 0 30px;
+			text-align: center;
+			h1 {
+				display: inline-block;
+				color: #fff;
+				font-family: $biryani;
+				font-weight: 900;
+				font-size: 32px;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				border: 4px solid $navy;
+				margin: 0 0 25px;
+				line-height: 1em;
+				padding: 22px 30px 8px;
+			}
+		}
+	}
 
+}
+.blueprint_grid {
+	background: #fff;
+	padding: 40px;
+	box-shadow: 0px 2px 12px 1px rgba(#000,0.4);
+	.column_container {
+		@include display(flex);
+		.col {
+			width: 18%;
+			text-align: left;
+			.cell {
+				width: 100%;
+				@include display(flex);
+				@include align-items(center);
+				height: 80px;
+				border-bottom: 2px solid rgba($dark-gray, 0.25);
+				font-family: $ps;
+				font-size: 14px;
+				line-height: 1.2em;
+				letter-spacing: 0;
+				a {
+					padding: 0 10px;
+					@include display(flex);
+					@include align-items(center);
+					height: 80px;
+					color: inherit;
+					text-align: center;
+					text-decoration: none;
+					width: 100%;
+					@include transition(.3s background, .3s color);
+					span.step-name {
+						width: 100%;
+						display: block;
+						text-align: center;
+						@include align-self(center);
+					}
+				}
+				&.header {
+					height: 60px;
+					display: block;
+					a {
+						height: 60px;
+						padding: 0;
+						@include justify-content(center);
+						span {
+							display: block;
+							color: $dark-gray;
+							font-family: $catamaran;
+							font-weight: 900;
+							font-size: 11px;
+							letter-spacing: 0.05em;
+							text-transform: uppercase;
+
+						}
+						.title {
+							white-space: nowrap;
+						}
+						.icon-inner {
+							display: block;
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							white-space: nowrap;
+							margin: 0 8px 0 0;
+						}
+					}
+
+				}
+			}
+			&.green {
+				color: $green;
+				.cell:not(.header) {
+					a:hover {
+						background: $green;
+						color: #fff;
+					}
+				}
+				.icon-inner {
+					background: $green;
+					&:before {
+						content: '';
+					    width: 26px;
+					    height: 35px;
+					    display: block;
+					    margin: 0px 0 0 9px;
+					    background: url(../images/sprites.svg) 0 -45px no-repeat;
+					    background-size: 80px auto;
+					    position: relative;
+					    top: 1px;
+					}
+				}
+			}
+			&.purple {
+				color: $purple;
+				.cell:not(.header) {
+					a:hover {
+						background: $purple;
+						color: #fff;
+					}
+				}
+				.icon-inner {
+					background: $purple;
+					&:before {
+						content: '';
+					    width: 24px;
+					    height: 30px;
+					    display: block;
+					    margin: 0px auto 0;
+					    background: url(../images/sprites.svg) 0 -80px no-repeat;
+					    background-size: 80px auto;
+					    position: relative;
+					    top: 6px;
+					}
+				}
+			}
+			&.navy {
+				color: $navy;
+				.cell:not(.header) {
+					a:hover {
+						background: $navy;
+						color: #fff;
+					}
+				}
+				.icon-inner {
+					background: $navy;
+					&:before {
+						content: '';
+					    width: 16px;
+					    height: 27px;
+					    display: block;
+					    margin: 0px auto 0;
+					    background: url(../images/sprites.svg) 0 -110px no-repeat;
+					    background-size: 80px auto;
+					    position: relative;
+					    top: 6px;
+					}
+				}
+			}
+			&.gold {
+				color: $gold;
+				.cell:not(.header) {
+					a:hover {
+						background: $gold;
+						color: #fff;
+					}
+				}
+				.icon-inner {
+					background: $gold;
+					&:before {
+						content: '';
+					    width: 30px;
+					    height: 28px;
+					    display: block;
+					    margin: 0 0 0 8px;
+					    background: url(../images/sprites.svg) 0 -139px no-repeat;
+					    background-size: 80px auto;
+					    position: relative;
+					    top: 7px;
+					}
+				}
+			}
+			&.teal {
+				color: $teal;
+				.cell:not(.header) {
+					a:hover {
+						background: $teal;
+						color: #fff;
+					}
+				}
+				.icon-inner {
+					background: $teal;
+					&:before {
+						content: '';
+					    width: 30px;
+					    width: 30px;
+					    height: 32px;
+					    display: block;
+					    margin: 0 0 0 7px;
+					    background: url(../images/sprites.svg) 0 -168px no-repeat;
+					    background-size: 80px auto;
+					    position: relative;
+					    top: 5px;
+					}
+				}
+			}
+		}
+		.col1 {
+			width: 10%;
+			min-width: 120px;
+			white-space: nowrap;
+			.cell {
+				padding: 0;
+				font-family: $catamaran;
+				font-weight: 900;
+				font-size: 11px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				span {
+					display: block;
+					background: $dark-gray;
+					color: #fff;
+					width: 18px;
+					height: 18px;
+					border-radius: 50%;
+					text-align: center;
+					font-weight: 700;
+					margin-right: 6px;
+					line-height: 18px;
+
+				}
+			}
+		}
+	}
 
 }
 .down_arrow {
@@ -421,11 +668,15 @@ body.home {
 		}
 	}
 }
-p 	a {
+p a {
 	color: inherit;
 	text-decoration: none;
 	font-weight: 800;
 	padding: 0 2px;
-	box-shadow: inset 0 -.5em 0 $blue;						
+	box-shadow: inset 0 -.5em 0 $blue;
+	@include transition(0.3s box-shadow);
+	&:hover {
+		box-shadow: inset 0 -.5em 0 $turquoise;
+	}						
 }
 

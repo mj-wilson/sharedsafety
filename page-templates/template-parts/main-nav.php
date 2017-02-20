@@ -11,6 +11,7 @@
 			<li><a href="/breaking-the-cycle-of-harm/">breaking the cycle of harm</a></li>
 			<li><a href="/making-the-system-work/">making the system work</a></li>
 		</ul>
+		<div class="download-pdf"><a href="">download blueprint pdf</a></div>
 	</div>
 </nav><!-- #site-navigation -->
 		

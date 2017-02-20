@@ -15,10 +15,7 @@ get_header(); ?>
 						<h1>Blueprint <span>for</span> Shared Safety</h1>
 					</div>
 					<div class="bp_sub_intro">
-						A guide for building a safer California. <br>
-						A vision for community wellbeing. <br>
-						A voice for crime survivors. <br>
-						A commitment to breaking the cycle of harm.
+						<?php the_content(); ?>
 					</div>
 					<div class="down_arrow">
 						<div class="link_to_section" data-target="home_panel2">
@@ -26,13 +23,11 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-			<?php endwhile; // end of the loop. ?>
 	</div>
 </section>
 
 
 <section id="home_panel2" class="home_panel">
-			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="panel_content">
 
 				<div class="explainer_slider">
@@ -42,31 +37,20 @@ get_header(); ?>
 					<div class="slides_holder">
 						<div class="slide">
 							<div class="slide-inner">
-								<h1>WHAT IS SHARED SAFETY?</h1>
-								<p>A community is safest when everyone plays a role in building and restoring community wellbeing. Shared Safety means tackling the drivers of crime, elevating the voices of crime survivors, and breaking the cycle of harm through more effective decision-making. Shared Safety is the pioneering work of community-wide stakeholders who are rethinking their approach to public safety using the lens of wellbeing and public health. <a hre="">Be part of the movement.</a></p>
+								<?php the_field('slide_1'); ?>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="slide-inner">
-								<h1>WHAT WE INVEST IN GROWS</h1>
-								<p><a hre="">Spending on incarceration skyrocketed in the ‘80s and ‘90s at the expense of public health and social services.</a> The result has left low-income communities of color—including crime survivors—increasingly vulnerable to crime, poverty and poor health. To disrupt this cycle of harm, local officials must work together to rethink public safety priorities—starting with defining and investing in shared safety.</p>
+								<?php the_field('slide_2'); ?>
 
 							</div>
 						</div>
 						<div class="slide">
 							<div class="slide-inner">
-								<h1>DESIGNING THE BLUEPRINT: <span>A Collaborative Effort</span></h1>
-								<p>This Blueprint is the product of more than a year of research, policy analysis and outreach to stakeholders and practitioners across California. By shifting the focus from over-incarceration to investments that will truly make our communities safer, they are re-envisioning the field of public safety.</p>
+								<?php the_field('slide_3'); ?>
 								<div class="partner-list">
-									<p>the following partners helped shape and support this blueprint for shared safety:</p>
-									<ul>
-										<li>Cerum aut veliam elis vendae</li>
-										<li>Cerum aut veliam elis vendae</li>
-										<li>Cerum aut veliam elis vendae</li>
-										<li>Cerum aut veliam elis vendae</li>
-										<li>Cerum aut veliam elis vendae</li>
-										<li>Cerum aut veliam elis vendae</li>
-									</ul>
+									<?php the_field('slide_3_partners'); ?>
 								</div>
 
 							</div>
@@ -87,39 +71,66 @@ get_header(); ?>
 				</div>
 			
 			</div>
-			<?php endwhile; // end of the loop. ?>
 
 </section>
 
 <section id="home_panel3" class="home_panel">
-			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="panel_content">
 
 				<div class="blueprint_principles">
 					<h1>5 blueprint principles</h1>
-					<p>These guiding principles are the foundation for achieving Shared Safety communities.
-Each principle has a set of <a href="">practices</a> that support an integrated system.</p>
+					
+					<?php the_field('blueprint_principals_intro_paragraph'); ?>
+
 					<ul class="principals">
-						<li class="green">
-							<div class="icon"></div>
-							<h2>shifting to a <span>Public Health Frame</span></h2>
-						</li>
-						<li class="purple">
-							<div class="icon"></div>
-							<h2><span>Wellbeing</span> is safety</h2>
-						</li>
-						<li class="navy">
-							<div class="icon"></div>
-							<h2><span>Crime Survivors </span> at the center</h2>
-						</li>
-						<li class="gold">
-							<div class="icon"></div>
-							<h2><span>Breaking the Cycle</span> of harm</h2>
-						</li>
-						<li class="teal">
-							<div class="icon"></div>
-							<h2>making the  <span>System Work</span></h2>
-						</li>
+
+		<?php
+			$colors = array('green', 'purple', 'navy', 'gold', 'teal');
+			foreach ($colors as &$value) {
+			// setup up loop of colors
+
+			// query for each pratice page by color:
+
+				$posts = get_posts(array(
+					'numberposts'	=> -1,
+					'post_type'		=> 'page',
+					'meta_key'		=> 'practice_name',
+					'meta_value'	=> $value
+				));
+
+				if( $posts ): ?>
+	
+					<?php foreach( $posts as $post ): 
+						
+						setup_postdata( $post );?>
+						<?php $color = get_field('practice_name'); ?>
+						<?php $link = get_the_permalink(); ?>
+						
+						<?php 
+						$array = [
+						    "green" => "<span>shifting to a</span> Public Health Frame",
+						    "purple" => "Wellbeing <span>is safety</span>",
+						    "navy" => "Crime Survivors <span>at the center</span>",
+						    "gold" => "Breaking the Cycle<span> of harm</span>",
+						    "teal" => "<span>making the</span> System Work",
+						];
+
+						?>
+
+							<li class="<?php echo $color; ?>">
+								<a href="<?php echo $link; ?>">
+									<div class="icon"></div>
+									<h2><?php echo $array[ $color ]; ?></h2>
+								</a>
+							</li>
+					<?php endforeach; ?>
+					<?php wp_reset_postdata(); ?>
+
+				<?php endif; wp_reset_query(); 
+			} 
+			unset($value);
+			?>
+						
 					</ul>
 				</div>
 				<div class="down_arrow">
@@ -132,54 +143,65 @@ Each principle has a set of <a href="">practices</a> that support an integrated 
 				<a href="/shifting-to-a-public-health-frame/"><?php get_template_part( 'page-templates/template-parts/svg/right_arrow.svg' ) ?></a>
 			</div>
 			
-			<?php endwhile; // end of the loop. ?>
 </section><!-- #primary -->
 
 <section id="home_panel4" class="home_panel">
 	<div class="content">
-			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="panel_content">
 
 				<div class="blueprint_steps">
 					<h1>5 blueprint steps</h1>
-					<p>Each Blueprint principle is supported by five action steps and <a href="">practices</a> the building blocks for a responsive and restorative safety infrastructure.</p>
+					<?php the_field('blueprint_steps_intro_paragraph'); ?>
+
 					<ul class="steps">
 						<li>
 							<a href="/shifting-to-a-public-health-frame/#envision_step">
 								<h2>envision <span>Safety</span></h2>
-								<p>Developing a shared understanding of what safety means for your community and how to get there.</p>
+								<p><?php the_field('blueprint_step_short_description_envision'); ?></p>
 							</a>
 						</li>
 						<li>
 							<a href="/shifting-to-a-public-health-frame/#plan_step">
 								<h2>plan <span>Safety</span></h2>
-								<p>Establishing a foundation and roadmap for advancing your community’s new safety priorities.</p>
+								<p><?php the_field('blueprint_step_short_description_plan'); ?></p>
 							</a>
 						</li>
 						<li>
 							<a href="/shifting-to-a-public-health-frame/#invest_step">
 								<h2>invest in <span>Safety</span></h2>
-								<p>Making smart, cost-effective investments in safety policies, programs and practices.</p>
+								<p><?php the_field('blueprint_step_short_description_invest'); ?></p>
 							</a>
 						</li>
 						<li>
 							<a href="/shifting-to-a-public-health-frame/#restore_step">
 								<h2>restore <span>Safety</span></h2>
-								<p>Repairing breaks and building trust so that the community can move forward together.</p>
+								<p><?php the_field('blueprint_step_short_description_restore'); ?></p>
 							</a>
 						</li>
 						<li>
 							<a href="/shifting-to-a-public-health-frame/#strengthen_step">
 								<h2>strengthen <span>Safety</span></h2>
-								<p>Building on what works to improve safety in your community, learning from others, and sharing your successes.</p>
+								<p><?php the_field('blueprint_step_short_description_strengthen'); ?></p>
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="down_arrow">
-					<div class="link_to_section" data-target="home_panel4">
+					<div class="link_to_section" data-target="home_panel5">
 						<?php get_template_part( 'page-templates/template-parts/svg/down_circle_arrow.svg' ) ?>
 					</div>
+				</div>
+			</div>
+			
+	</div>
+</section><!-- #primary -->
+
+<section id="home_panel5" class="home_panel">
+	<div class="content">
+			<div class="panel_content">
+				<div class="blueprint_overview">
+					<h1>Blueprint Overview</h1>
+					<?php get_template_part( 'page-templates/template-parts/grid-overview' ) ?>
 				</div>
 			</div>
 			

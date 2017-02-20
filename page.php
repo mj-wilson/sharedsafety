@@ -13,19 +13,21 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<div class="content">
-			<section class="secondary-page">
+		<div class="page-content">
+
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="page-header">
 					<h1><?php the_title(); ?></h1>
 				</div>
-
-				<?php the_content(); ?>
+				<div class="content-container">
+					<?php the_content(); ?>
+				</div>
 
 			<?php endwhile; // end of the loop. ?>
-			</section>
+
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
 
 <?php get_footer(); ?>
+

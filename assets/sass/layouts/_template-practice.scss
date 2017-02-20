@@ -7,7 +7,7 @@ body.page-template-template-practice {
 		min-height: calc(100vh - 50px);
 		background-color: #fff;
 		position: relative;		
-		background-image: url('../images/wellbeing_hero.jpg');
+		background-image: url('../images/public-health_hero.jpg');
 		background-position: center 10% ;
 		background-size: cover;
 		background-color:$green;
@@ -108,7 +108,8 @@ body.page-template-template-practice {
 			}
 		}
 		.panel_content {
-			height: 100vh;
+			min-height: 100vh;
+			padding: 50px 0 140px;
 			max-width: 700px;
 			margin: auto;
 			@include display(flex);
@@ -654,4 +655,128 @@ body.page-template-template-practice {
 			}
 		}
 	}	
+}
+.fixed_footer_nav {
+	position: fixed;
+	z-index: 9998;
+	bottom: 0;
+	right: 0;
+	.mini-btn {		
+		display: block;
+		float: left;
+		height: 40px;
+		padding: 0 30px;
+		font-family: $biryani;
+		font-weight: 900;
+		font-size: 10px;
+		line-height: 44px;
+		letter-spacing: 0.175em;
+		text-transform: uppercase;
+		background: $turquoise;
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+		&.open-bp-overview {
+			color: $turquoise;
+			background: $dark-gray;
+			padding: 0 16px 0 20px;
+			&:after {
+				 content:'';
+				 width: 7px;
+				 height: 11px;
+				 background: url('../images/sprites.svg') 0 -700px no-repeat;
+				 display: inline-block;
+				 margin: 0 0 0 8px;
+				 position: relative;
+				 bottom: -1px;
+			}
+		}
+	}
+}
+.grid-overlay {
+	position: fixed;
+	background: #fff;
+	bottom: -1100px;
+	right: 0;
+	z-index: 9999;
+	box-shadow: 0px 2px 12px 1px rgba(#000,0.4);
+	@include transition(0.3s bottom);
+	&.open {
+		bottom: 0;
+	}
+	.overlay-header {
+		background: $dark-gray;
+		color: #fff;
+		padding: 15px;
+		.close-overlay {
+			 width: 13px;
+			 height: 13px;
+			 background: url('../images/sprites.svg') 0 -740px no-repeat;
+			 display: inline-block;
+			 margin: 0 0 0 8px;
+			 position: relative;
+			 bottom: -2px;
+			 cursor: pointer;
+		}
+		.header {
+			display: inline-block;
+			color: $turquoise;
+			font-family: $biryani;
+			font-weight: 900;
+			font-size: 12px;
+			letter-spacing: 0.175em;
+			text-transform: uppercase;
+			line-height: 1em;
+			margin-left: 20px;
+		}
+		.download-btn {
+			float: right;
+			color:#807e7c;
+			font-family: $biryani;
+			font-weight: 900;
+			font-size: 12px;
+			letter-spacing: 0.175em;
+			text-transform: uppercase;
+			line-height: 1em;
+			margin: 0 40px 0 0;
+			&:after {
+				 content:'';
+				 width: 10px;
+				 height: 15px;
+				 background: url('../images/sprites.svg') 0 -720px no-repeat;
+				 display: inline-block;
+				 margin: 0 0 0 15px;
+				 position: relative;
+				 bottom: -3px;
+			}
+
+		}
+		
+	}
+	.blueprint_grid {
+		box-shadow: none;
+		max-width: 1000px;
+		.column_container {
+			.col {
+				.cell {
+			    	font-size: 12px;
+			    }
+			    .cell.header a span {
+			    	font-size: 9px;
+			    }
+			}
+			.col1 {
+				min-width: 70px;
+				.cell {
+				    padding: 0;
+				    font-family: "Catamaran",sans-serif;
+				    font-weight: 900;
+				    font-size: 9px;
+				    letter-spacing: .05em;
+				    text-transform: uppercase;
+				}
+
+			}
+		}
+	}
 }

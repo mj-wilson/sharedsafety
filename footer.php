@@ -25,8 +25,8 @@
 					?>
 				</div>
 				<ul class="social">
-					<li><a class="twitter" href=""></a></li>
-					<li><a class="facebook" href=""></a></li>						
+					<li><a class="twitter" target="_blank" href="https://twitter.com/safeandjust"></a></li>
+					<li><a class="facebook" target="_blank"  href="https://www.facebook.com/safeandjust"></a></li>						
 				</ul>
 			</div>
 		</div>

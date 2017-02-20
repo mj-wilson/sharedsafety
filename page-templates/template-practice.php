@@ -13,8 +13,6 @@ get_header(); ?>
 
 <div class="page-wrapper <?php echo $color; ?>">		
 
-
-
 	<div class="hero-panel <?php echo $color; ?>">
 		
 		<div class="hero-panel-nav">
@@ -143,7 +141,7 @@ get_header(); ?>
 										</div>
 									</div>
 								<?php endif; ?>
-								<a class="btn" href="/resources">Resources</a>
+								<a class="btn" target="_blank" href="/resources">Resources</a>
 							</div>
 						</div>
 					</div>
@@ -161,6 +159,20 @@ get_header(); ?>
 
 </div>
 
+<div class="fixed_footer_nav">
+	<a target="_blank" class="mini-btn" href="/contact-us">get involved</a>
+	<div class="mini-btn open-bp-overview">blueprint overview </div>
+</div>
+<div class="grid-overlay">
+	<div class="overlay-header">
+		<div class="close-overlay"></div>
+		<div class="header">Blueprint Overview</div>
+		<div class="download-btn">download</div>
+	</div>
+	<div class="overlay-content">
+					<?php get_template_part( 'page-templates/template-parts/grid-overview' ) ?>
+	</div>
+</div>
 	<?php endwhile; // end of the loop. ?>
 
 

@@ -4,17 +4,6 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    #mini_logo {
-        position: absolute;
-        left: 50px;
-        top: 40px;
-        a {
-            display: block;
-            width: 24px;
-            height: 56px;
-            background: url(../images/sprites.svg) 0 0 no-repeat;
-        }
-    }
     #primary-nav {
         position: absolute;
         right: 55px;
@@ -49,6 +38,30 @@ header {
             position: fixed;
             background: $dark-gray;
             @include transition(right 0.3s);
+            .download-pdf {
+                margin: 40px 0 0;
+                a {
+                    font-family: $biryani;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 900;
+                    letter-spacing: 0.08em;
+                    line-height: 1.3em;
+                    color: #fff;
+                    text-decoration: none;
+                    &:after {
+                         content:'';
+                         width: 10px;
+                         height: 15px;
+                         background: url('../images/sprites.svg') 0 -760px no-repeat;
+                         display: inline-block;
+                         margin: 0 0 0 8px;
+                         position: relative;
+                         bottom: -3px;
+                    }
+                  
+                }
+            }
             ul {
                 li {
                     color: $turquoise;
@@ -121,4 +134,70 @@ header {
         
     }
 }
+body.home {
+    header{
+        background: none;
+        height: auto;
+         #mini_logo {
+            position: absolute;
+            left: 50px;
+            top: 40px;
+            text-indent: -99999px;
+            a {
+                display: block;
+                width: 24px;
+                height: 56px;
+                background: url(../images/sprites.svg) 0 0 no-repeat;
+            }
+        }
+    }
+}
+body:not(.home) {
+    header#masthead  {
+        background: $turquoise;
+        height: 54px;
+        text-align: center;
+        padding: 13px 0 0;
+        box-shadow: 2px 2px 12px 1px rgba(#000,0.3);
+        #mini_logo {
+            display: inline-block;
+            a {
+                display: inline-block;
+                border: 2px solid $orange;
+                border-radius: 1px;
+                color: #fff;
+                font-family: $biryani;
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 0.175em;
+                height:28px;
+                line-height: 28px;
+                padding: 0 10px;
+                text-decoration: none;
+                span {
+                    font-weight: 400;
+                    font-size: 0.65em;
+                    position: relative;
+                    top: -1px;
+                    margin: 0 2px;
+                }
+            }
+        }
+       #primary-nav {
+            text-align: left;
+            position: absolute;
+            right: 40px;
+            top: 20px;
+            .nav-toggle-button {
+                width: 20px;
+                &:before, &:after, span {
+                    height: 2px;
+                    border-radius: 4px;
+                    margin-bottom: 4px;
+                }   
+            }   
+        }
+    }
 
+}

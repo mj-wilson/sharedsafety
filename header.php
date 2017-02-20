@@ -32,7 +32,7 @@
 
 	
 			<div id="mini_logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Blueprint <span>for</span> Shared Safety</a>
 			</div>
 
 			<?php get_template_part( 'page-templates/template-parts/main-nav' ) ?>
