@@ -1,6 +1,7 @@
 <nav id="primary-nav" role="navigation">
 	<div class="nav-toggle-button">
 		<span class="nav-toggle-icon"></span>
+		<span class="menu-label">MENU</span>
 	</div>
 	<div class="sidenav">
 		<ul>

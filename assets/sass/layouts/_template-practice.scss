@@ -315,18 +315,36 @@ body.page-template-template-practice {
 			text-align: left;
 		    position: absolute;
 		    right: 40px;
+		    top: 20px;
 		    @media all and (max-width: 800px) { 
             	right: 10px;
             }
-		    top: 20px;
 			.nav-toggle-button {
-            width: 20px;
-	            &:before, &:after, span {
-	                height: 2px;
-	                border-radius: 4px;
-	                margin-bottom: 4px;
-	            }	
-	        }	
+                width: 22px;
+                top: -4px;
+                .menu-label {
+                    display: block;
+                    font-family: $biryani;
+                    text-transform: uppercase;
+                    font-size: 7px;
+                    font-weight: 800;
+                    letter-spacing: 0;
+                    line-height: 1em;
+                    color: $wheat;
+                    text-align: justify;
+                    position: absolute;
+                    bottom: -8px;
+                    white-space: nowrap;
+                }
+                &:before, &:after, span.nav-toggle-icon {
+                    height: 2px;
+                    border-radius: 4px;
+                    margin-bottom: 4px;
+                }  
+            }
+            &.open .nav-toggle-button{
+                top: 0;
+            }
         }
 	}
 	.sticky_subnav {
@@ -372,10 +390,7 @@ body.page-template-template-practice {
 		position: relative;
 		padding: 180px 0 0px;
 		@media all and (max-width: 736px) {
-			padding-top: 40px;
-				&#envision_step {
-					padding-top: 120px;
-				}
+			padding-top: 120px;
 		}
 
 		&.active {
@@ -815,7 +830,7 @@ body.page-template-template-practice {
 						padding: 50px 0;
 						margin: auto;
 						overflow: auto;
-						@media all and (max-width: 736px) {
+						@media all and (max-width: 1000px) {
 							padding: 30px 40px 0 20px;
 						}
 						h3 {
@@ -827,7 +842,7 @@ body.page-template-template-practice {
 							letter-spacing: 0.125em;
 							text-transform: uppercase;
 							margin: 0 0 15px;
-							@media all and (max-width: 736px) {
+							@media all and (max-width: 1000px) {
 								font-size: 13px;
 							}
 						}
@@ -845,7 +860,7 @@ body.page-template-template-practice {
 								height: 2px;
 								margin: 8px 0 15px;
 							}
-							@media all and (max-width: 736px) {
+							@media all and (max-width: 1000px) {
 								font-size: 16px;
 								margin: 0 0 20px;
 							}
@@ -860,7 +875,7 @@ body.page-template-template-practice {
 							&:after {
 								display:none;
 							}
-							@media all and (max-width: 736px) {
+							@media all and (max-width: 1000px) {
 								font-size: 16px;
 								margin: 10px 0;
 							}
@@ -869,7 +884,7 @@ body.page-template-template-practice {
 							font-family: $nunito;
 							font-size: 19px;
 							line-height: 1.5em;
-							@media all and (max-width: 736px) {
+							@media all and (max-width: 1000px) {
 								font-size: 14px;
 							}
 						}
@@ -882,7 +897,7 @@ body.page-template-template-practice {
 						height: 28px;
 						background: url('../images/close.svg') 0 0px  no-repeat;
 						cursor: pointer;
-						@media all and (max-width: 736px) {
+						@media all and (max-width: 1000px) {
 							top: 15px;
 							right: 15px;
 							width: 16px;

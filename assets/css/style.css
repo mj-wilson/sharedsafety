@@ -690,7 +690,7 @@ header {
       width: 37px;
       z-index: 99999;
       cursor: pointer; }
-      header #primary-nav .nav-toggle-button:before, header #primary-nav .nav-toggle-button:after, header #primary-nav .nav-toggle-button span {
+      header #primary-nav .nav-toggle-button:before, header #primary-nav .nav-toggle-button:after, header #primary-nav .nav-toggle-button span.nav-toggle-icon {
         display: block;
         height: 4px;
         width: 100%;
@@ -700,6 +700,19 @@ header {
         transition: all 0.3s; }
       header #primary-nav .nav-toggle-button:before, header #primary-nav .nav-toggle-button:after {
         content: ''; }
+      header #primary-nav .nav-toggle-button .menu-label {
+        display: block;
+        font-family: "Biryani", sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        line-height: 1em;
+        color: #fffef6;
+        text-align: justify;
+        position: absolute;
+        bottom: -10px;
+        white-space: nowrap; }
     header #primary-nav .sidenav {
       z-index: 99998;
       width: 348px;
@@ -844,11 +857,27 @@ body:not(.home) header#masthead {
       body:not(.home) header#masthead #primary-nav {
         right: 20px; } }
     body:not(.home) header#masthead #primary-nav .nav-toggle-button {
-      width: 20px; }
-      body:not(.home) header#masthead #primary-nav .nav-toggle-button:before, body:not(.home) header#masthead #primary-nav .nav-toggle-button:after, body:not(.home) header#masthead #primary-nav .nav-toggle-button span {
+      width: 22px;
+      top: -4px; }
+      body:not(.home) header#masthead #primary-nav .nav-toggle-button .menu-label {
+        display: block;
+        font-family: "Biryani", sans-serif;
+        text-transform: uppercase;
+        font-size: 7px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 1em;
+        color: #fffef6;
+        text-align: justify;
+        position: absolute;
+        bottom: -8px;
+        white-space: nowrap; }
+      body:not(.home) header#masthead #primary-nav .nav-toggle-button:before, body:not(.home) header#masthead #primary-nav .nav-toggle-button:after, body:not(.home) header#masthead #primary-nav .nav-toggle-button span.nav-toggle-icon {
         height: 2px;
         border-radius: 4px;
         margin-bottom: 4px; }
+    body:not(.home) header#masthead #primary-nav.open .nav-toggle-button {
+      top: 0; }
 
 @media all and (max-width: 800px) {
   body.home header {
@@ -872,11 +901,27 @@ body:not(.home) header#masthead {
       right: 20px;
       top: 20px; }
       body.home header #primary-nav .nav-toggle-button {
-        width: 20px; }
-        body.home header #primary-nav .nav-toggle-button:before, body.home header #primary-nav .nav-toggle-button:after, body.home header #primary-nav .nav-toggle-button span {
+        width: 22px;
+        top: -4px; }
+        body.home header #primary-nav .nav-toggle-button .menu-label {
+          display: block;
+          font-family: "Biryani", sans-serif;
+          text-transform: uppercase;
+          font-size: 7px;
+          font-weight: 800;
+          letter-spacing: 0;
+          line-height: 1em;
+          color: #fffef6;
+          text-align: justify;
+          position: absolute;
+          bottom: -8px;
+          white-space: nowrap; }
+        body.home header #primary-nav .nav-toggle-button:before, body.home header #primary-nav .nav-toggle-button:after, body.home header #primary-nav .nav-toggle-button span.nav-toggle-icon {
           height: 2px;
           border-radius: 4px;
-          margin-bottom: 4px; } }
+          margin-bottom: 4px; }
+      body.home header #primary-nav.open .nav-toggle-button {
+        top: 0; } }
 
 /*--------------------------------------------------------------
     6.2 Navigation
@@ -1257,24 +1302,12 @@ body.home #home_panel2 .panel_content {
         @media all and (max-width: 736px) {
           body.home #home_panel2 .panel_content .slide .slide-inner p {
             font-size: 14px; } }
-      body.home #home_panel2 .panel_content .slide .slide-inner img {
+      body.home #home_panel2 .panel_content .slide .slide-inner img, body.home #home_panel2 .panel_content .slide .slide-inner iframe {
         float: right;
         margin: 0 0 0 20px; }
       body.home #home_panel2 .panel_content .slide .slide-inner .partner-list {
         color: #00a9e0; }
-        body.home #home_panel2 .panel_content .slide .slide-inner .partner-list p {
-          font-family: "Biryani", sans-serif;
-          font-weight: 900;
-          text-transform: uppercase;
-          font-size: 13px;
-          letter-spacing: 0.05em;
-          margin-bottom: 7px; }
-          @media all and (max-width: 736px) {
-            body.home #home_panel2 .panel_content .slide .slide-inner .partner-list p {
-              font-size: 12px; } }
         body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul {
-          font-size: 13px;
-          font-style: italic;
           display: -webkit-box;
           display: -moz-box;
           display: box;
@@ -1282,14 +1315,27 @@ body.home #home_panel2 .panel_content {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-flow: row wrap;
-              flex-flow: row wrap; }
+              flex-flow: row wrap;
+          margin: 0 -15px; }
           body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li {
-            width: 25%;
-            line-height: 1.4em;
-            padding-right: 10px; }
+            width: calc(25% - 30px);
+            margin: 0 15px; }
             @media all and (max-width: 736px) {
               body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li {
                 width: 50%; } }
+            body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li p {
+              font-size: 14px;
+              line-height: 1.4em;
+              text-align: right;
+              margin: 0 0 10px; }
+              body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li p strong:before {
+                content: '- '; }
+            body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li blockquote {
+              margin: 0;
+              font-size: 11px;
+              line-height: 1.3em; }
+              body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li blockquote p {
+                text-align: left; }
 
 body.home #home_panel3 .blueprint_principles, body.home #home_panel3 .blueprint_steps, body.home #home_panel4 .blueprint_principles, body.home #home_panel4 .blueprint_steps {
   padding: 0 100px;
@@ -2410,11 +2456,27 @@ body.page-template-template-practice header#secondary {
       body.page-template-template-practice header#secondary #primary-nav {
         right: 10px; } }
     body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button {
-      width: 20px; }
-      body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button:before, body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button:after, body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button span {
+      width: 22px;
+      top: -4px; }
+      body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button .menu-label {
+        display: block;
+        font-family: "Biryani", sans-serif;
+        text-transform: uppercase;
+        font-size: 7px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 1em;
+        color: #fffef6;
+        text-align: justify;
+        position: absolute;
+        bottom: -8px;
+        white-space: nowrap; }
+      body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button:before, body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button:after, body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button span.nav-toggle-icon {
         height: 2px;
         border-radius: 4px;
         margin-bottom: 4px; }
+    body.page-template-template-practice header#secondary #primary-nav.open .nav-toggle-button {
+      top: 0; }
 
 body.page-template-template-practice .sticky_subnav {
   background: #a4d4a4;
@@ -2455,9 +2517,7 @@ body.page-template-template-practice .step_panel {
   padding: 180px 0 0px; }
   @media all and (max-width: 736px) {
     body.page-template-template-practice .step_panel {
-      padding-top: 40px; }
-      body.page-template-template-practice .step_panel#envision_step {
-        padding-top: 120px; } }
+      padding-top: 120px; } }
   body.page-template-template-practice .step_panel.active .sticky_subnav {
     opacity: 1;
     z-index: 9998; }
@@ -2843,7 +2903,7 @@ body.page-template-template-practice .step_panel {
           padding: 50px 0;
           margin: auto;
           overflow: auto; }
-          @media all and (max-width: 736px) {
+          @media all and (max-width: 1000px) {
             body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content {
               padding: 30px 40px 0 20px; } }
           body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h3 {
@@ -2855,7 +2915,7 @@ body.page-template-template-practice .step_panel {
             letter-spacing: 0.125em;
             text-transform: uppercase;
             margin: 0 0 15px; }
-            @media all and (max-width: 736px) {
+            @media all and (max-width: 1000px) {
               body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h3 {
                 font-size: 13px; } }
           body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1 {
@@ -2871,7 +2931,7 @@ body.page-template-template-practice .step_panel {
               background: #005498;
               height: 2px;
               margin: 8px 0 15px; }
-            @media all and (max-width: 736px) {
+            @media all and (max-width: 1000px) {
               body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1 {
                 font-size: 16px;
                 margin: 0 0 20px; } }
@@ -2884,7 +2944,7 @@ body.page-template-template-practice .step_panel {
             color: #005498; }
             body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2:after {
               display: none; }
-            @media all and (max-width: 736px) {
+            @media all and (max-width: 1000px) {
               body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2 {
                 font-size: 16px;
                 margin: 10px 0; } }
@@ -2892,7 +2952,7 @@ body.page-template-template-practice .step_panel {
             font-family: "Nunito Sans", sans-serif;
             font-size: 19px;
             line-height: 1.5em; }
-            @media all and (max-width: 736px) {
+            @media all and (max-width: 1000px) {
               body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p {
                 font-size: 14px; } }
         body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal {
@@ -2903,7 +2963,7 @@ body.page-template-template-practice .step_panel {
           height: 28px;
           background: url("../images/close.svg") 0 0px no-repeat;
           cursor: pointer; }
-          @media all and (max-width: 736px) {
+          @media all and (max-width: 1000px) {
             body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal {
               top: 15px;
               right: 15px;

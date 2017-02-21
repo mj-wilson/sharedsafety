@@ -48,8 +48,9 @@ table{border-collapse:collapse;border-spacing:0}@keyframes bounce{0%,20%,50%,80%
 #primary ul li ul li{list-style-type:disc}#primary ul li ul li ul li{list-style-type:circle}
 p{margin:0 0 20px}header{position:fixed;z-index:9999;top:0;right:0;left:0}header #primary-nav{position:absolute;right:55px;top:40px}
 header #primary-nav .nav-toggle-button{position:absolute;top:0;right:0;width:37px;z-index:99999;cursor:pointer}
-header #primary-nav .nav-toggle-button:before,header #primary-nav .nav-toggle-button:after,header #primary-nav .nav-toggle-button span{display:block;height:4px;width:100%;background:#fffef6;border-radius:8px;margin-bottom:7px;transition:all .3s}
+header #primary-nav .nav-toggle-button:before,header #primary-nav .nav-toggle-button:after,header #primary-nav .nav-toggle-button span.nav-toggle-icon{display:block;height:4px;width:100%;background:#fffef6;border-radius:8px;margin-bottom:7px;transition:all .3s}
 header #primary-nav .nav-toggle-button:before,header #primary-nav .nav-toggle-button:after{content:''}
+header #primary-nav .nav-toggle-button .menu-label{display:block;font-family:"Biryani",sans-serif;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.12em;line-height:1em;color:#fffef6;text-align:justify;position:absolute;bottom:-10px;white-space:nowrap}
 header #primary-nav .sidenav{z-index:99998;width:348px;top:0;bottom:0;right:-350px;padding:110px 60px 0 50px;position:fixed;background:#303230;transition:right .3s}
 @media all and (max-width:736px){header #primary-nav .sidenav{padding:30px 60px 0 30px}
 }header #primary-nav .sidenav .download-pdf{margin:40px 0 0}@media all and (max-width:736px){header #primary-nav .sidenav .download-pdf{margin:20px 0 0}
@@ -77,14 +78,18 @@ body:not(.home) header#masthead #mini_logo a span{font-weight:400;font-size:.65e
 @media all and (max-width:800px){body:not(.home) header#masthead #mini_logo a{font-size:10px}
 }body:not(.home) header#masthead #primary-nav{text-align:left;position:absolute;right:40px;top:20px}
 @media all and (max-width:800px){body:not(.home) header#masthead #primary-nav{right:20px}
-}body:not(.home) header#masthead #primary-nav .nav-toggle-button{width:20px}body:not(.home) header#masthead #primary-nav .nav-toggle-button:before,body:not(.home) header#masthead #primary-nav .nav-toggle-button:after,body:not(.home) header#masthead #primary-nav .nav-toggle-button span{height:2px;border-radius:4px;margin-bottom:4px}
-@media all and (max-width:800px){body.home header{background:#00a9e0;height:54px;box-shadow:2px 2px 12px 1px rgba(0,0,0,0.3)}
+}body:not(.home) header#masthead #primary-nav .nav-toggle-button{width:22px;top:-4px}
+body:not(.home) header#masthead #primary-nav .nav-toggle-button .menu-label{display:block;font-family:"Biryani",sans-serif;text-transform:uppercase;font-size:7px;font-weight:800;letter-spacing:0;line-height:1em;color:#fffef6;text-align:justify;position:absolute;bottom:-8px;white-space:nowrap}
+body:not(.home) header#masthead #primary-nav .nav-toggle-button:before,body:not(.home) header#masthead #primary-nav .nav-toggle-button:after,body:not(.home) header#masthead #primary-nav .nav-toggle-button span.nav-toggle-icon{height:2px;border-radius:4px;margin-bottom:4px}
+body:not(.home) header#masthead #primary-nav.open .nav-toggle-button{top:0}@media all and (max-width:800px){body.home header{background:#00a9e0;height:54px;box-shadow:2px 2px 12px 1px rgba(0,0,0,0.3)}
 body.home header #mini_logo{position:absolute;left:20px;top:7px;text-indent:-99999px}
 body.home header #mini_logo a{display:block;width:18px;height:42px;background:url(../images/sprites.svg) 0 0 no-repeat;background-size:170px auto}
 body.home header #primary-nav{text-align:left;position:absolute;right:20px;top:20px}
-body.home header #primary-nav .nav-toggle-button{width:20px}body.home header #primary-nav .nav-toggle-button:before,body.home header #primary-nav .nav-toggle-button:after,body.home header #primary-nav .nav-toggle-button span{height:2px;border-radius:4px;margin-bottom:4px}
-}.sticky{background:#ededed}.gallery-caption{list-style:none}.bypostauthor{list-style:none}
-.hentry{margin:0 0 1.5em}.byline,.updated{display:none}.single .byline,.group-blog .byline{display:inline}
+body.home header #primary-nav .nav-toggle-button{width:22px;top:-4px}body.home header #primary-nav .nav-toggle-button .menu-label{display:block;font-family:"Biryani",sans-serif;text-transform:uppercase;font-size:7px;font-weight:800;letter-spacing:0;line-height:1em;color:#fffef6;text-align:justify;position:absolute;bottom:-8px;white-space:nowrap}
+body.home header #primary-nav .nav-toggle-button:before,body.home header #primary-nav .nav-toggle-button:after,body.home header #primary-nav .nav-toggle-button span.nav-toggle-icon{height:2px;border-radius:4px;margin-bottom:4px}
+body.home header #primary-nav.open .nav-toggle-button{top:0}}.sticky{background:#ededed}
+.gallery-caption{list-style:none}.bypostauthor{list-style:none}.hentry{margin:0 0 1.5em}
+.byline,.updated{display:none}.single .byline,.group-blog .byline{display:inline}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}.page-links{clear:both;margin:0 0 1.5em}
 .aligncenter{float:none;margin-top:.5em;margin-right:auto !important;margin-bottom:.5em;margin-left:auto !important}
 .aligncenter::after{clear:both;content:"";display:table}
@@ -139,14 +144,16 @@ body.home #home_panel2 .panel_content .slide .slide-inner h1 span,body.home #hom
 @media all and (max-width:736px){body.home #home_panel2 .panel_content .slide .slide-inner h1{font-size:16px}
 }body.home #home_panel2 .panel_content .slide .slide-inner p{margin:25px 0;font-family:"Nunito Sans",sans-serif;font-weight:600;font-size:16px;line-height:1.6em;letter-spacing:.01em}
 @media all and (max-width:736px){body.home #home_panel2 .panel_content .slide .slide-inner p{font-size:14px}
-}body.home #home_panel2 .panel_content .slide .slide-inner img{float:right;margin:0 0 0 20px}
+}body.home #home_panel2 .panel_content .slide .slide-inner img,body.home #home_panel2 .panel_content .slide .slide-inner iframe{float:right;margin:0 0 0 20px}
 body.home #home_panel2 .panel_content .slide .slide-inner .partner-list{color:#00a9e0}
-body.home #home_panel2 .panel_content .slide .slide-inner .partner-list p{font-family:"Biryani",sans-serif;font-weight:900;text-transform:uppercase;font-size:13px;letter-spacing:.05em;margin-bottom:7px}
-@media all and (max-width:736px){body.home #home_panel2 .panel_content .slide .slide-inner .partner-list p{font-size:12px}
-}body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul{font-size:13px;font-style:italic;display:-webkit-box;display:-moz-box;display:box;display:-moz-flex;display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap}
-body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li{width:25%;line-height:1.4em;padding-right:10px}
+body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul{display:-webkit-box;display:-moz-box;display:box;display:-moz-flex;display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap;margin:0 -15px}
+body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li{width:calc(25% - 30px);margin:0 15px}
 @media all and (max-width:736px){body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li{width:50%}
-}body.home #home_panel3 .blueprint_principles,body.home #home_panel3 .blueprint_steps,body.home #home_panel4 .blueprint_principles,body.home #home_panel4 .blueprint_steps{padding:0 100px;text-align:center}
+}body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li p{font-size:14px;line-height:1.4em;text-align:right;margin:0 0 10px}
+body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li p strong:before{content:'- '}
+body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li blockquote{margin:0;font-size:11px;line-height:1.3em}
+body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li blockquote p{text-align:left}
+body.home #home_panel3 .blueprint_principles,body.home #home_panel3 .blueprint_steps,body.home #home_panel4 .blueprint_principles,body.home #home_panel4 .blueprint_steps{padding:0 100px;text-align:center}
 @media all and (max-width:800px){body.home #home_panel3 .blueprint_principles,body.home #home_panel3 .blueprint_steps,body.home #home_panel4 .blueprint_principles,body.home #home_panel4 .blueprint_steps{padding:0 40px}
 }@media all and (max-width:600px){body.home #home_panel3 .blueprint_principles,body.home #home_panel3 .blueprint_steps,body.home #home_panel4 .blueprint_principles,body.home #home_panel4 .blueprint_steps{padding:0 40px 0 20px}
 }body.home #home_panel3 .blueprint_principles.blueprint_steps,body.home #home_panel3 .blueprint_steps.blueprint_steps,body.home #home_panel4 .blueprint_principles.blueprint_steps,body.home #home_panel4 .blueprint_steps.blueprint_steps{padding:0 20px}
@@ -323,8 +330,10 @@ body.page-template-template-practice header#secondary.showme{top:0}body.page-tem
 @media all and (max-width:736px){body.page-template-template-practice header#secondary #text_logo_short a{font-size:10px}
 }body.page-template-template-practice header#secondary #primary-nav{text-align:left;position:absolute;right:40px;top:20px}
 @media all and (max-width:800px){body.page-template-template-practice header#secondary #primary-nav{right:10px}
-}body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button{width:20px}
-body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button:before,body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button:after,body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button span{height:2px;border-radius:4px;margin-bottom:4px}
+}body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button{width:22px;top:-4px}
+body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button .menu-label{display:block;font-family:"Biryani",sans-serif;text-transform:uppercase;font-size:7px;font-weight:800;letter-spacing:0;line-height:1em;color:#fffef6;text-align:justify;position:absolute;bottom:-8px;white-space:nowrap}
+body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button:before,body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button:after,body.page-template-template-practice header#secondary #primary-nav .nav-toggle-button span.nav-toggle-icon{height:2px;border-radius:4px;margin-bottom:4px}
+body.page-template-template-practice header#secondary #primary-nav.open .nav-toggle-button{top:0}
 body.page-template-template-practice .sticky_subnav{background:#a4d4a4;position:fixed;height:54px;top:54px;left:0;right:0;text-align:center;padding:3px 0 0;opacity:0;z-index:10;transition:.3s opacity ease-in}
 @media all and (max-width:600px){body.page-template-template-practice .sticky_subnav .previous_practice,body.page-template-template-practice .sticky_subnav .next_practice{top:28px}
 }body.page-template-template-practice .sticky_subnav .section_header{display:inline-block;color:#00a65b;font-family:"Biryani",sans-serif;font-weight:900;text-transform:uppercase;font-size:18px;line-height:54px;letter-spacing:.1em}
@@ -332,8 +341,7 @@ body.page-template-template-practice .sticky_subnav .section_header span{font-we
 @media all and (max-width:736px){body.page-template-template-practice .sticky_subnav .section_header{font-size:14px}
 }@media all and (max-width:600px){body.page-template-template-practice .sticky_subnav .section_header{line-height:2em}
 }body.page-template-template-practice .step_panel{position:relative;padding:180px 0 0}
-@media all and (max-width:736px){body.page-template-template-practice .step_panel{padding-top:40px}
-body.page-template-template-practice .step_panel#envision_step{padding-top:120px}
+@media all and (max-width:736px){body.page-template-template-practice .step_panel{padding-top:120px}
 }body.page-template-template-practice .step_panel.active .sticky_subnav{opacity:1;z-index:9998}
 body.page-template-template-practice .step_panel:last-child{padding-bottom:100px}
 body.page-template-template-practice .step_panel .step_nav{position:absolute;left:40px;top:340px;z-index:9}
@@ -411,19 +419,19 @@ body.page-template-template-practice .step_panel .step_content .cols .stats p em
 body.page-template-template-practice .step_panel .step_content .modal .modal-backdrop{position:fixed;top:0;right:0;left:0;bottom:0;background:rgba(0,166,91,0.97);z-index:9999}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container{position:fixed;top:0;right:0;left:0;bottom:0;z-index:9999;color:#fffef6;overflow:auto}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content{position:relative;max-width:960px;padding:50px 0;margin:auto;overflow:auto}
-@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content{padding:30px 40px 0 20px}
+@media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content{padding:30px 40px 0 20px}
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h3{color:#a4d4a4;font-family:"Biryani",sans-serif;font-weight:900;font-size:16px;line-height:1.1em;letter-spacing:.125em;text-transform:uppercase;margin:0 0 15px}
-@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h3{font-size:13px}
+@media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h3{font-size:13px}
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1{color:#fffef6;font-family:"Biryani",sans-serif;font-weight:900;font-size:23px;line-height:1.1em;letter-spacing:.1em;text-transform:uppercase;margin:0 0 40px}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1:before,body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1:after{background:#005498;height:2px;margin:8px 0 15px}
-@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1{font-size:16px;margin:0 0 20px}
+@media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1{font-size:16px;margin:0 0 20px}
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2{font-family:"Roboto Slab",serif;font-weight:bold;font-size:19px;line-height:1.2em;margin:35px 0 25px;color:#005498}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2:after{display:none}
-@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2{font-size:16px;margin:10px 0}
+@media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2{font-size:16px;margin:10px 0}
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p{font-family:"Nunito Sans",sans-serif;font-size:19px;line-height:1.5em}
-@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p{font-size:14px}
+@media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p{font-size:14px}
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal{position:fixed;top:30px;right:30px;width:28px;height:28px;background:url("../images/close.svg") 0 0 no-repeat;cursor:pointer}
-@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal{top:15px;right:15px;width:16px;height:16px;background-size:100%}
+@media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal{top:15px;right:15px;width:16px;height:16px;background-size:100%}
 }.fixed_footer_nav{position:fixed;z-index:9998;bottom:0;right:0}.fixed_footer_nav .mini-btn{display:block;float:left;height:40px;padding:0 30px;font-family:"Biryani",sans-serif;font-weight:900;font-size:10px;line-height:44px;letter-spacing:.175em;text-transform:uppercase;background:#00a9e0;color:#fffef6;text-decoration:none;cursor:pointer}
 .fixed_footer_nav .mini-btn.open-bp-overview{color:#00a9e0;background:#303230;padding:0 16px 0 20px}
 .fixed_footer_nav .mini-btn.open-bp-overview:after{content:'';width:7px;height:11px;background:url("../images/sprites.svg") 0 -700px no-repeat;display:inline-block;margin:0 0 0 8px;position:relative;bottom:-1px}

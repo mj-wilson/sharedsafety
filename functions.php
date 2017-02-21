@@ -221,14 +221,14 @@ if ( ! function_exists( 'some_like_it_neat_styles' ) ) :
 		if ( SCRIPT_DEBUG || WP_DEBUG ) :
 			wp_register_style(
 				'some_like_it_neat-style', // handle name
-				get_template_directory_uri() . '/assets/css/style.css', '', '1.2', 'screen'
+				get_template_directory_uri() . '/assets/css/style.css', '', '1.3', 'screen'
 			);
 			wp_enqueue_style( 'some_like_it_neat-style' );
 
 			else :
 			wp_register_style(
 				'some_like_it_neat-style', // handle name
-				get_template_directory_uri() . '/assets/css/style-min.css', '', '1.2', 'screen'
+				get_template_directory_uri() . '/assets/css/style-min.css', '', '1.3', 'screen'
 			);
 			wp_enqueue_style( 'some_like_it_neat-style' );
 		endif;

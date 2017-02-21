@@ -15,6 +15,7 @@ jQuery(function( $ ) {
 	$( '.slides_holder' ).slick({
 	  	prevArrow: '#slick_arrow_left',
 	  	nextArrow: '#slick_arrow_right',
+      adaptiveHeight: true
 	});
 
 	$( '.link_to_section' ).click( function () {

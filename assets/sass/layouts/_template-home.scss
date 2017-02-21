@@ -206,34 +206,45 @@ body.home {
 							font-size: 14px;
 						}
 					}
-					img {
+					img, iframe {
 						float: right;
 						margin: 0 0 0 20px;
 					}
 					.partner-list {
 						color: $turquoise;
 						p {
-							font-family: $biryani;
-							font-weight: 900;
-							text-transform: uppercase;
-							font-size: 13px;
-							letter-spacing: 0.05em;
-							margin-bottom: 7px;
 							@media all and (max-width: 736px) {
-								font-size: 12px;
 							}
 						}
 						ul {
-							font-size: 13px;
-							font-style: italic;
 							@include display(flex);
 							@include flex-flow(row wrap);
+							margin: 0 -15px;
 							li {
-								width: 25%;
-								line-height: 1.4em;
-								padding-right: 10px;
+								width: calc(25% - 30px);
+								margin: 0 15px;
+
 								@media all and (max-width: 736px) {
 									width: 50%;
+								}
+								p {
+									font-size: 14px;
+									line-height: 1.4em;
+									text-align: right;
+									margin: 0 0 10px;
+									strong:before {
+										content:'- ';
+									}
+
+								}
+								blockquote {
+									margin: 0;
+									font-size: 11px;
+									line-height: 1.3em;
+									p {
+										text-align: left;
+
+									}
 								}
 							}
 						}

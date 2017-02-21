@@ -15,7 +15,7 @@ header {
             width: 37px;
             z-index: 99999;
             cursor: pointer;
-            &:before, &:after, span {
+            &:before, &:after, span.nav-toggle-icon {
                 display: block;
                 height: 4px;
                 width: 100%;
@@ -26,6 +26,20 @@ header {
             }
             &:before, &:after {
                 content: '';
+            }
+            .menu-label {
+                display: block;
+                font-family: $biryani;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: 800;
+                letter-spacing: 0.12em;
+                line-height: 1em;
+                color: $wheat;
+                text-align: justify;
+                position: absolute;
+                bottom: -10px;
+                white-space: nowrap;
             }
         }
         .sidenav {
@@ -219,13 +233,31 @@ body:not(.home) {
                 right: 20px;
             }
             .nav-toggle-button {
-                width: 20px;
-                &:before, &:after, span {
+                width: 22px;
+                top: -4px;
+                .menu-label {
+                    display: block;
+                    font-family: $biryani;
+                    text-transform: uppercase;
+                    font-size: 7px;
+                    font-weight: 800;
+                    letter-spacing: 0;
+                    line-height: 1em;
+                    color: $wheat;
+                    text-align: justify;
+                    position: absolute;
+                    bottom: -8px;
+                    white-space: nowrap;
+                }
+                &:before, &:after, span.nav-toggle-icon {
                     height: 2px;
                     border-radius: 4px;
                     margin-bottom: 4px;
                 }   
-            }   
+            }
+            &.open .nav-toggle-button{
+                top: 0;
+            }
         }
     }
 
@@ -254,14 +286,34 @@ body:not(.home) {
                 position: absolute;
                 right: 20px;
                 top: 20px;
+
                 .nav-toggle-button {
-                    width: 20px;
-                    &:before, &:after, span {
+                    width: 22px;
+                    top: -4px;
+
+                    .menu-label {
+                        display: block;
+                        font-family: $biryani;
+                        text-transform: uppercase;
+                        font-size: 7px;
+                        font-weight: 800;
+                        letter-spacing: 0;
+                        line-height: 1em;
+                        color: $wheat;
+                        text-align: justify;
+                        position: absolute;
+                        bottom: -8px;
+                        white-space: nowrap;
+                    }
+                    &:before, &:after, span.nav-toggle-icon {
                         height: 2px;
                         border-radius: 4px;
                         margin-bottom: 4px;
                     }   
-                }   
+                }
+                &.open .nav-toggle-button{
+                    top: 0;
+                }
             }
         }
     }
