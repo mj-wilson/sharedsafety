@@ -43,6 +43,17 @@ footer {
         @media all and (max-width: 736px) {
             padding: 30px 0;
         }
+        .footer-logo {
+            a {
+                display: block;
+                outline: none;
+                @include transition(0.3s opacity );
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+            }
+        }
         .logo {
             width: 230px;
             height:62px;                               
@@ -117,6 +128,10 @@ footer {
                     @media all and (max-width: 736px) {
                         margin: 0 10px 0 0;
                     }
+                    @include transition(0.3s opacity );
+                    &:hover {
+                        opacity: 0.8;
+                    }
                 }
                 &:last-child {
                     margin: 0 10px 0 0;
@@ -140,6 +155,10 @@ footer {
                     background: $wheat;
                     border-radius: 50%;
                     overflow: hidden;
+                    @include transition(0.3s opacity );
+                    &:hover {
+                        opacity: 0.8;
+                    }
                     @media all and (max-width: 736px) {
                         width: 24px;
                         height: 24px;

@@ -21,6 +21,7 @@ get_header(); ?>
 				</section>
 				<section class="divider host">
 					<?php the_field('host_a_blueprint_event_text'); ?>
+
 				</section>
 
 			<?php endwhile; // end of the loop. ?>

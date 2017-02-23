@@ -4,7 +4,7 @@
 		<span class="menu-label">MENU</span>
 	</div>
 	<div class="sidenav">
-		<ul>
+		<ul class="no_shadow">
 			<li class="header">5 principles</li>
 			<li><a href="/shifting-to-a-public-health-frame/">shifting to a public health frame</a></li>
 			<li><a href="/wellbeing-is-safety/">wellbeing is safety</a></li>

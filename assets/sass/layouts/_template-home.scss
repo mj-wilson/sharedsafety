@@ -1,7 +1,7 @@
 body.home {
 	.home_panel{
 		width: 100%;
-		min-height: calc(100vh + 50px);
+		min-height: calc(100vh);
 		background-color: $wheat;
 		position: relative;
 		&#home_panel1 {
@@ -24,7 +24,7 @@ body.home {
 		}
 		&#home_panel2 {
 			background-image: url('../images/home_hero2.jpg');
-			background-position: center center ;
+			background-position: top center ;
 			background-size: cover;
 			background-color:#005498;
 			background-blend-mode: multiply;
@@ -51,7 +51,7 @@ body.home {
 	}
 	.panel_content {
 		min-height: 100vh;
-		padding: 40px 0;
+		padding: 40px 0 100px;
 		max-width: 100%;
 		margin: auto;
 		@include display(flex);
@@ -138,11 +138,19 @@ body.home {
 				position: relative;
 				.left_arrow, .right_arrow {
 					position: absolute;
+					width: 22px;
+					height: 40px;
+					background: url('../images/sprites.svg') 0 -820px  no-repeat;
+
 					left: 50px;
 					top: 50%;
 					@include transform(translateY(-50%));
-					z-index: 99999;
+					z-index: 999;
 					cursor: pointer;
+					@include transition(0.3s opacity);
+					&:hover {
+						opacity:0.6;
+					}
 					@media all and (max-width: 800px) {
 						left: 10px;
 					}
@@ -150,6 +158,7 @@ body.home {
 					&.right_arrow {
 						left: auto;
 						right: 50px;
+						background: url('../images/sprites.svg') -40px -820px  no-repeat;
 						@media all and (max-width: 800px) {
 							right: 10px;
 						}
@@ -190,6 +199,7 @@ body.home {
 							text-transform: none;
 							font-weight: 400;
 							text-decoration: none;
+							letter-spacing: 0;
 						}
 						@media all and (max-width: 736px) {
 							font-size: 16px;
@@ -255,6 +265,9 @@ body.home {
 		}
 	}
 	#home_panel3, #home_panel4 { 
+		.panel_content {
+			padding-top: 110px;
+		}
 		.blueprint_principles, .blueprint_steps {
 			padding: 0 100px;
 			@media all and (max-width: 800px) {
@@ -264,7 +277,7 @@ body.home {
 				padding: 0 40px 0 20px;
 			}
 			&.blueprint_steps {
-				padding: 0 20px;
+				padding: 0 20px 30px;
 			}
 			text-align: center;
 			h1 {
@@ -287,7 +300,8 @@ body.home {
 				font-weight: 400;
 				line-height: 1.4em;
 				letter-spacing: 0.01em;
-				margin: 30px 0;
+				margin: 30px auto 50px;
+				max-width: 900px;
 				@media all and (max-width: 736px) {
 					font-size: 18px;
 				}
@@ -469,8 +483,11 @@ body.home {
 			}
 		}
 		.down_arrow {
-			@include align-self(flex-end);
 			margin: 30px 0 0;
+			@include transition(0.3s opacity);
+			&:hover {
+				opacity:0.6;
+			}
 			@media all and (min-width: 1025px) {
 				margin: 100px 0 0;
 			}
@@ -481,10 +498,14 @@ body.home {
 			}
 		}
 		.right_arrow {
+			@include transition(0.3s opacity);
+			&:hover {
+				opacity:0.6;
+			}
 			position: absolute;
-			top: 50%;
+			top: calc(50% + 80px);
 			@include transform(translateY(-50%));
-			z-index: 99999;
+			z-index: 999;
 			cursor: pointer;
 			right: 50px;
 			@media all and (max-width: 800px) {
@@ -537,6 +558,11 @@ body.home {
 							top: 45%;
 							@include transform(translateY(-50%));
 						}
+					}
+					&:hover:after {
+						@include transition(0.3s opacity)
+						opacity:0.6;
+
 					}
 					h2 {
 		        		font-family: $biryani;
@@ -613,6 +639,9 @@ body.home {
 		}
 	}
 	#home_panel5 { 
+		.panel_content {
+			padding-top: 110px;
+		}
 		.blueprint_overview {
 			padding: 0 30px;
 			text-align: center;
@@ -696,7 +725,7 @@ body.home {
 					}
 				}
 				&.header {
-					height: 60px;
+					height: 70px;
 					display: block;
 					@media all and (max-width: 800px) {
 						height: 100px;
@@ -903,6 +932,13 @@ body.home {
 
 }
 .down_arrow {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	@include transition(0.3s opacity);
+	&:hover {
+		opacity:0.6;
+	}
 
 	text-align: center;
 	.link_to_section {
@@ -914,7 +950,7 @@ body.home {
 		}
 	}
 }
-p a {
+p a, body:not(.home) ul:not(.no_shadow) li:not(.menu-item) a { 
 	color: inherit;
 	text-decoration: none;
 	font-weight: 800;

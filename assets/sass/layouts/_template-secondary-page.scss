@@ -83,13 +83,18 @@
 			 -webkit-column-count: 2;
 			 -webkit-column-gap: 30px;
 		 }
-		p {
+		p, ul {
 			font-size: 18px;
 			line-height: 1.6em;
+			margin: 0 0 20px;
 			@media all and (max-width: 736px) {
 				font-size: 14px;
 			}
+			li {
+				margin-left: 30px;
+			}
 		}
+
 
 	}
 	.content-container {
@@ -111,10 +116,10 @@
 .get-involved {
 	section {
 		border-top: 1px solid $blue;
-		padding: 30px 20px 20px 0;
+		padding: 60px 20px 50px 0;
 		&:first-of-type {
 			border:none;
-			padding-top: 20px;
+			padding-top: 50px;
 		}
 		h2 {
 			font-size: 18px;
@@ -133,5 +138,135 @@
 				font-size: 14px;
 			}
 		}
+	}
+}
+.frm_forms {
+	padding-top: 20px;
+}
+form.frm-show-form {
+	fieldset {
+		margin: 0 -6px;
+	}
+	.frm_hidden {
+		display: none;
+	}
+	.form-field {
+		width: 100%;
+		padding: 0 6px 20px;
+		&.frm_none_container {
+			label {
+				display: none;
+			}
+		}
+		&.frm_inline {
+			float: left;
+		}
+		&.frm_sixth  {
+			width: calc( 100% / 6 );	
+		}
+		&.frm_third {
+			width: calc( 100% / 3 );	
+		}
+		&.frm_two_thirds {
+			width: calc( 100% * ( 2 / 3 ) );	
+		}
+		&.frm_half {
+			width: 50%;
+		}
+		&.last {
+			padding-bottom: 0;
+		}
+		&.frm_dropdown {
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				top: 13px;
+				right: 20px;
+				width: 11px;
+				height: 7px;
+				background: url(../images/sprites.svg) 0 -800px no-repeat;
+				z-index: 999;
+				position: absolute;
+
+			}
+		}
+		textarea {
+			width: calc( 66.67% - 10px);	
+			font-size: 13px;
+			text-transform: none;
+		}
+		select {
+			text-transform: uppercase;
+			border-radius: 0;
+			-webkit-appearance: none;
+			font-family: $nunito;
+			font-weight: 800;
+			font-size: 13px;
+			letter-spacing: 0.1em;
+
+		}
+
+	}
+	.frm_submit {
+		position: relative;
+		.frm_button_submit {
+			position: absolute;
+			left: 66.67%;
+			top: -33px;
+		}
+
+	}
+	.frm_primary_label {
+		color: $turquoise;
+		font-family: $nunito;
+		font-size: 19px;
+		line-height: 1.5;
+		font-style: italic;
+		letter-spacing: 0.01em;
+		font-weight: 400;
+		padding-bottom: 25px; 
+		margin:0;
+	}
+	@media all and (max-width: 736px) { 
+		.form-field {
+			&.frm_inline {
+				float: none;
+			}
+			&.frm_sixth, &.frm_third, &.frm_two_thirds, &.frm_half {
+				width: 100%;
+			}
+			&.last {
+				padding-bottom: 20px;
+			}
+			textarea {
+				width: 100%;	
+			}
+		}
+		.frm_submit {
+			position: relative;
+			.frm_button_submit {
+				position: relative;
+				left: 6px;
+				top: 0;
+			}
+
+		}
+
+	}
+
+}
+.frm_message {
+	p {
+		color: $turquoise;
+		font-family: $nunito;
+		font-size: 19px;
+		line-height: 1.5;
+		font-style: italic;
+		letter-spacing: 0.01em;
+		font-weight: 400;
+		padding-bottom: 25px; 
+		margin:0;
+
 	}
 }

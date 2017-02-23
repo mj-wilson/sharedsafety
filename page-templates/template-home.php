@@ -32,7 +32,7 @@ get_header(); ?>
 
 				<div class="explainer_slider">
 					<div id="slick_arrow_left" class="left_arrow">
-						<?php get_template_part( 'page-templates/template-parts/svg/left_arrow.svg' ) ?>
+						
 					</div>
 					<div class="slides_holder">
 						<div class="slide">
@@ -61,7 +61,7 @@ get_header(); ?>
 
 					</div>
 					<div id="slick_arrow_right" class="right_arrow">
-						<?php get_template_part( 'page-templates/template-parts/svg/right_arrow.svg' ) ?>
+						
 					</div>
 				</div>
 				<div class="down_arrow">

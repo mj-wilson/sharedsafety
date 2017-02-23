@@ -3,6 +3,7 @@ fieldset {
   border: 0;
   margin: 0;
   padding: 0;
+
 }
 
 legend {
@@ -21,29 +22,36 @@ input,
 select,
 textarea {
   display: block;
-  font-size: 16px;
-  font-weight: 300;
-  color: #555;
 }
 
 #{$all-text-inputs},
-select[multiple] {
-  background-color: #ebebeb;
-  border: 1px solid #ebebeb;
-  height: 42px;
-  line-height: 42px;
-  border-radius: 4px;
+select[multiple], select, select option {
+  background-color: rgba(#00a9e0, 0.2);
+  color: #7fd3ef;
+  border: none;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 0px;
   box-shadow: none;
   box-sizing: border-box;
-  padding: 0 20px;
-  transition: border-color $base-duration $base-timing;
+  padding: 0 10px;
+  transition: background-color $base-duration $base-timing;
   width: 100%;
-
+  font-family: $nunito;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  width: 100%;
+    text-transform: uppercase;
+  @include placeholder {
+    color: #7fd3ef;   
+    text-transform: uppercase;
+  }
   &:hover {
   }
 
   &:focus {
-    border-color: #ddd;
+    background-color: rgba(#00a9e0, 0.15);
     outline: none;
   }
 
@@ -61,6 +69,8 @@ textarea {
   resize: none;
   line-height: 1.5em;
   padding: 12px 20px;
+  height: 150px;
+  font-size: 13px;
 }
 
 [type="search"] {
@@ -81,5 +91,22 @@ textarea {
 select {
   margin-bottom: $small-spacing;
   max-width: 100%;
-  width: auto;
+  width: 100%;
+  border-radius: 0;
 }
+[type="submit"] {
+  background: $turquoise;
+  border-radius: 0;
+  border:none;
+  font-family: $biryani;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  height: 33px;
+  line-height: 38px;
+  padding: 0 30px;
+  min-width: 0;
+}
+

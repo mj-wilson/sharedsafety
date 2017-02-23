@@ -1,8 +1,7 @@
 jQuery(function( $ ) {
 	
-  if ( $( 'body.home' ).length ) {
-    $( '#mini_logo a' ).click( function () {
-    		event.preventDefault();
+ if ( $( 'body.page-template-template-practice' ).length ) {
+    $( '.page-header' ).click( function () {
     		$( 'html, body' ).animate({ scrollTop: 0 }, "fast" );
   	});	
   }
@@ -15,7 +14,8 @@ jQuery(function( $ ) {
 	$( '.slides_holder' ).slick({
 	  	prevArrow: '#slick_arrow_left',
 	  	nextArrow: '#slick_arrow_right',
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      infinite: false
 	});
 
 	$( '.link_to_section' ).click( function () {

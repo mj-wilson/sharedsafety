@@ -31,7 +31,10 @@
 	<header id="masthead" class="site-header">
 
 	
-			<div id="mini_logo">
+			<div id="mini_logo" class="home">
+				<a href="http://www.safeandjust.org" target="_blank" rel="home"></a>
+			</div>
+			<div id="mini_logo" class="not_home">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Blueprint <span>for</span> Shared Safety</a>
 			</div>
 
