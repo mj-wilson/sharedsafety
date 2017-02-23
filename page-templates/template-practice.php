@@ -160,7 +160,7 @@ get_header(); ?>
 </div>
 
 <div class="fixed_footer_nav">
-	<a target="_blank" class="mini-btn" href="/contact-us">get involved</a>
+	<a class="mini-btn" href="/contact-us?principle=1">get involved</a>
 	<div class="mini-btn open-bp-overview">blueprint overview </div>
 </div>
 <div class="grid-overlay">

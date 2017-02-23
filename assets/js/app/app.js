@@ -59,6 +59,8 @@ jQuery(function( $ ) {
   $( '.close-overlay' ).click( function () {
       $( '.grid-overlay' ).removeClass( 'open' );
   }); 
+  
+  $( '.breadcrumb' ).toggle( document.URL.indexOf( 'principle=1' ) !== -1 );
 
 
 });

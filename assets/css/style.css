@@ -3478,6 +3478,30 @@ body.page-template-template-practice .step_panel {
           font-size: 16px;
           margin: 0 0 20px; } }
 
+.breadcrumb {
+  margin: 0 0 60px; }
+  .breadcrumb span {
+    color: rgba(48, 50, 48, 0.5);
+    font-family: "Biryani", sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding: 0 0 0 15px; }
+    .breadcrumb span:before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 13px;
+      background: url(../images/sprites.svg) 0 -860px no-repeat;
+      position: absolute;
+      left: 0;
+      top: 0; }
+
 .get-involved section {
   border-top: 1px solid #7fd3ef;
   padding: 60px 20px 50px 0; }
