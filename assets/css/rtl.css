@@ -724,7 +724,10 @@ header {
       right: -5px;
       width: 37px;
       z-index: 99999;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: opacity 0.3s; }
+      header #primary-nav .nav-toggle-button:hover {
+        opacity: 0.7; }
       header #primary-nav .nav-toggle-button:before, header #primary-nav .nav-toggle-button:after, header #primary-nav .nav-toggle-button span.nav-toggle-icon {
         display: block;
         height: 4px;
@@ -816,11 +819,11 @@ header {
         header #primary-nav .sidenav ul li:first-child {
           padding-top: 0; }
         header #primary-nav .sidenav ul li:nth-child(2) a:hover, header #primary-nav .sidenav ul li:nth-child(2) a:focus {
-          color: #00a65b; }
+          color: #00ac6c; }
         header #primary-nav .sidenav ul li:nth-child(3) a:hover, header #primary-nav .sidenav ul li:nth-child(3) a:focus {
-          color: #73509a; }
+          color: #855a9e; }
         header #primary-nav .sidenav ul li:nth-child(4) a:hover, header #primary-nav .sidenav ul li:nth-child(4) a:focus {
-          color: #005498; }
+          color: #3069b3; }
         header #primary-nav .sidenav ul li:nth-child(5) a:hover, header #primary-nav .sidenav ul li:nth-child(5) a:focus {
           color: #f3ae14; }
         header #primary-nav .sidenav ul li:nth-child(6) a:hover, header #primary-nav .sidenav ul li:nth-child(6) a:focus {
@@ -2316,7 +2319,8 @@ body.page-template-template-practice .hero-panel {
         height: 28px;
         line-height: 28px;
         padding: 0 10px;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: 0.3s color; }
         body.page-template-template-practice .hero-panel .hero-panel-nav .home_link a span {
           font-weight: 400;
           font-size: 0.65em;
@@ -2326,6 +2330,8 @@ body.page-template-template-practice .hero-panel {
         @media all and (max-width: 736px) {
           body.page-template-template-practice .hero-panel .hero-panel-nav .home_link a {
             font-size: 11px; } }
+        body.page-template-template-practice .hero-panel .hero-panel-nav .home_link a:hover {
+          color: rgba(255, 254, 246, 0.7); }
   body.page-template-template-practice .hero-panel .panel_content {
     min-height: 100vh;
     padding: 50px 0 140px;
@@ -2408,7 +2414,8 @@ body.page-template-template-practice .previous_practice, body.page-template-temp
     line-height: 32px;
     letter-spacing: 0.175em;
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 0.3s opacity; }
     @media all and (max-width: 736px) {
       body.page-template-template-practice .previous_practice a, body.page-template-template-practice .next_practice a {
         font-size: 9px;
@@ -2421,6 +2428,8 @@ body.page-template-template-practice .previous_practice, body.page-template-temp
     @media all and (max-width: 600px) {
       body.page-template-template-practice .previous_practice a, body.page-template-template-practice .next_practice a {
         max-width: 100%; } }
+    body.page-template-template-practice .previous_practice a:hover, body.page-template-template-practice .next_practice a:hover {
+      opacity: 0.7; }
   body.page-template-template-practice .previous_practice.next_practice, body.page-template-template-practice .next_practice.next_practice {
     right: 40px;
     padding: 0 30px 0 0; }
@@ -2485,7 +2494,7 @@ body.page-template-template-practice header#secondary {
     cursor: pointer;
     transition: 0.3s opacity; }
     body.page-template-template-practice header#secondary .page-header:hover {
-      opacity: 0.6; }
+      opacity: 0.7; }
     @media all and (max-width: 800px) {
       body.page-template-template-practice header#secondary .page-header {
         font-size: 13px; } }
@@ -2515,10 +2524,13 @@ body.page-template-template-practice header#secondary {
       height: 28px;
       line-height: 28px;
       padding: 0 10px;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: 0.3s color; }
       @media all and (max-width: 736px) {
         body.page-template-template-practice header#secondary #text_logo_short a {
           font-size: 10px; } }
+      body.page-template-template-practice header#secondary #text_logo_short a:hover {
+        color: rgba(255, 254, 246, 0.7); }
   body.page-template-template-practice header#secondary #primary-nav {
     text-align: left;
     position: absolute;
@@ -2593,13 +2605,19 @@ body.page-template-template-practice .step_panel {
   body.page-template-template-practice .step_panel.active .sticky_subnav {
     opacity: 1;
     z-index: 9998; }
+  body.page-template-template-practice .step_panel.active .step_nav {
+    opacity: 1;
+    z-index: 999; }
   body.page-template-template-practice .step_panel:last-child {
     padding-bottom: 100px; }
   body.page-template-template-practice .step_panel .step_nav {
-    position: absolute;
+    opacity: 0;
+    position: fixed;
+    top: calc(50% - 5px);
+    transform: translateY(-50%);
     left: 40px;
-    top: 340px;
-    z-index: 9; }
+    z-index: 9;
+    transition: opacity 0.3s; }
     @media all and (max-width: 1024px) {
       body.page-template-template-practice .step_panel .step_nav {
         left: 10px; } }
