@@ -413,6 +413,8 @@ body.page-template-template-practice .step_panel .step_content .intro_paragraph.
 @media all and (max-width:1024px){body.page-template-template-practice .step_panel .step_content .cols .left{width:100%;padding:0}
 }body.page-template-template-practice .step_panel .step_content .cols .right{width:51%}
 @media all and (max-width:1024px){body.page-template-template-practice .step_panel .step_content .cols .right{width:100%}
+}body.page-template-template-practice .step_panel .step_content .cols .right p{font-size:17px;line-height:1.4em}
+@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .cols .right p{font-size:14px}
 }body.page-template-template-practice .step_panel .step_content .cols .right ul{margin:0 0 40px}
 @media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .cols .right ul{margin:0 0 20px}
 }body.page-template-template-practice .step_panel .step_content .cols .right ul li{font-size:17px;line-height:1.4em;margin:0 0 10px;position:relative;padding:0 0 0 13px}

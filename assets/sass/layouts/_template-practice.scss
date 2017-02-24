@@ -703,6 +703,13 @@ body.page-template-template-practice {
 					@media all and (max-width: 1024px) {
 						width: 100%;
 					}
+					p {
+						font-size: 17px;
+						@media all and (max-width: 736px) {
+							font-size: 14px;
+						}
+						line-height: 1.4em;
+					}
 					ul {
 						margin: 0 0 40px;
 						@media all and (max-width: 736px) {

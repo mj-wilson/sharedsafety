@@ -2855,6 +2855,12 @@ body.page-template-template-practice .step_panel {
         @media all and (max-width: 1024px) {
           body.page-template-template-practice .step_panel .step_content .cols .right {
             width: 100%; } }
+        body.page-template-template-practice .step_panel .step_content .cols .right p {
+          font-size: 17px;
+          line-height: 1.4em; }
+          @media all and (max-width: 736px) {
+            body.page-template-template-practice .step_panel .step_content .cols .right p {
+              font-size: 14px; } }
         body.page-template-template-practice .step_panel .step_content .cols .right ul {
           margin: 0 0 40px; }
           @media all and (max-width: 736px) {
