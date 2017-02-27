@@ -63,6 +63,9 @@
 				}
 				.btn {
 					border: 3px solid $purple;
+					&:hover {
+						background: $purple;
+					}
 				}
 			}
 			.modal {
@@ -146,6 +149,9 @@
 				}
 				.btn {
 					border: 3px solid $navy;
+					&:hover {
+						background: $navy;
+					}
 				}
 			}
 			.modal {
@@ -236,6 +242,9 @@
 				}
 				.btn {
 					border: 3px solid $gold;
+					&:hover {
+						background: $gold;
+					}
 				}
 			}
 			.modal {
@@ -318,6 +327,9 @@
 				}
 				.btn {
 					border: 3px solid $teal;
+					&:hover {
+						background: $teal;
+					}
 				}
 			}
 			.modal {

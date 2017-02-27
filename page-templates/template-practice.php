@@ -11,14 +11,14 @@ get_header(); ?>
 	<?php $previous_practice = get_field('previous_practice', false, false); ?>
 	<?php $next_practice = get_field('next_practice', false, false); ?>
 
-<div class="page-wrapper <?php echo $color; ?>">		
+<div class="page-wrapper scene_element--fadeinright <?php echo $color; ?>" >		
 
 	<div class="hero-panel <?php echo $color; ?>">
 		
 		<div class="hero-panel-nav">
 
 			<?php if ( get_the_permalink($previous_practice) != '' ) : ?>
-				<div class="previous_practice"><a href="<?php echo get_the_permalink($previous_practice); ?>"><?php echo get_the_title($previous_practice); ?> <span class="arrow"><?php get_template_part( 'page-templates/template-parts/svg/left_arrow.svg' ) ?></span></a></div>
+				<div class="previous_practice"><a href="<?php echo get_the_permalink($previous_practice); ?>?bw=1"><?php echo get_the_title($previous_practice); ?> <span class="arrow"><?php get_template_part( 'page-templates/template-parts/svg/left_arrow.svg' ) ?></span></a></div>
 			<?php endif; ?>
 			<div class="home_link">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">blueprint <span>for</span> shared safety</a>
@@ -86,7 +86,9 @@ get_header(); ?>
 						<div class="previous_practice"><a href="<?php echo get_the_permalink($previous_practice); ?>#<?php echo $current_step; ?>_step""><?php echo get_the_title($previous_practice); ?> <span class="arrow"><?php get_template_part( 'page-templates/template-parts/svg/left_arrow.svg' ) ?></span></a></div>
 					<?php endif; ?>
 					<div class="section_header"><?php echo $current_step; ?> <span>
-					<?php if ($current_step == 'invest') : echo 'in '; endif; ?>safety</span></div>
+					<?php  	if ($current_step == 'invest') : echo 'in '; 
+							elseif ($current_step == 'plan') : echo 'for '; 
+							endif; ?>safety</span></div>
 					<?php if ( get_the_permalink($next_practice) != '' ) : ?>
 						<div class="next_practice"><a href="<?php echo get_the_permalink($next_practice); ?>#<?php echo $current_step; ?>_step""><?php echo get_the_title($next_practice); ?> <span class="arrow"><?php get_template_part( 'page-templates/template-parts/svg/right_arrow.svg' ) ?></span></a></div>
 					<?php endif; ?>
@@ -97,7 +99,7 @@ get_header(); ?>
 						<li <?php if ($current_step == 'envision') { echo 'class="active"'; } ?> ><div class="link_to_section" data-target="envision_step">1</div><div class="step_label">envision</div></li>
 						<li <?php if ($current_step == 'plan') { echo 'class="active"'; } ?> ><div class="link_to_section" data-target="plan_step">2</div><div class="step_label">plan</div></li>
 						<li <?php if ($current_step == 'invest') { echo 'class="active"'; } ?> ><div class="link_to_section" data-target="invest_step">3</div><div class="step_label">invest</div></li>
-						<li <?php if ($current_step == 'restore') { echo 'class="active"'; } ?> ><div class="link_to_section" data-target="restore_step">4</div><div class="step_label">restore</div></li>
+						<li <?php if ($current_step == 'evaluate') { echo 'class="active"'; } ?> ><div class="link_to_section" data-target="evaluate_step">4</div><div class="step_label">evaluate</div></li>
 						<li <?php if ($current_step == 'strengthen') { echo 'class="active"'; } ?> ><div class="link_to_section" data-target="strengthen_step">5</div><div class="step_label">strengthen</div></li>
 					</ul>
 				</div>

@@ -61,6 +61,12 @@ jQuery(function( $ ) {
   }); 
   
   $( '.breadcrumb' ).toggle( document.URL.indexOf( 'principle=1' ) !== -1 );
+  
+  if ( document.URL.indexOf( 'bw=1' ) !== -1 )  {
+    $( '.page-wrapper' ).removeClass( 'scene_element--fadeinright' ).addClass( 'scene_element--fadeinleft' );
+  }
+
+
 
 
 });

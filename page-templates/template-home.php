@@ -55,6 +55,12 @@ get_header(); ?>
 
 							</div>
 						</div>
+						<div class="slide">
+							<div class="slide-inner video">
+								<?php the_field('slide_4'); ?>
+
+							</div>
+						</div>
 
 
 
@@ -165,7 +171,7 @@ get_header(); ?>
 						</li>
 						<li>
 							<a href="/shifting-to-a-public-health-frame/#plan_step">
-								<h2>plan <span>Safety</span></h2>
+								<h2>plan for <span>Safety</span></h2>
 								<p><?php the_field('blueprint_step_short_description_plan'); ?></p>
 							</a>
 						</li>
@@ -176,8 +182,8 @@ get_header(); ?>
 							</a>
 						</li>
 						<li>
-							<a href="/shifting-to-a-public-health-frame/#restore_step">
-								<h2>restore <span>Safety</span></h2>
+							<a href="/shifting-to-a-public-health-frame/#evaluate_step">
+								<h2>evaluate <span>Safety</span></h2>
 								<p><?php the_field('blueprint_step_short_description_restore'); ?></p>
 							</a>
 						</li>

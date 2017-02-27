@@ -25,7 +25,7 @@ body.home {
 		&#home_panel2 {
 			background-image: url('../images/home_hero2.jpg');
 			background-position: top center ;
-			background-size: cover;
+			background-size: 100% auto;
 			background-color:#005498;
 			background-blend-mode: multiply;
 			filter:opacity(0.95);
@@ -175,6 +175,7 @@ body.home {
 					padding: 30px 40px;
 				}
 				outline: none;
+
 				.slide-inner {
 					background: $wheat;
 					max-width: 1000px;
@@ -217,8 +218,7 @@ body.home {
 						}
 					}
 					img, iframe {
-						float: right;
-						margin: 0 0 0 20px;
+						width: 100%;
 					}
 					.partner-list {
 						color: $turquoise;
@@ -259,6 +259,22 @@ body.home {
 							}
 						}
 					}
+					&.video {
+						p:last-child {
+							position:relative;
+							width: 100%;
+							height: 0;
+							padding-bottom: 56.25%;
+							iframe {
+								 position: absolute;
+								  top:0;
+								  left: 0;
+								  width: 100%;
+								  height: 100%;
+							}
+						}
+
+					}
 				}
 			}
 
@@ -279,8 +295,10 @@ body.home {
 	}
 }
 	#home_panel3, #home_panel4 { 
-		.panel_content {
-			padding-top: 80px;
+		@media all and (max-width: 1024px) {
+			.panel_content {
+				padding-top: 80px;
+			}
 		}
 		.blueprint_principles, .blueprint_steps {
 			padding: 0 100px;
@@ -1001,5 +1019,18 @@ p a, body:not(.home) ul:not(.no_shadow) li:not(.menu-item) a {
 	&:hover {
 		box-shadow: inset 0 -.5em 0 $turquoise;
 	}						
+}
+
+.scene_element--fadeinright {
+    animation-duration: .3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInRight;
+}
+.scene_element--fadeinleft {
+    animation-duration: .3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInLeft;
 }
 

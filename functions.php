@@ -192,7 +192,7 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 
 		wp_register_script( 'slick-js', get_template_directory_uri() . '/assets/js/vendor/slick.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'slick-js' );
-
+		
 		// Dashicons
 		wp_enqueue_style( 'dashicons' );
 
