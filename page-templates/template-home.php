@@ -78,9 +78,10 @@ get_header(); ?>
 			<div class="panel_content">
 
 				<div class="blueprint_principles">
-					<h1>5 blueprint principles</h1>
-					
-					<?php the_field('blueprint_principals_intro_paragraph'); ?>
+					<div class="top">
+						<h1>5 blueprint principles</h1>
+						<?php the_field('blueprint_principals_intro_paragraph'); ?>
+					</div>
 
 					<ul class="principals">
 
@@ -150,8 +151,10 @@ get_header(); ?>
 			<div class="panel_content">
 
 				<div class="blueprint_steps">
-					<h1>5 blueprint steps</h1>
-					<?php the_field('blueprint_steps_intro_paragraph'); ?>
+					<div class="top">
+						<h1>5 blueprint steps</h1>
+						<?php the_field('blueprint_steps_intro_paragraph'); ?>
+					</div>
 
 					<ul class="steps">
 						<li>
@@ -200,7 +203,7 @@ get_header(); ?>
 	<div class="content">
 			<div class="panel_content">
 				<div class="blueprint_overview">
-					<h1>Blueprint Overview</h1>
+					<div class="top"><h1>Blueprint Overview</h1></div>
 					<?php get_template_part( 'page-templates/template-parts/grid-overview' ) ?>
 				</div>
 			</div>

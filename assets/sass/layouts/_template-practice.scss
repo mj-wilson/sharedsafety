@@ -826,6 +826,10 @@ body.page-template-template-practice {
 					height: 45px;
 					line-height: 45px;
 					cursor: pointer;
+					@include transition(opacity 0.3s);
+					&:hover {
+						opacity: 0.7;
+					}
 					@media all and (max-width: 736px) {
 						display: inline-block;
 						margin-right: 10px;

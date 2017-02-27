@@ -852,7 +852,10 @@ body.home header {
       width: 24px;
       height: 56px;
       background: url(../images/sprites.svg) 0 0 no-repeat;
-      outline: none; }
+      outline: none;
+      transition: opacity 0.3s; }
+      body.home header #mini_logo.home a:hover {
+        opacity: 0.7; }
   body.home header #mini_logo.not_home {
     display: none; }
 
@@ -1386,8 +1389,16 @@ body.home #home_panel2 .panel_content {
               body.home #home_panel2 .panel_content .slide .slide-inner .partner-list ul li blockquote p {
                 text-align: left; }
 
+@media all and (min-width: 1025px) {
+  body.home #home_panel3 .panel_content {
+    padding-top: 300px;
+    padding-bottom: 200px; }
+  body.home #home_panel4 .panel_content {
+    padding-top: 300px;
+    padding-bottom: 150px; } }
+
 body.home #home_panel3 .panel_content, body.home #home_panel4 .panel_content {
-  padding-top: 110px; }
+  padding-top: 80px; }
 
 body.home #home_panel3 .blueprint_principles, body.home #home_panel3 .blueprint_steps, body.home #home_panel4 .blueprint_principles, body.home #home_panel4 .blueprint_steps {
   padding: 0 100px;
@@ -1414,16 +1425,25 @@ body.home #home_panel3 .blueprint_principles, body.home #home_panel3 .blueprint_
     @media all and (max-width: 736px) {
       body.home #home_panel3 .blueprint_principles h1, body.home #home_panel3 .blueprint_steps h1, body.home #home_panel4 .blueprint_principles h1, body.home #home_panel4 .blueprint_steps h1 {
         font-size: 20px; } }
-  body.home #home_panel3 .blueprint_principles > p, body.home #home_panel3 .blueprint_steps > p, body.home #home_panel4 .blueprint_principles > p, body.home #home_panel4 .blueprint_steps > p {
+  body.home #home_panel3 .blueprint_principles > p, body.home #home_panel3 .blueprint_principles .top p, body.home #home_panel3 .blueprint_steps > p, body.home #home_panel3 .blueprint_steps .top p, body.home #home_panel4 .blueprint_principles > p, body.home #home_panel4 .blueprint_principles .top p, body.home #home_panel4 .blueprint_steps > p, body.home #home_panel4 .blueprint_steps .top p {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.4em;
     letter-spacing: 0.01em;
     margin: 30px auto 50px;
     max-width: 900px; }
-    @media all and (max-width: 736px) {
-      body.home #home_panel3 .blueprint_principles > p, body.home #home_panel3 .blueprint_steps > p, body.home #home_panel4 .blueprint_principles > p, body.home #home_panel4 .blueprint_steps > p {
+    @media all and (max-width: 1024px) {
+      body.home #home_panel3 .blueprint_principles > p, body.home #home_panel3 .blueprint_principles .top p, body.home #home_panel3 .blueprint_steps > p, body.home #home_panel3 .blueprint_steps .top p, body.home #home_panel4 .blueprint_principles > p, body.home #home_panel4 .blueprint_principles .top p, body.home #home_panel4 .blueprint_steps > p, body.home #home_panel4 .blueprint_steps .top p {
         font-size: 18px; } }
+  @media all and (min-width: 1025px) {
+    body.home #home_panel3 .blueprint_principles .top, body.home #home_panel3 .blueprint_steps .top, body.home #home_panel4 .blueprint_principles .top, body.home #home_panel4 .blueprint_steps .top {
+      position: absolute;
+      top: 110px;
+      width: 100%;
+      left: 0; }
+      body.home #home_panel3 .blueprint_principles .top p, body.home #home_panel3 .blueprint_steps .top p, body.home #home_panel4 .blueprint_principles .top p, body.home #home_panel4 .blueprint_steps .top p {
+        max-width: 1260px;
+        padding: 0 20px; } }
   body.home #home_panel3 .blueprint_principles ul.principals, body.home #home_panel3 .blueprint_steps ul.principals, body.home #home_panel4 .blueprint_principles ul.principals, body.home #home_panel4 .blueprint_steps ul.principals {
     display: -webkit-box;
     display: -moz-box;
@@ -1605,7 +1625,7 @@ body.home #home_panel3 .down_arrow svg *, body.home #home_panel3 .right_arrow sv
 body.home #home_panel3 .right_arrow, body.home #home_panel4 .right_arrow {
   transition: 0.3s opacity;
   position: absolute;
-  top: calc(50% + 80px);
+  top: calc(50% + 30px);
   transform: translateY(-50%);
   z-index: 999;
   cursor: pointer;
@@ -1618,6 +1638,8 @@ body.home #home_panel3 .right_arrow, body.home #home_panel4 .right_arrow {
 
 body.home #home_panel4 {
   background: #3e4242; }
+  body.home #home_panel4 .top p {
+    max-width: 940px; }
   body.home #home_panel4 h1, body.home #home_panel4 p {
     color: #fffef6; }
     body.home #home_panel4 h1 a, body.home #home_panel4 p a {
@@ -1929,7 +1951,10 @@ body.home #home_panel4 {
             transform: translateY(-50%); } }
 
 body.home #home_panel5 .panel_content {
-  padding-top: 110px; }
+  padding-top: 80px; }
+  @media all and (min-width: 1025px) {
+    body.home #home_panel5 .panel_content {
+      padding-top: 200px; } }
 
 body.home #home_panel5 .blueprint_overview {
   padding: 0 30px;
@@ -1938,6 +1963,12 @@ body.home #home_panel5 .blueprint_overview {
   @media all and (max-width: 800px) {
     body.home #home_panel5 .blueprint_overview {
       padding: 0 15px; } }
+  @media all and (min-width: 1025px) {
+    body.home #home_panel5 .blueprint_overview .top {
+      position: absolute;
+      top: 110px;
+      width: 100%;
+      left: 0; } }
   body.home #home_panel5 .blueprint_overview h1 {
     display: inline-block;
     color: #fffef6;
@@ -1947,7 +1978,7 @@ body.home #home_panel5 .blueprint_overview {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     border: 4px solid #005498;
-    margin: 0 0 25px;
+    margin: 0 0 55px;
     line-height: 1em;
     padding: 22px 30px 8px; }
     @media all and (max-width: 736px) {
@@ -2962,7 +2993,10 @@ body.page-template-template-practice .step_panel {
         text-decoration: none;
         height: 45px;
         line-height: 45px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: opacity 0.3s; }
+        body.page-template-template-practice .step_panel .step_content .cols .btn:hover {
+          opacity: 0.7; }
         @media all and (max-width: 736px) {
           body.page-template-template-practice .step_panel .step_content .cols .btn {
             display: inline-block;
@@ -3678,14 +3712,7 @@ footer {
           text-align: left; } }
     @media all and (min-width: 480px) and (max-width: 736px) {
       footer .content {
-        text-align: left; }
-        footer .content .footer-logo {
-          display: -webkit-box;
-          display: -moz-box;
-          display: box;
-          display: -moz-flex;
-          display: -ms-flexbox;
-          display: flex; } }
+        text-align: left; } }
   footer .lower-footer-content {
     background: #003e6b;
     padding: 18px 0 18px;
@@ -3702,9 +3729,18 @@ footer {
     footer .footer-content .footer-logo a {
       display: block;
       outline: none;
-      transition: 0.3s opacity; }
+      transition: 0.3s opacity;
+      text-decoration: none; }
       footer .footer-content .footer-logo a:hover {
         opacity: 0.8; }
+      @media all and (min-width: 480px) and (max-width: 736px) {
+        footer .footer-content .footer-logo a {
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex; } }
     footer .footer-content .logo {
       width: 230px;
       height: 62px;

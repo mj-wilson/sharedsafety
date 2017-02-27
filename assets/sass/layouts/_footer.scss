@@ -19,12 +19,8 @@ footer {
                 text-align: left;
             }
         }
-       @media all and (min-width: 480px) and (max-width: 736px) {
-            
+        @media all and (min-width: 480px) and (max-width: 736px) {            
             text-align:left;
-            .footer-logo {
-                @include display(flex);
-            }
 
         }
 
@@ -48,10 +44,13 @@ footer {
                 display: block;
                 outline: none;
                 @include transition(0.3s opacity );
-                    &:hover {
-                        opacity: 0.8;
-                    }
-
+                text-decoration: none;
+                &:hover {
+                    opacity: 0.8;
+                }
+                @media all and (min-width: 480px) and (max-width: 736px) {
+                    @include display(flex);
+                }
             }
         }
         .logo {
