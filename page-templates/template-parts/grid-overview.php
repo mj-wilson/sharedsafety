@@ -5,7 +5,7 @@
 				<div class="cell"><span>1</span>Envision</div>
 				<div class="cell"><span>2</span>Plan</div>
 				<div class="cell"><span>3</span>Invest</div>
-				<div class="cell"><span>4</span>Restore</div>
+				<div class="cell"><span>4</span>Evaluate</div>
 				<div class="cell"><span>5</span>Strengthen</div>
 			</div>
 
