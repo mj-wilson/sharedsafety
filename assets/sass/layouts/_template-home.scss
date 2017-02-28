@@ -51,7 +51,7 @@ body.home {
 	}
 	.panel_content {
 		min-height: 100vh;
-		padding: 40px 0 100px;
+		padding: 40px 0 110px;
 		max-width: 100%;
 		margin: auto;
 		@include display(flex);
@@ -66,10 +66,12 @@ body.home {
 			@include align-self(center);
 		}
 		.bp_intro {
+			max-width: 650px;
 			border: 6px solid $orange;
 			background: rgba(#005498, 0.3);
 			border-radius: 4px;
 			padding: 40px 40px 30px;
+			margin: auto;
 			@media all and (max-width: 736px) {
 				display: inline-block;
 				padding: 30px 40px 20px;
@@ -96,23 +98,22 @@ body.home {
 			}
 		}
 		.bp_sub_intro {
-			font-family: $nunito;
-			font-size: 24px;
-			font-weight: 600;
+			font-family: $rs;
+			font-size: 40px;
+			font-weight: 400;
 			margin: 30px 0 50px;
 			line-height: 1.6em;
-			letter-spacing: 0.03em;
+			letter-spacing: 0;
 			text-align: center;
 			color: $wheat;
 				@media all and (max-width: 736px) {
-					font-size: 18px;
+					font-size: 24px;
 				}
 		}
 
 	}
 	#home_panel1 {
 		.panel_content {
-			max-width: 650px;
 			@include align-content(center);
 			@media all and (max-width: 736px) {
 				max-width: 100%;
@@ -132,9 +133,6 @@ body.home {
 				}
 			}
 			.explainer_slider {
-				@media all and (min-width: 1025px) {
-					margin-top: 100px;
-				}
 				position: relative;
 				.left_arrow, .right_arrow {
 					position: absolute;
@@ -165,6 +163,38 @@ body.home {
 					}
 					&.slick-disabled {
 						visibility: hidden;
+					}
+				}
+				.slick-dots {
+					text-align: center;
+					position: relative;
+					top: -10px;
+					li {
+						display: inline-block;
+						margin: 0 7px;
+						button {
+							display: block;
+							border: none;
+							width: 12px;
+							height: 12px;
+							border-radius: 50%;
+							background: #4c96bd;
+							padding:0;
+							text-indent: -9999px;
+							overflow: hidden;
+							outline: none;
+							@include transition(0.3s background);
+						}
+						&:hover {
+							button {
+								background: $turquoise;
+							}
+						}
+						&.slick-active {
+							button {
+								background: $wheat;
+							}
+						}
 					}
 				}
 			}
@@ -215,6 +245,36 @@ body.home {
 						letter-spacing: 0.01em;
 						@media all and (max-width: 736px) {
 							font-size: 14px;
+							margin: 15px 0;
+						}
+					}
+					> blockquote {
+						margin: 0;
+						padding: 0 40px;
+						@media all and (max-width: 480px) {
+							padding: 0 20px;
+						}
+						p {
+							color: $turquoise;
+							font-family: $rs;
+							font-weight: 300;
+							font-size: 24px;
+							line-height: 1.4em;
+							margin-bottom: 0;
+							strong {
+								display: block;
+								text-align: right;
+								font-family: $biryani;
+								font-weight: 900;
+								font-size: 15px;
+								margin: 10px 0 0;
+							}
+							@media all and (max-width: 736px) {
+								font-size: 16px;
+								strong {
+									font-size: 13px;
+								}
+							}						
 						}
 					}
 					img, iframe {
@@ -222,37 +282,67 @@ body.home {
 					}
 					.partner-list {
 						color: $turquoise;
-						p {
-							@media all and (max-width: 736px) {
-							}
+						margin-top: 30px; 
+						@media all and (max-width: 736px) {
+							margin: 0;
 						}
+
 						ul {
 							@include display(flex);
 							@include flex-flow(row wrap);
-							margin: 0 -15px;
+							margin: 0 -20px;
+							@media all and (max-width: 736px) {
+								margin: 0;
+							}
 							li {
-								width: calc(25% - 30px);
-								margin: 0 15px;
-
+								width: calc(25%);
+								padding: 5px 20px 0;
+								border-right: 1px solid rgba($blue, 0.5);
+								&:last-child {
+									border:none;
+								}
 								@media all and (max-width: 736px) {
-									width: 50%;
+									padding: 8px 0 5px;
+									width: 100%;
+									border-right:0;
+									border-bottom: 1px solid rgba($blue, 0.5);
 								}
 								p {
-									font-size: 14px;
+									font-family: $biryani;
+									font-weight: 800;
+									color: #c2c2c0;
+									font-size: 8px;
+									text-transform: uppercase;
 									line-height: 1.4em;
 									text-align: right;
-									margin: 0 0 10px;
-									strong:before {
-										content:'- ';
+									margin: 0 0 5px;
+									letter-spacing: 0.05em;
+									strong{
+										font-size: 10px;
+										text-transform: none;
+										color: $turquoise;
+										font-family: $biryani;
+										font-weight: 900;
+										letter-spacing: 0.01em;
+										line-height: 2em;
 									}
 
 								}
 								blockquote {
 									margin: 0;
-									font-size: 11px;
-									line-height: 1.3em;
 									p {
+										text-transform: none;
+										color: $turquoise;
+										font-family: $rs;
+										font-weight: 300;
+										font-size: 12px;
+										letter-spacing: 0.01em;
+										line-height: 1.35em;
 										text-align: left;
+										margin-bottom: 10px;
+										@media all and (max-width: 736px) {
+											margin-bottom: 0;
+										}
 
 									}
 								}
@@ -1033,4 +1123,6 @@ p a, body:not(.home) ul:not(.no_shadow) li:not(.menu-item) a {
     animation-fill-mode: both;
 	animation-name: fadeInLeft;
 }
-
+a {
+	outline: none;
+}

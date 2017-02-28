@@ -1,4 +1,4 @@
-#{$all-buttons} {
+input[type="button"], input[type="reset"], [type="submit"] {
   appearance: none;
   background-color: #fff;
   cursor: pointer;

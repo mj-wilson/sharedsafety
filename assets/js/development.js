@@ -15,7 +15,8 @@ jQuery(function( $ ) {
 	  	prevArrow: '#slick_arrow_left',
 	  	nextArrow: '#slick_arrow_right',
       adaptiveHeight: true,
-      infinite: false
+      infinite: false,
+      dots: true
 	});
 
 	$( '.link_to_section' ).click( function () {

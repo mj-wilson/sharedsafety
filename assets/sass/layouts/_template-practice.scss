@@ -83,7 +83,7 @@ body.page-template-template-practice {
 			text-align: center;
 			.home_link {
 				display: inline-block;
-				@media all and (max-width: 736px) {
+				@media all and (max-width: 768px) {
 					margin-top: 34px;
 				}
 
@@ -109,7 +109,7 @@ body.page-template-template-practice {
 						top: -1px;
 						margin: 0 2px;
 					}
-					@media all and (max-width: 736px) {
+					@media all and (max-width: 768px) {
 						font-size: 11px;
 					}
 					&:hover {
@@ -198,14 +198,17 @@ body.page-template-template-practice {
 			display: block;
 			text-decoration: none;
 			@include transition(0.3s opacity);
-			@media all and (max-width: 736px) {
+			@media all and (max-width: 1024px) {
 				font-size: 9px;
+			}
+			@media all and (max-width: 736px) {
 				letter-spacing: 0.1em;
 				line-height: 24px;
 				white-space: nowrap;
 			    max-width: 180px;
 			    text-overflow: ellipsis;
 			    overflow: hidden;
+			    text-align: left;
 			}
 			@media all and (max-width: 600px) {
 				max-width: 100%;
@@ -220,9 +223,13 @@ body.page-template-template-practice {
 			padding: 0 30px 0 0;
 			@media all and (max-width: 1024px) {
 				right: 10px;
+				padding: 0 20px 0 0;
 			}
 			@media all and (max-width: 736px) {
 				padding: 0 15px 0 0;
+				a {
+					text-align: right;
+				}
 			}
 			.arrow {
 				position: absolute;
@@ -244,6 +251,7 @@ body.page-template-template-practice {
 			padding: 0 0 0 30px;
 			@media all and (max-width: 1024px) {
 				left: 10px;
+				padding: 0 0 0 20px;
 			}
 			@media all and (max-width: 736px) {
 				padding: 0 0 0 15px;
@@ -339,19 +347,20 @@ body.page-template-template-practice {
             }
 			.nav-toggle-button {
                 width: 22px;
-                top: -4px;
+                right: 0;
                 .menu-label {
                     display: block;
-                    font-family: $biryani;
+                    font-family: $ps;
                     text-transform: uppercase;
-                    font-size: 7px;
+                    font-size: 10px;
                     font-weight: 800;
-                    letter-spacing: 0;
-                    line-height: 1em;
-                    color: $wheat;
-                    text-align: justify;
+                    letter-spacing: 0.25em;
+                    line-height: 10px;
+                    color: rgba($wheat,0.6);
                     position: absolute;
-                    bottom: -8px;
+                    top: 2px;
+                    left: -50px;
+                    bottom: auto;
                     white-space: nowrap;
                 }
                 &:before, &:after, span.nav-toggle-icon {
@@ -375,7 +384,7 @@ body.page-template-template-practice {
 		text-align: center;
 		padding: 3px 0 0;
 		opacity: 0;
-		z-index: 10;
+		z-index: -1;
 		@include transition(0.3s opacity ease-in);
 		@media all and (max-width: 600px) {
 			.previous_practice, .next_practice {
@@ -763,6 +772,9 @@ body.page-template-template-practice {
 						color: $wheat;
 						margin: 0 0 25px;
 						position: relative;
+						span {
+							font-weight: 300 !important;
+						}
 						@media all and (max-width: 736px) {
 							font-size: 14px;
 							margin: 0 0 15px;
@@ -775,6 +787,15 @@ body.page-template-template-practice {
 							top: 0;
 							font-weight: 400;
 						}
+						a {
+							padding: 0;
+							box-shadow: none;
+							border-bottom: 2px solid $blue;
+							@include transition(0.3s border);
+							&:hover {
+								border-bottom-color: $turquoise;
+							}
+						}
 					}
 				}
 				.stats p {
@@ -784,14 +805,26 @@ body.page-template-template-practice {
 					font-family: $nunito;
 					font-weight: 800;
 					font-size: 22px;
-					line-height: 1.6em;
-					letter-spacing: 0.01;
+					line-height: 1.5em;
+					letter-spacing: 0.01em;
 					em {
 						font-weight: 400;
+						display: inline;
+					}
+					strong {
+						display: inline;	
 					}
 					@media all and (max-width: 736px) {
 						margin: 20px 0;
 						font-size: 18px;
+					}
+					a {
+						padding: 0;
+						box-shadow: inset 0 -2px 0 $blue;
+						&:hover {
+							box-shadow: inset 0 -2px 0 $turquoise;
+						}
+
 					}
 
 				}
