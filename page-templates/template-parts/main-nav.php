@@ -12,7 +12,23 @@
 			<li><a href="/breaking-the-cycle-of-harm/">breaking the cycle of harm</a></li>
 			<li><a href="/making-the-system-work/">making the system work</a></li>
 		</ul>
-		<div class="download-pdf"><a href="">download blueprint pdf</a></div>
+		<?php  
+		$args = array(
+		    'post_type' => 'page',
+		    'pagename' => 'home'
+		);
+		$query = new WP_Query( $args );
+
+		if ( $query->have_posts() ) : 
+
+			while ($query -> have_posts()) : $query -> the_post();
+			
+				$download_link = get_field( 'blueprint_overview_pdf' ); ?>
+				<div class="download-pdf"><a target="_blank" href="<?php echo $download_link; ?>">download blueprint pdf</a></div>
+
+	    	<?php endwhile; ?>
+
+		<?php endif; wp_reset_query(); ?>
 	</div>
 </nav><!-- #site-navigation -->
 		

@@ -3676,8 +3676,11 @@ body.page-template-template-practice .step_panel {
     padding: 0 30px;
     min-width: 0;
     text-align: center;
+    transition: all 150ms ease;
     flex-shrink: 0;
     -ms-flex-negative: 0; }
+    .signup_form input[type=submit]:hover {
+      background: #7fd3ef; }
   .signup_form:after::after {
     clear: both;
     content: "";

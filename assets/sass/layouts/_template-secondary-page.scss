@@ -197,21 +197,25 @@
 		font-size: 11px;
 	}
 	input[type=submit] {
-	  background: $turquoise;
-	  border-radius: 0;
-	  border:none;
-	  font-family: $biryani;
-	  font-weight: 900;
-	  font-size: 15px;
-	  text-transform: uppercase;
-	  letter-spacing: 0.1em;
-	  color: #fff;
-	  height: 33px;
-	  line-height: 38px;
-	  padding: 0 30px;
-	  min-width: 0;
-	  text-align: center;
-	  @include flex-shrink(0);
+		background: $turquoise;
+		border-radius: 0;
+		border:none;
+		font-family: $biryani;
+		font-weight: 900;
+		font-size: 15px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #fff;
+		height: 33px;
+		line-height: 38px;
+		padding: 0 30px;
+		min-width: 0;
+		text-align: center;
+		transition: all $base-duration $base-timing;
+		@include flex-shrink(0);
+		&:hover {
+			background: $blue;
+		}
 	}
 	&:after {
 	 @include clearfix;

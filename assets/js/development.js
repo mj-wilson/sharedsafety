@@ -60,7 +60,6 @@ jQuery(function( $ ) {
       $( '.grid-overlay' ).removeClass( 'open' );
   }); 
   
-  $( '.breadcrumb' ).toggle( document.URL.indexOf( 'principle=' ) !== -1 );
   
   if ( document.URL.indexOf( 'bw=1' ) !== -1 )  {
     $( '.page-wrapper' ).removeClass( 'scene_element--fadeinright' ).addClass( 'scene_element--fadeinleft' );
@@ -73,6 +72,7 @@ jQuery(function( $ ) {
     $( '.signup_form_thanks' ).show();
   }
   
+  $( '.breadcrumb' ).toggle( document.URL.indexOf( 'principle=' ) !== -1 );
 
   if ( document.URL.indexOf( 'principle=' ) !== -1 )  {
     

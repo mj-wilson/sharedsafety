@@ -172,7 +172,26 @@ $end = end((explode('/', rtrim($url, '/'))));?>
 	<div class="overlay-header">
 		<div class="close-overlay"></div>
 		<div class="header">Blueprint Overview</div>
-		<div class="download-btn"><a href="">download</a></div>
+
+		<?php  
+		$args = array(
+		    'post_type' => 'page',
+		    'pagename' => 'home'
+		);
+		$query = new WP_Query( $args );
+
+		if ( $query->have_posts() ) : 
+
+			while ($query -> have_posts()) : $query -> the_post();
+			
+				$download_link = get_field( 'blueprint_overview_pdf' ); ?>
+				<div class="download-btn"><a target="_blank" href="<?php echo $download_link; ?>">download</a></div>
+
+
+	    	<?php endwhile; ?>
+
+		<?php endif; wp_reset_query(); ?>
+
 	</div>
 	<div class="overlay-content">
 					<?php get_template_part( 'page-templates/template-parts/grid-overview' ) ?>
