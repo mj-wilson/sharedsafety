@@ -3593,7 +3593,8 @@ body.page-template-template-practice .step_panel {
 
 .breadcrumb {
   margin: 0 0 60px; }
-  .breadcrumb span {
+  .breadcrumb a {
+    text-decoration: none;
     color: rgba(48, 50, 48, 0.5);
     font-family: "Biryani", sans-serif;
     font-weight: 900;
@@ -3605,7 +3606,7 @@ body.page-template-template-practice .step_panel {
     cursor: pointer;
     position: relative;
     padding: 0 0 0 15px; }
-    .breadcrumb span:before {
+    .breadcrumb a:before {
       content: '';
       display: block;
       width: 8px;
@@ -3632,6 +3633,57 @@ body.page-template-template-practice .step_panel {
       font-size: 15px; }
     .get-involved section p {
       font-size: 14px; } }
+
+.signup_form_thanks {
+  color: #00a9e0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  padding: 10px 0 0; }
+
+.signup_form {
+  position: relative;
+  max-width: 615px; }
+  .signup_form form {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .signup_form input.email {
+    height: 33px; }
+  .signup_form label.error {
+    position: absolute;
+    color: red;
+    left: 0;
+    bottom: -30px;
+    text-transform: uppercase;
+    font-size: 11px; }
+  .signup_form input[type=submit] {
+    background: #00a9e0;
+    border-radius: 0;
+    border: none;
+    font-family: "Biryani", sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+    height: 33px;
+    line-height: 38px;
+    padding: 0 30px;
+    min-width: 0;
+    text-align: center;
+    flex-shrink: 0;
+    -ms-flex-negative: 0; }
+  .signup_form:after::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .frm_forms {
   padding-top: 20px; }

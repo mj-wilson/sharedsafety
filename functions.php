@@ -193,6 +193,9 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 		wp_register_script( 'slick-js', get_template_directory_uri() . '/assets/js/vendor/slick.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'slick-js' );
 		
+		wp_register_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/validate.js', array( 'jquery' ), '', false );
+		wp_enqueue_script( 'validate-js' );
+
 		// Dashicons
 		wp_enqueue_style( 'dashicons' );
 
@@ -353,3 +356,18 @@ if ( ! function_exists( 'some_like_it_neat_add_footer_divs' ) ) :
 
 endif;
 
+if ( ! function_exists( 'get_current_page_url' ) ) {
+function get_current_page_url() {
+  global $wp;
+  return add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request ) );
+}
+}
+/*
+* Shorthand for echo get_current_page_url(); 
+* @returns echo'd string
+*/
+if ( ! function_exists( 'the_current_page_url' ) ) {
+function the_current_page_url() {
+  echo get_current_page_url();
+}
+}

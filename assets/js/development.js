@@ -60,12 +60,30 @@ jQuery(function( $ ) {
       $( '.grid-overlay' ).removeClass( 'open' );
   }); 
   
-  $( '.breadcrumb' ).toggle( document.URL.indexOf( 'principle=1' ) !== -1 );
+  $( '.breadcrumb' ).toggle( document.URL.indexOf( 'principle=' ) !== -1 );
   
   if ( document.URL.indexOf( 'bw=1' ) !== -1 )  {
     $( '.page-wrapper' ).removeClass( 'scene_element--fadeinright' ).addClass( 'scene_element--fadeinleft' );
   }
 
+  if ( $( 'body.page-template-template-contact' ).length ) {
+    $( '#headerform' ).validate();
+  }
+  if ( document.URL.indexOf( 'key=' ) !== -1 )  {
+    $( '.signup_form_thanks' ).show();
+  }
+  
+
+  if ( document.URL.indexOf( 'principle=' ) !== -1 )  {
+    
+    function getParameterByName( name ) {
+        var match = RegExp( '[?&]' + name + '=([^&]*)' ).exec( window.location.search );
+        return match && decodeURIComponent( match[1].replace( /\+/g, ' ' ) );
+    }
+    var target = '/' + getParameterByName('principle'); 
+    $( '.breadcrumb a' ).attr( 'href', target );
+
+  }
 
 
 

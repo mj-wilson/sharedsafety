@@ -115,7 +115,8 @@
 }
 .breadcrumb {
 	margin: 0 0 60px;
-	span {
+	a {
+		text-decoration: none;
 		color: rgba(#303230, 0.5);
 		font-family: $biryani;
 		font-weight: 900;
@@ -166,6 +167,54 @@
 				font-size: 14px;
 			}
 		}
+	}
+}
+.signup_form_thanks {
+	color: $turquoise;
+	font-family: $nunito;
+	font-size: 19px;
+	line-height: 1.5;
+	font-style: italic;
+	letter-spacing: 0.01em;
+	font-weight: 400;
+	padding: 10px 0 0;
+}
+.signup_form {
+	position: relative;
+	max-width: 615px;
+	form {
+		@include display(flex);
+	}
+	input.email {
+	  height: 33px;
+	}
+	label.error {
+		position: absolute;
+		color: red;
+		left: 0;
+		bottom: -30px;
+		text-transform: uppercase;
+		font-size: 11px;
+	}
+	input[type=submit] {
+	  background: $turquoise;
+	  border-radius: 0;
+	  border:none;
+	  font-family: $biryani;
+	  font-weight: 900;
+	  font-size: 15px;
+	  text-transform: uppercase;
+	  letter-spacing: 0.1em;
+	  color: #fff;
+	  height: 33px;
+	  line-height: 38px;
+	  padding: 0 30px;
+	  min-width: 0;
+	  text-align: center;
+	  @include flex-shrink(0);
+	}
+	&:after {
+	 @include clearfix;
 	}
 }
 .frm_forms {

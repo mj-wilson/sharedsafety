@@ -162,7 +162,10 @@ get_header(); ?>
 </div>
 
 <div class="fixed_footer_nav">
-	<a class="mini-btn" href="/contact-us?principle=1">get involved</a>
+<?php 
+$url = get_current_page_url();
+$end = end((explode('/', rtrim($url, '/'))));?>
+	<a class="mini-btn" href="/contact-us?principle=<?php echo $end; ?>">get involved</a>
 	<div class="mini-btn open-bp-overview">blueprint overview </div>
 </div>
 <div class="grid-overlay">
