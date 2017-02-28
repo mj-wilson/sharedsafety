@@ -171,13 +171,13 @@ get_header(); ?>
 						</li>
 						<li>
 							<a href="/shifting-to-a-public-health-frame/#plan_step">
-								<h2>plan for <span>Safety</span></h2>
+								<h2>plan <span>for Safety</span></h2>
 								<p><?php the_field('blueprint_step_short_description_plan'); ?></p>
 							</a>
 						</li>
 						<li>
 							<a href="/shifting-to-a-public-health-frame/#invest_step">
-								<h2>invest in <span>Safety</span></h2>
+								<h2>invest <span>in Safety</span></h2>
 								<p><?php the_field('blueprint_step_short_description_invest'); ?></p>
 							</a>
 						</li>

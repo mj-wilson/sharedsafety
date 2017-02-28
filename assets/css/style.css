@@ -760,11 +760,11 @@ header {
         content: ''; }
       header #primary-nav .nav-toggle-button .menu-label {
         display: block;
-        font-family: "Biryani", sans-serif;
+        font-family: "ProximaNovaSoft-Semibold", sans-serif;
         text-transform: uppercase;
         font-size: 10px;
         font-weight: 800;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.275em;
         line-height: 1em;
         color: #fffef6;
         text-align: justify;
@@ -2141,7 +2141,7 @@ body.home #home_panel5 .blueprint_overview {
         -ms-flex-align: center;
         height: 80px;
         border-bottom: 2px solid rgba(48, 50, 48, 0.25);
-        font-family: "ProximaNovaSoft-Semibold", sans-serif;
+        font-family: "ProximaNova-Semibold", sans-serif;
         font-size: 14px;
         line-height: 1.2em;
         letter-spacing: 0; }
@@ -2542,7 +2542,7 @@ body.page-template-template-practice .hero-panel {
       font-size: 19px;
       line-height: 1.6em;
       margin: 20px 0 0;
-      font-family: "ProximaNovaSoft-Semibold", sans-serif;
+      font-family: "ProximaNova-Semibold", sans-serif;
       letter-spacing: 0.025em; }
       @media all and (max-width: 736px) {
         body.page-template-template-practice .hero-panel .panel_content .hero_text p {
@@ -2856,7 +2856,7 @@ body.page-template-template-practice .step_panel {
       body.page-template-template-practice .step_panel .step_content {
         padding: 0 20px; } }
     body.page-template-template-practice .step_panel .step_content p, body.page-template-template-practice .step_panel .step_content li {
-      font-family: "ProximaNovaSoft-Semibold", sans-serif;
+      font-family: "ProximaNova-Semibold", sans-serif;
       font-size: 22px;
       line-height: 1.5em;
       letter-spacing: 0.02em; }

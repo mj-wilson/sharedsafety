@@ -34,11 +34,11 @@ header {
 
             .menu-label {
                 display: block;
-                font-family: $biryani;
+                font-family: $ps-soft;
                 text-transform: uppercase;
                 font-size: 10px;
                 font-weight: 800;
-                letter-spacing: 0.18em;
+                letter-spacing: 0.275em;
                 line-height: 1em;
                 color: $wheat;
                 text-align: justify;
@@ -253,7 +253,7 @@ body:not(.home) {
                 right: 0;
                 .menu-label {
                     display: block;
-                    font-family: $ps;
+                    font-family: $ps-soft;
                     text-transform: uppercase;
                     font-size: 10px;
                     font-weight: 800;
@@ -309,7 +309,7 @@ body:not(.home) {
                     right: 0;
                     .menu-label {
                         display: block;
-                        font-family: $ps;
+                        font-family: $ps-soft;
                         text-transform: uppercase;
                         font-size: 10px;
                         font-weight: 800;

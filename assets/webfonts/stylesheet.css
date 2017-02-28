@@ -20,6 +20,7 @@
 
 
 
-  
- @font-face {font-family: 'ProximaNovaSoft-Semibold';src: url('23E768_0_0.eot');src: url('23E768_0_0.eot?#iefix') format('embedded-opentype'),url('23E768_0_0.woff') format('woff'),url('23E768_0_0.ttf') format('truetype');}
+@font-face {font-family: 'ProximaNova-Semibold';src: url('webfonts/33273C_5_0.eot');src: url('webfonts/33273C_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33273C_5_0.woff2') format('woff2'),url('webfonts/33273C_5_0.woff') format('woff'),url('webfonts/33273C_5_0.ttf') format('truetype');}
+
+@font-face {font-family: 'ProximaNovaSoft-Semibold';src: url('23E768_0_0.eot');src: url('23E768_0_0.eot?#iefix') format('embedded-opentype'),url('23E768_0_0.woff') format('woff'),url('23E768_0_0.ttf') format('truetype');}
  
