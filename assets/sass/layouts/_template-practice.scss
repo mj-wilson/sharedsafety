@@ -942,7 +942,7 @@ body.page-template-template-practice {
 							font-size: 19px;
 							line-height: 1.2em;
 							margin: 35px 0 25px;
-							color: $navy;
+							color: $wheat;
 							&:after {
 								display:none;
 							}
@@ -966,7 +966,7 @@ body.page-template-template-practice {
 						right: 30px;
 						width: 28px;
 						height: 28px;
-						background: url('../images/close.svg') 0 0px  no-repeat;
+						background: url('../images/sprites.svg') 0 -660px  no-repeat;
 						cursor: pointer;
 						@media all and (max-width: 1000px) {
 							top: 15px;

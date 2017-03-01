@@ -3224,7 +3224,7 @@ body.page-template-template-practice .step_panel {
             font-size: 19px;
             line-height: 1.2em;
             margin: 35px 0 25px;
-            color: #005498; }
+            color: #fffef6; }
             body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2:after {
               display: none; }
             @media all and (max-width: 1000px) {
@@ -3244,7 +3244,7 @@ body.page-template-template-practice .step_panel {
           right: 30px;
           width: 28px;
           height: 28px;
-          background: url("../images/close.svg") 0 0px no-repeat;
+          background: url("../images/sprites.svg") 0 -660px no-repeat;
           cursor: pointer; }
           @media all and (max-width: 1000px) {
             body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal {
@@ -3497,9 +3497,6 @@ body.page-template-template-practice .step_panel {
 
 .page-wrapper.navy .step_panel .step_content .modal .modal-container .modal-content h1:before, .page-wrapper.navy .step_panel .step_content .modal .modal-container .modal-content h1:after {
   background: #f3ae14; }
-
-.page-wrapper.navy .step_panel .step_content .modal .modal-container .modal-content h2 {
-  color: #f3ae14; }
 
 .page-wrapper.navy .step_panel .step_content .modal .modal-container .modal-content h3 {
   color: #33a3dc; }

@@ -7,7 +7,7 @@
 		<ul class="no_shadow">
 			<li class="header">5 principles</li>
 			<li><a href="/shifting-to-a-public-health-frame/">shifting to a public health frame</a></li>
-			<li><a href="/wellbeing-is-safety/">wellbeing is safety</a></li>
+			<li><a href="/wellbeing-is-safety/">well-being is safety</a></li>
 			<li><a href="/crime-survivors-at-the-center/">crime survivors at the center</a></li>
 			<li><a href="/breaking-the-cycle-of-harm/">breaking the cycle of harm</a></li>
 			<li><a href="/making-the-system-work/">making the system work</a></li>

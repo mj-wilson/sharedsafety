@@ -7,7 +7,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div class="page-content get-involved">
 			<div class="breadcrumb">
-				<a href="">back to practice</a>
+				<a href="">back to principle</a>
 			</div>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="page-header">
@@ -16,11 +16,11 @@ get_header(); ?>
 				<section class="divider newsletter">
 					<?php the_field('newsletter_intro'); ?>
 						
-						<script type="text/javascript">
-							jQuery( document ).ready(function() {
-								jQuery("#headerform").validate();
-							});
-						</script>
+					<script type="text/javascript">
+						jQuery( document ).ready(function() {
+							jQuery("#headerform").validate();
+						});
+					</script>
 					<div class="signup_form">
 						<form action="http://salsa4.salsalabs.com/save" id="headerform" method="post" novalidate="">
 						    <input type="hidden" name="organization_KEY" value="50859">

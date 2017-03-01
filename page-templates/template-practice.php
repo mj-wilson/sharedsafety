@@ -111,7 +111,7 @@ get_header(); ?>
 							<div class="icon "></div>
 							<?php the_field('intro_paragraph'); ?>
 						</div>
-						<h2>What is it?</h2>
+						<h2>Why do we need it?</h2>
 						<?php the_field('what_is_it'); ?>
 						<h2>How does it help?</h2>
 						<?php the_field('how_does_it_help'); ?>

@@ -479,12 +479,12 @@ body.page-template-template-practice .step_panel .step_content .modal .modal-con
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1{color:#fffef6;font-family:"Biryani",sans-serif;font-weight:900;font-size:23px;line-height:1.1em;letter-spacing:.1em;text-transform:uppercase;margin:0 0 40px}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1:before,body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1:after{background:#005498;height:2px;margin:8px 0 15px}
 @media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1{font-size:16px;margin:0 0 20px}
-}body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2{font-family:"Roboto Slab",serif;font-weight:bold;font-size:19px;line-height:1.2em;margin:35px 0 25px;color:#005498}
+}body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2{font-family:"Roboto Slab",serif;font-weight:bold;font-size:19px;line-height:1.2em;margin:35px 0 25px;color:#fffef6}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2:after{display:none}
 @media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2{font-size:16px;margin:10px 0}
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p{font-family:"Nunito Sans",sans-serif;font-size:19px;line-height:1.5em}
 @media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p{font-size:14px}
-}body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal{position:fixed;top:30px;right:30px;width:28px;height:28px;background:url("../images/close.svg") 0 0 no-repeat;cursor:pointer}
+}body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal{position:fixed;top:30px;right:30px;width:28px;height:28px;background:url("../images/sprites.svg") 0 -660px no-repeat;cursor:pointer}
 @media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal{top:15px;right:15px;width:16px;height:16px;background-size:100%}
 }.fixed_footer_nav{position:fixed;z-index:9998;bottom:0;right:0}.fixed_footer_nav .mini-btn{display:block;float:left;height:40px;padding:0 30px;font-family:"Biryani",sans-serif;font-weight:900;font-size:10px;line-height:44px;letter-spacing:.175em;text-transform:uppercase;background:#00a9e0;color:#fffef6;text-decoration:none;cursor:pointer}
 .fixed_footer_nav .mini-btn.open-bp-overview{color:#00a9e0;background:#303230;padding:0 16px 0 20px}
@@ -533,7 +533,6 @@ body.page-template-template-practice .step_panel .step_content .modal .modal-con
 .page-wrapper.navy .step_panel .step_content .cols .btn:hover{background:#005498}
 .page-wrapper.navy .step_panel .step_content .modal .modal-backdrop{background:rgba(0,84,152,0.97)}
 .page-wrapper.navy .step_panel .step_content .modal .modal-container .modal-content h1:before,.page-wrapper.navy .step_panel .step_content .modal .modal-container .modal-content h1:after{background:#f3ae14}
-.page-wrapper.navy .step_panel .step_content .modal .modal-container .modal-content h2{color:#f3ae14}
 .page-wrapper.navy .step_panel .step_content .modal .modal-container .modal-content h3{color:#33a3dc}
 .page-wrapper.gold header#secondary{background:#f3ae14}.page-wrapper.gold .sticky_subnav{background:#ffde78}
 .page-wrapper.gold .sticky_subnav .section_header{color:#f3ae14}.page-wrapper.gold .step_panel .step_nav li .step_label{color:#f3ae14}

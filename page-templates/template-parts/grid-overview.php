@@ -35,7 +35,7 @@
 								<?php 
 								$array = [
 								    "green" => "<span>shifting to a</span> Public Health Frame",
-								    "purple" => "Wellbeing <span>is safety</span>",
+								    "purple" => "Well-Being <span>is safety</span>",
 								    "navy" => "Crime Survivors <span>at the center</span>",
 								    "gold" => "Breaking the Cycle<span> of harm</span>",
 								    "teal" => "<span>making the</span> System Work",
