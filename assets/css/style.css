@@ -602,7 +602,7 @@ table {
     transform: translate3d(100%, 0, 0); }
   100% {
     opacity: 1;
-    transform: none; } }
+    transform: initial; } }
 
 @keyframes fadeInLeft {
   0% {
@@ -613,7 +613,7 @@ table {
     transform: translate3d(-100%, 0, 0); }
   100% {
     opacity: 1;
-    transform: none; } }
+    transform: initial; } }
 
 /* Slider */
 .slick-slider {
@@ -693,7 +693,11 @@ body {
   color: #303230;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5em;
-  word-break: break-word; }
+  word-break: break-word;
+  overflow-x: hidden; }
+
+body.modal_open {
+  overflow: hidden; }
 
 .content {
   max-width: 1200px;
@@ -3309,6 +3313,13 @@ body.page-template-template-practice .step_panel {
             @media all and (max-width: 1000px) {
               body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p {
                 font-size: 14px; } }
+          body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content a {
+            font-weight: normal;
+            box-shadow: none;
+            border-bottom: 1px solid #fff;
+            transition: 0.3s opacity; }
+            body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content a:hover {
+              opacity: 0.7; }
         body.page-template-template-practice .step_panel .step_content .modal .modal-container .close-modal {
           position: fixed;
           top: 30px;

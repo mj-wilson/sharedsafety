@@ -3,6 +3,7 @@
 html {
 
 }
+
 @include ltr {
 		body {
 			background-color: $wheat;
@@ -10,6 +11,7 @@ html {
 			font-family: $nunito;
 			line-height: 1.5em;
 			word-break: break-word;
+			overflow-x: hidden;
 		}
 }
 
@@ -22,8 +24,13 @@ html {
 		word-break: break-word;
 		direction: rtl;
 	  unicode-bidi: embed;
+	  overflow-x: hidden;
 	}
 }
+body.modal_open {
+	overflow: hidden;
+}
+
 
 #main {
 }

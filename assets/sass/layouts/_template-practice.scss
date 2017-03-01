@@ -998,6 +998,15 @@ body.page-template-template-practice {
 								font-size: 14px;
 							}
 						}
+						a {
+							font-weight: normal;
+							box-shadow: none;
+							border-bottom: 1px solid #fff;
+							@include transition(0.3s opacity);
+							&:hover {
+								opacity: 0.7;
+							}
+						}
 					}
 					.close-modal {
 						position: fixed;

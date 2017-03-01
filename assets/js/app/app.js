@@ -50,9 +50,11 @@ jQuery(function( $ ) {
 	
   $( '.open_modal' ).click( function () {
   		$( this ).next( '.modal' ).show();
+      $( 'body' ).addClass( 'modal_open' );
 	});	
 	$( '.close-modal' ).click( function () {
   		$( '.modal' ).hide();
+      $( 'body' ).removeClass( 'modal_open' );
 	});	
   $( '.open-bp-overview' ).click( function () {
       $( '.grid-overlay' ).addClass( 'open' );

@@ -22,7 +22,7 @@
 
   100% {
     opacity: 1;
-    @include transform(none);
+    @include transform(initial);
   }
 }
 
@@ -38,6 +38,6 @@
 
   100% {
     opacity: 1;
-    @include transform(none);
+    @include transform(initial);
   }
 }
