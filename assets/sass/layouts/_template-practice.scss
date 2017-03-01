@@ -2,7 +2,7 @@ body.page-template-template-practice {
 	header#masthead {
 		display: none;
 	}
-	.hero-panel{
+	.hero-panel {
 		width: 100%;
 		min-height: calc(100vh - 50px);
 		background-color: $wheat;
@@ -86,10 +86,16 @@ body.page-template-template-practice {
 			right: 0;
 			padding: 15px 0 0;
 			text-align: center;
+			@media all and (max-width: 768px) {
+				.previous_practice, .next_practice {
+					top: 52px;
+				}
+					
+			}
 			.home_link {
 				display: inline-block;
 				@media all and (max-width: 768px) {
-					margin-top: 34px;
+					
 				}
 
 				a {
@@ -137,6 +143,9 @@ body.page-template-template-practice {
 				padding: 100px 20px;
 				text-align: center;
 			}
+			@media all and (max-width: 500px) {
+				padding: 150px 20px 125px;
+			}
 			> div {
 				width: 100%;
 				@include align-self(center);
@@ -159,6 +168,9 @@ body.page-template-template-practice {
 					line-height: 1.2em;
 					height: auto;
 					padding: 10px 0 6px;
+				}
+				@media all and (max-width: 500px) {
+					font-size: 15px;
 				}
 			}
 			.hero_text p {

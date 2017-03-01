@@ -109,7 +109,7 @@ body.home {
 			font-size: 40px;
 			font-weight: 300;
 			margin: 30px 0 50px;
-			line-height: 1.6em;
+			line-height: 1.3em;
 			letter-spacing: 0;
 			text-align: center;
 			color: $wheat;
@@ -219,7 +219,7 @@ body.home {
 					margin: auto;
 					padding: 50px 70px;
 					@media all and (max-width: 800px) {
-						padding: 40px 30px;
+						padding: 35px 25px;
 					}
 					box-shadow: 1px 1px 10px 2px rgba(#000,0.3);
 					@include clearfix;
@@ -240,7 +240,11 @@ body.home {
 							letter-spacing: 0;
 						}
 						@media all and (max-width: 736px) {
-							font-size: 16px;
+							font-size: 15px;
+							line-height: 1.3em;
+							em {
+								display: block;
+							}
 						}
 					}
 					p {
@@ -309,7 +313,7 @@ body.home {
 									border:none;
 								}
 								@media all and (max-width: 736px) {
-									padding: 8px 0 5px;
+									padding: 20px 0 12px;
 									width: 100%;
 									border-right:0;
 									border-bottom: 1px solid rgba($blue, 0.5);
@@ -439,7 +443,10 @@ body.home {
 				@media all and (max-width: 1024px) {
 					font-size: 18px;
 				}
-
+				@media all and (max-width: 500px) {
+					font-size: 16px;
+					margin: 20px auto;
+				}
 			}
 			@media all and (min-width: 1025px) {
 				.top {
@@ -461,7 +468,7 @@ body.home {
 				}
 				margin: 80px 0;
 				@media all and (max-width: 736px) {
-					margin: 40px 0;
+					margin: 30px 0;
 				}
 				li {
 					width: 20%;
@@ -681,6 +688,9 @@ body.home {
 			li {
 				border-bottom: 1px solid $turquoise;
 				padding: 12px 0;
+				@media all and (max-width: 600px) {
+					padding: 20px 0;
+				}
 				&:first-child  {
 					border-top: 1px solid $turquoise;
 				}
@@ -724,6 +734,11 @@ body.home {
 						white-space: nowrap;
 						width: 280px;
 						text-align: left;
+						span {
+							color: $turquoise;
+							font-size: 15px;
+							font-weight: 700;
+						}
 						@media all and (max-width: 736px) {
 							font-size: 18px;
 							width: 200px;
@@ -731,13 +746,12 @@ body.home {
 						}
 						@media all and (max-width: 600px) {
 							width: auto;
+							font-size: 15px;
+							span {
+								font-size: 12px;
+							}
 						}
 
-						span {
-							color: $turquoise;
-							font-size: 15px;
-							font-weight: 700;
-						}
 					}
 					p {
 						width: calc(100% - 380px);
@@ -826,6 +840,7 @@ body.home {
 					font-size: 18px;
 					display: block;
 					padding: 15px 10px 8px;
+					margin: 0 0 25px;
 				}
 
 			}
