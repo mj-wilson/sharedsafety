@@ -4141,6 +4141,9 @@ footer {
       @media all and (max-width: 736px) {
         footer .footer-nav ul.social li {
           margin: 0 15px 3px 0; } }
+      @media all and (max-width: 479px) {
+        footer .footer-nav ul.social li {
+          margin: 0 12px 0 0; } }
       footer .footer-nav ul.social li:last-child {
         margin: 0; }
       footer .footer-nav ul.social li a {

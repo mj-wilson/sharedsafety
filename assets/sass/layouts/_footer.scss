@@ -173,6 +173,9 @@ footer {
                 @media all and (max-width: 736px) {
                     margin: 0 15px 3px 0;
                 }
+                @media all and (max-width: 479px) {
+                    margin: 0 12px 0 0;
+                }
                 &:last-child {
                     margin: 0;
                 }
