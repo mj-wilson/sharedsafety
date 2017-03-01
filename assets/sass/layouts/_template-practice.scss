@@ -142,14 +142,14 @@ body.page-template-template-practice {
 				font-family: $biryani;
 				font-weight: 900;
 				text-transform: uppercase;
-				font-size: 27px;
+				font-size: 24px;
 				line-height: 65px;
 				height: 65px;
 				letter-spacing: 0.125em;
 				border-radius: 4px;
 				text-align: center;
 				@media all and (max-width: 736px) {
-					font-size: 16px;
+					font-size: 18px;
 					border-width: 3px;
 					line-height: 1.2em;
 					height: auto;
@@ -157,13 +157,13 @@ body.page-template-template-practice {
 				}
 			}
 			.hero_text p {
-				font-size: 19px;
+				font-size: 18px;
 				line-height: 1.6em;
 				margin: 20px 0 0;
 				font-family: $ps;
 				letter-spacing: 0.025em;
 				@media all and (max-width: 736px) {
-					font-size: 14px;
+					font-size: 15px;
 				}
 			}
 		}
@@ -514,7 +514,7 @@ body.page-template-template-practice {
 			}
 		}
 		.step_content {
-			max-width: 960px;
+			max-width: 800px;
 			margin: auto;
 			@media all and (max-width: 1024px) {
 				max-width: 100%;
@@ -523,9 +523,29 @@ body.page-template-template-practice {
 			@media all and (max-width: 736px) {
 				padding: 0 20px;
 			}
+			.section_header {
+				font-family: $biryani;
+				font-weight: 900;
+				text-transform: uppercase;
+				font-size: 18px;
+				line-height: 1em;
+				letter-spacing: 0.1em;
+				color: rgba(#000,0.4);
+				margin: 20px 0 30px;
+				span {
+					font-weight: 800;
+					font-size: 12px;
+				}
+				@media all and (max-width: 736px) {
+					margin: 20px 0;
+					font-size: 14px;
+				}
+
+			}
+
 			p, li {
 				font-family: $ps;
-				font-size: 22px;
+				font-size: 18px;
 				line-height: 1.5em;
 				letter-spacing: 0.02em;
 				@media all and (max-width: 736px) {
@@ -536,7 +556,7 @@ body.page-template-template-practice {
 				display: block;
 				font-family: $biryani;
 				font-weight: 900;
-				font-size: 36px;
+				font-size: 29px;
 				line-height: 1.2em;
 				&:before, &:after {
 					content:'';
@@ -552,7 +572,7 @@ body.page-template-template-practice {
 				}
 			}
 			h2 {
-				font-size: 28px;
+				font-size: 23px;
 				margin-top: 60px;
 				@media all and (max-width: 736px) {
 					font-size: 18px;
@@ -567,7 +587,8 @@ body.page-template-template-practice {
 			}
 			.intro_paragraph {
 				padding: 0 0 0 150px;
-				margin: 40px 0;
+				margin: 30px 0;
+				min-height: 115px;
 				position: relative;
 				color: $green;
 				@media all and (max-width: 736px) {
@@ -576,7 +597,8 @@ body.page-template-template-practice {
 				}
 				p {
 					font-family: $rs;
-					font-size: 30px;
+					font-weight: 300;
+					font-size: 26px;
 					line-height: 1.4em;
 					@media all and (max-width: 736px) {
 						font-size: 18px;
@@ -699,7 +721,7 @@ body.page-template-template-practice {
 
 				.left {
 					width: 49%;
-					padding: 0 55px 0 0;
+					padding: 0 45px 0 0;
 					@media all and (max-width: 1024px) {
 						width: 100%;
 						padding: 0;
@@ -713,9 +735,9 @@ body.page-template-template-practice {
 						width: 100%;
 					}
 					p {
-						font-size: 17px;
+						font-size: 14px;
 						@media all and (max-width: 736px) {
-							font-size: 14px;
+							font-size: 12px;
 						}
 						line-height: 1.4em;
 					}
@@ -725,7 +747,7 @@ body.page-template-template-practice {
 							margin: 0 0 20px;
 						}
 						li {
-							font-size: 17px;
+							font-size: 15px;
 							@media all and (max-width: 736px) {
 								font-size: 14px;
 							}
@@ -754,7 +776,7 @@ body.page-template-template-practice {
 						color: $light-green;
 						font-family: $biryani;
 						font-weight: 900;
-						font-size: 25px;
+						font-size: 20px;
 						line-height: 1.1em;
 						letter-spacing: 0.125em;
 						text-transform: uppercase;
@@ -767,7 +789,7 @@ body.page-template-template-practice {
 					ul li {
 						font-family: $rs;
 						font-weight: 300;
-						font-size: 19px;
+						font-size: 15px;
 						line-height: 1.4em;
 						color: $wheat;
 						margin: 0 0 25px;
@@ -804,7 +826,7 @@ body.page-template-template-practice {
 					color: $green;
 					font-family: $nunito;
 					font-weight: 800;
-					font-size: 22px;
+					font-size: 17px;
 					line-height: 1.5em;
 					letter-spacing: 0.01em;
 					em {
@@ -831,7 +853,7 @@ body.page-template-template-practice {
 				h4 {
 					font-family: $biryani;
 					font-weight: 900;
-					font-size: 19px;
+					font-size: 15px;
 					line-height: 1.1em;
 					letter-spacing: 0.125em;
 					text-transform: uppercase;
@@ -845,7 +867,7 @@ body.page-template-template-practice {
 					display: block;
 					font-family: $biryani;
 					font-weight: 900;
-					font-size: 19px;
+					font-size: 15px;
 					line-height: 1.1em;
 					letter-spacing: 0.125em;
 					text-transform: uppercase;
@@ -908,7 +930,7 @@ body.page-template-template-practice {
 							color: $light-green;
 							font-family: $biryani;
 							font-weight: 900;
-							font-size: 16px;
+							font-size: 13px;
 							line-height: 1.1em;
 							letter-spacing: 0.125em;
 							text-transform: uppercase;
@@ -921,7 +943,7 @@ body.page-template-template-practice {
 							color: $wheat;
 							font-family: $biryani;
 							font-weight: 900;
-							font-size: 23px;
+							font-size: 18px;
 							line-height: 1.1em;
 							letter-spacing: 0.1em;
 							text-transform: uppercase;
@@ -938,8 +960,8 @@ body.page-template-template-practice {
 						}
 						h2 {
 							font-family: $rs;
-							font-weight: bold;
-							font-size: 19px;
+							font-weight: 400;
+							font-size: 15px;
 							line-height: 1.2em;
 							margin: 35px 0 25px;
 							color: $wheat;
@@ -953,7 +975,7 @@ body.page-template-template-practice {
 						}
 						p {
 							font-family: $nunito;
-							font-size: 19px;
+							font-size: 15px;
 							line-height: 1.5em;
 							@media all and (max-width: 1000px) {
 								font-size: 14px;
@@ -972,8 +994,9 @@ body.page-template-template-practice {
 							top: 15px;
 							right: 15px;
 							width: 16px;
-							height: 16px;
-							background-size: 100%;
+						    height: 16px;
+						    background: url(../images/sprites.svg) 0 -329px no-repeat;
+						    background-size: 114px auto;
 						}
 					}
 				}

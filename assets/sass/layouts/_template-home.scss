@@ -100,7 +100,7 @@ body.home {
 		.bp_sub_intro {
 			font-family: $rs;
 			font-size: 40px;
-			font-weight: 400;
+			font-weight: 300;
 			margin: 30px 0 50px;
 			line-height: 1.6em;
 			letter-spacing: 0;
@@ -845,7 +845,7 @@ body.home {
 				@include align-items(center);
 				height: 80px;
 				border-bottom: 2px solid rgba($dark-gray, 0.25);
-				font-family: $ps;
+				font-family: $ps-sb;
 				font-size: 14px;
 				line-height: 1.2em;
 				letter-spacing: 0;

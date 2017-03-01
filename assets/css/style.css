@@ -1286,7 +1286,7 @@ body.home .panel_content {
   body.home .panel_content .bp_sub_intro {
     font-family: "Roboto Slab", serif;
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 30px 0 50px;
     line-height: 1.6em;
     letter-spacing: 0;
@@ -2535,7 +2535,7 @@ body.page-template-template-practice .hero-panel {
       font-family: "Biryani", sans-serif;
       font-weight: 900;
       text-transform: uppercase;
-      font-size: 27px;
+      font-size: 24px;
       line-height: 65px;
       height: 65px;
       letter-spacing: 0.125em;
@@ -2543,20 +2543,20 @@ body.page-template-template-practice .hero-panel {
       text-align: center; }
       @media all and (max-width: 736px) {
         body.page-template-template-practice .hero-panel .panel_content .practice_title {
-          font-size: 16px;
+          font-size: 18px;
           border-width: 3px;
           line-height: 1.2em;
           height: auto;
           padding: 10px 0 6px; } }
     body.page-template-template-practice .hero-panel .panel_content .hero_text p {
-      font-size: 19px;
+      font-size: 18px;
       line-height: 1.6em;
       margin: 20px 0 0;
-      font-family: "ProximaNova-Semibold", sans-serif;
+      font-family: "ProximaNova-Medium", sans-serif;
       letter-spacing: 0.025em; }
       @media all and (max-width: 736px) {
         body.page-template-template-practice .hero-panel .panel_content .hero_text p {
-          font-size: 14px; } }
+          font-size: 15px; } }
   body.page-template-template-practice .hero-panel .down_arrow {
     position: absolute;
     bottom: 80px;
@@ -2856,7 +2856,7 @@ body.page-template-template-practice .step_panel {
       body.page-template-template-practice .step_panel .step_nav li.active .link_to_section {
         background: #00a65b; }
   body.page-template-template-practice .step_panel .step_content {
-    max-width: 960px;
+    max-width: 800px;
     margin: auto; }
     @media all and (max-width: 1024px) {
       body.page-template-template-practice .step_panel .step_content {
@@ -2865,9 +2865,25 @@ body.page-template-template-practice .step_panel {
     @media all and (max-width: 736px) {
       body.page-template-template-practice .step_panel .step_content {
         padding: 0 20px; } }
+    body.page-template-template-practice .step_panel .step_content .section_header {
+      font-family: "Biryani", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 1em;
+      letter-spacing: 0.1em;
+      color: rgba(0, 0, 0, 0.4);
+      margin: 20px 0 30px; }
+      body.page-template-template-practice .step_panel .step_content .section_header span {
+        font-weight: 800;
+        font-size: 12px; }
+      @media all and (max-width: 736px) {
+        body.page-template-template-practice .step_panel .step_content .section_header {
+          margin: 20px 0;
+          font-size: 14px; } }
     body.page-template-template-practice .step_panel .step_content p, body.page-template-template-practice .step_panel .step_content li {
-      font-family: "ProximaNova-Semibold", sans-serif;
-      font-size: 22px;
+      font-family: "ProximaNova-Medium", sans-serif;
+      font-size: 18px;
       line-height: 1.5em;
       letter-spacing: 0.02em; }
       @media all and (max-width: 736px) {
@@ -2877,7 +2893,7 @@ body.page-template-template-practice .step_panel {
       display: block;
       font-family: "Biryani", sans-serif;
       font-weight: 900;
-      font-size: 36px;
+      font-size: 29px;
       line-height: 1.2em; }
       body.page-template-template-practice .step_panel .step_content h1:before, body.page-template-template-practice .step_panel .step_content h1:after, body.page-template-template-practice .step_panel .step_content h2:before, body.page-template-template-practice .step_panel .step_content h2:after {
         content: '';
@@ -2891,7 +2907,7 @@ body.page-template-template-practice .step_panel {
         body.page-template-template-practice .step_panel .step_content h1, body.page-template-template-practice .step_panel .step_content h2 {
           font-size: 22px; } }
     body.page-template-template-practice .step_panel .step_content h2 {
-      font-size: 28px;
+      font-size: 23px;
       margin-top: 60px; }
       @media all and (max-width: 736px) {
         body.page-template-template-practice .step_panel .step_content h2 {
@@ -2903,7 +2919,8 @@ body.page-template-template-practice .step_panel {
         margin: 12px 0 20px; }
     body.page-template-template-practice .step_panel .step_content .intro_paragraph {
       padding: 0 0 0 150px;
-      margin: 40px 0;
+      margin: 30px 0;
+      min-height: 115px;
       position: relative;
       color: #00a65b; }
       @media all and (max-width: 736px) {
@@ -2912,7 +2929,8 @@ body.page-template-template-practice .step_panel {
           margin: 20px 0; } }
       body.page-template-template-practice .step_panel .step_content .intro_paragraph p {
         font-family: "Roboto Slab", serif;
-        font-size: 30px;
+        font-weight: 300;
+        font-size: 26px;
         line-height: 1.4em; }
         @media all and (max-width: 736px) {
           body.page-template-template-practice .step_panel .step_content .intro_paragraph p {
@@ -3022,7 +3040,7 @@ body.page-template-template-practice .step_panel {
           margin-top: 30px; } }
       body.page-template-template-practice .step_panel .step_content .cols .left {
         width: 49%;
-        padding: 0 55px 0 0; }
+        padding: 0 45px 0 0; }
         @media all and (max-width: 1024px) {
           body.page-template-template-practice .step_panel .step_content .cols .left {
             width: 100%;
@@ -3033,18 +3051,18 @@ body.page-template-template-practice .step_panel {
           body.page-template-template-practice .step_panel .step_content .cols .right {
             width: 100%; } }
         body.page-template-template-practice .step_panel .step_content .cols .right p {
-          font-size: 17px;
+          font-size: 14px;
           line-height: 1.4em; }
           @media all and (max-width: 736px) {
             body.page-template-template-practice .step_panel .step_content .cols .right p {
-              font-size: 14px; } }
+              font-size: 12px; } }
         body.page-template-template-practice .step_panel .step_content .cols .right ul {
           margin: 0 0 40px; }
           @media all and (max-width: 736px) {
             body.page-template-template-practice .step_panel .step_content .cols .right ul {
               margin: 0 0 20px; } }
           body.page-template-template-practice .step_panel .step_content .cols .right ul li {
-            font-size: 17px;
+            font-size: 15px;
             line-height: 1.4em;
             margin: 0 0 10px;
             position: relative;
@@ -3069,7 +3087,7 @@ body.page-template-template-practice .step_panel {
           color: #a4d4a4;
           font-family: "Biryani", sans-serif;
           font-weight: 900;
-          font-size: 25px;
+          font-size: 20px;
           line-height: 1.1em;
           letter-spacing: 0.125em;
           text-transform: uppercase;
@@ -3081,7 +3099,7 @@ body.page-template-template-practice .step_panel {
         body.page-template-template-practice .step_panel .step_content .cols .questions ul li {
           font-family: "Roboto Slab", serif;
           font-weight: 300;
-          font-size: 19px;
+          font-size: 15px;
           line-height: 1.4em;
           color: #fffef6;
           margin: 0 0 25px;
@@ -3112,7 +3130,7 @@ body.page-template-template-practice .step_panel {
         color: #00a65b;
         font-family: "Nunito Sans", sans-serif;
         font-weight: 800;
-        font-size: 22px;
+        font-size: 17px;
         line-height: 1.5em;
         letter-spacing: 0.01em; }
         body.page-template-template-practice .step_panel .step_content .cols .stats p em {
@@ -3132,7 +3150,7 @@ body.page-template-template-practice .step_panel {
       body.page-template-template-practice .step_panel .step_content .cols h4 {
         font-family: "Biryani", sans-serif;
         font-weight: 900;
-        font-size: 19px;
+        font-size: 15px;
         line-height: 1.1em;
         letter-spacing: 0.125em;
         text-transform: uppercase;
@@ -3145,7 +3163,7 @@ body.page-template-template-practice .step_panel {
         display: block;
         font-family: "Biryani", sans-serif;
         font-weight: 900;
-        font-size: 19px;
+        font-size: 15px;
         line-height: 1.1em;
         letter-spacing: 0.125em;
         text-transform: uppercase;
@@ -3203,7 +3221,7 @@ body.page-template-template-practice .step_panel {
             color: #a4d4a4;
             font-family: "Biryani", sans-serif;
             font-weight: 900;
-            font-size: 16px;
+            font-size: 13px;
             line-height: 1.1em;
             letter-spacing: 0.125em;
             text-transform: uppercase;
@@ -3215,7 +3233,7 @@ body.page-template-template-practice .step_panel {
             color: #fffef6;
             font-family: "Biryani", sans-serif;
             font-weight: 900;
-            font-size: 23px;
+            font-size: 18px;
             line-height: 1.1em;
             letter-spacing: 0.1em;
             text-transform: uppercase;
@@ -3230,8 +3248,8 @@ body.page-template-template-practice .step_panel {
                 margin: 0 0 20px; } }
           body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h2 {
             font-family: "Roboto Slab", serif;
-            font-weight: bold;
-            font-size: 19px;
+            font-weight: 400;
+            font-size: 15px;
             line-height: 1.2em;
             margin: 35px 0 25px;
             color: #fffef6; }
@@ -3243,7 +3261,7 @@ body.page-template-template-practice .step_panel {
                 margin: 10px 0; } }
           body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p {
             font-family: "Nunito Sans", sans-serif;
-            font-size: 19px;
+            font-size: 15px;
             line-height: 1.5em; }
             @media all and (max-width: 1000px) {
               body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content p {
@@ -3262,7 +3280,8 @@ body.page-template-template-practice .step_panel {
               right: 15px;
               width: 16px;
               height: 16px;
-              background-size: 100%; } }
+              background: url(../images/sprites.svg) 0 -329px no-repeat;
+              background-size: 114px auto; } }
 
 .fixed_footer_nav {
   position: fixed;
@@ -3653,6 +3672,7 @@ body.page-template-template-practice .step_panel {
         font-size: 20px; } }
   .page-content .callout {
     font-family: "Roboto Slab", serif;
+    font-weight: 300;
     font-size: 30px;
     color: #005498;
     line-height: 1.5em;

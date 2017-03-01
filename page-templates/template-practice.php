@@ -56,6 +56,8 @@ get_header(); ?>
 	</header><!-- #masthead -->
 	
 	<?php
+	
+	$counter = 0;
 
 	$args = array(
 	    'post_type'      => 'page',
@@ -78,7 +80,7 @@ get_header(); ?>
 				$current_step = $step_field['choices'][ $value ];
 	    	?>
 
-		
+			<?php $counter++; ?>
 			<div class="step_panel" id="<?php echo $current_step; ?>_step">
 
 				<div class="sticky_subnav">
@@ -86,9 +88,10 @@ get_header(); ?>
 						<div class="previous_practice"><a href="<?php echo get_the_permalink($previous_practice); ?>#<?php echo $current_step; ?>_step""><?php echo get_the_title($previous_practice); ?> <span class="arrow"><?php get_template_part( 'page-templates/template-parts/svg/left_arrow.svg' ) ?></span></a></div>
 					<?php endif; ?>
 					<div class="section_header"><?php echo $current_step; ?> <span>
-					<?php  	if ($current_step == 'invest') : echo 'in '; 
+						<?php  	if ($current_step == 'invest') : echo 'in '; 
 							elseif ($current_step == 'plan') : echo 'for '; 
-							endif; ?>safety</span></div>
+							endif; ?>safety</span>
+					</div>
 					<?php if ( get_the_permalink($next_practice) != '' ) : ?>
 						<div class="next_practice"><a href="<?php echo get_the_permalink($next_practice); ?>#<?php echo $current_step; ?>_step""><?php echo get_the_title($next_practice); ?> <span class="arrow"><?php get_template_part( 'page-templates/template-parts/svg/right_arrow.svg' ) ?></span></a></div>
 					<?php endif; ?>
@@ -106,6 +109,14 @@ get_header(); ?>
 
 				<div class="content">
 					<div class="step_content">
+						<div class="section_header"><?php echo $counter; ?>. <?php echo $current_step; ?> <span>
+							<?php  	if ($current_step == 'invest') : echo 'in '; 
+								elseif ($current_step == 'plan') : echo 'for '; 
+								endif; ?>safety</span>
+						</div>
+
+
+
 						<h1><?php the_field('step_title'); ?></h1>
 						<div class="intro_paragraph <?php echo $color; ?>">
 							<div class="icon "></div>
