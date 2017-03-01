@@ -21,9 +21,7 @@ footer {
         }
         @media all and (min-width: 480px) and (max-width: 736px) {            
             text-align:left;
-
         }
-
     }
     .lower-footer-content {
         background: $dark-blue;
@@ -32,12 +30,16 @@ footer {
         font-size: 12px;
         @media all and (max-width: 480px) {
             padding-bottom: 45px;
+            text-align: center;
         }
     }
     .footer-content {
         padding: 40px 0 50px;
         @media all and (max-width: 736px) {
             padding: 30px 0;
+        }
+        @media all and (max-width: 479px) {
+            text-align:center;
         }
         .footer-logo {
             a {
@@ -50,6 +52,9 @@ footer {
                 }
                 @media all and (min-width: 480px) and (max-width: 736px) {
                     @include display(flex);
+                }
+                @media all and (max-width: 479px) {
+                    text-align:center;
                 }
             }
         }
@@ -84,6 +89,10 @@ footer {
                 @include align-self(center);
 
             }
+            @media all and (max-width: 479px) {
+                margin: 10px 0 0;
+                display: block;
+            }
         }
     }
     .footer-nav {
@@ -97,7 +106,9 @@ footer {
             @include justify-content(flex-start);
             padding-top: 15px;
         }
-
+        @media all and (max-width: 479px) {
+            display:block;
+        }
         .links {
             li {
                 display: inline-block;
@@ -116,6 +127,11 @@ footer {
                     font-size: 11px;
                     margin: 0 10px 0 0;
                 }
+                @media all and (max-width: 479px) {
+                    font-size: 9px;
+                    margin: 0 3px 0 0;
+                }
+
                 &:not(:last-child):after {
                     content: '/';
                     color: $dark-blue;
@@ -127,6 +143,9 @@ footer {
                     @media all and (max-width: 736px) {
                         margin: 0 10px 0 0;
                     }
+                    @media all and (max-width: 479px) {
+                        margin: 0 6px 0 0;
+                    }
                     @include transition(0.3s opacity );
                     &:hover {
                         opacity: 0.8;
@@ -134,10 +153,20 @@ footer {
                 }
                 &:last-child {
                     margin: 0 10px 0 0;
+                    @media all and (max-width: 479px) {
+                        margin: 0;
+                        a {
+                            margin: 0;
+                        }
+                    }
                 }
             }
         }
         ul.social {
+            @media all and (max-width: 479px) {
+                margin-top: 10px;
+            }
+
             li {
                 display: inline-block;
                 margin: 0 24px 0 0;

@@ -1196,6 +1196,9 @@ body.home .home_panel {
     background-size: cover;
     background-color: #005498;
     background-blend-mode: screen; }
+    @media all and (max-width: 500px) {
+      body.home .home_panel#home_panel1 {
+        background-position: 20% 10%; } }
     body.home .home_panel#home_panel1:before {
       content: '';
       position: absolute;
@@ -1209,7 +1212,7 @@ body.home .home_panel {
   body.home .home_panel#home_panel2 {
     background-image: url("../images/home_hero2.jpg");
     background-position: top center;
-    background-size: 100% auto;
+    background-size: cover;
     background-color: #005498;
     background-blend-mode: multiply;
     filter: opacity(0.95); }
@@ -1280,6 +1283,10 @@ body.home .panel_content {
         font-size: 0.35em;
         position: relative;
         top: -11px; }
+        @media all and (max-width: 500px) {
+          body.home .panel_content .bp_intro h1 span {
+            display: block;
+            top: -3px; } }
       @media all and (max-width: 736px) {
         body.home .panel_content .bp_intro h1 {
           font-size: 30px; } }
@@ -1531,7 +1538,7 @@ body.home #home_panel3 .blueprint_principles, body.home #home_panel3 .blueprint_
       padding: 0 40px; } }
   @media all and (max-width: 600px) {
     body.home #home_panel3 .blueprint_principles, body.home #home_panel3 .blueprint_steps, body.home #home_panel4 .blueprint_principles, body.home #home_panel4 .blueprint_steps {
-      padding: 0 40px 0 20px; } }
+      padding: 0 20px 0 20px; } }
   body.home #home_panel3 .blueprint_principles.blueprint_steps, body.home #home_panel3 .blueprint_steps.blueprint_steps, body.home #home_panel4 .blueprint_principles.blueprint_steps, body.home #home_panel4 .blueprint_steps.blueprint_steps {
     padding: 0 20px 30px; }
   body.home #home_panel3 .blueprint_principles h1, body.home #home_panel3 .blueprint_steps h1, body.home #home_panel4 .blueprint_principles h1, body.home #home_panel4 .blueprint_steps h1 {
@@ -1548,6 +1555,11 @@ body.home #home_panel3 .blueprint_principles, body.home #home_panel3 .blueprint_
     @media all and (max-width: 736px) {
       body.home #home_panel3 .blueprint_principles h1, body.home #home_panel3 .blueprint_steps h1, body.home #home_panel4 .blueprint_principles h1, body.home #home_panel4 .blueprint_steps h1 {
         font-size: 20px; } }
+    @media all and (max-width: 500px) {
+      body.home #home_panel3 .blueprint_principles h1, body.home #home_panel3 .blueprint_steps h1, body.home #home_panel4 .blueprint_principles h1, body.home #home_panel4 .blueprint_steps h1 {
+        font-size: 18px;
+        display: block;
+        padding: 15px 10px 8px; } }
   body.home #home_panel3 .blueprint_principles > p, body.home #home_panel3 .blueprint_principles .top p, body.home #home_panel3 .blueprint_steps > p, body.home #home_panel3 .blueprint_steps .top p, body.home #home_panel4 .blueprint_principles > p, body.home #home_panel4 .blueprint_principles .top p, body.home #home_panel4 .blueprint_steps > p, body.home #home_panel4 .blueprint_steps .top p {
     font-size: 24px;
     font-weight: 400;
@@ -1757,7 +1769,7 @@ body.home #home_panel3 .right_arrow, body.home #home_panel4 .right_arrow {
     opacity: 0.6; }
   @media all and (max-width: 800px) {
     body.home #home_panel3 .right_arrow, body.home #home_panel4 .right_arrow {
-      right: 10px; } }
+      display: none; } }
 
 body.home #home_panel4 {
   background: #3e4242; }
@@ -2104,9 +2116,11 @@ body.home #home_panel5 .blueprint_overview {
     margin: 0 0 55px;
     line-height: 1em;
     padding: 22px 30px 8px; }
-    @media all and (max-width: 736px) {
+    @media all and (max-width: 500px) {
       body.home #home_panel5 .blueprint_overview h1 {
-        font-size: 20px; } }
+        font-size: 18px;
+        display: block;
+        padding: 15px 10px 8px; } }
 
 .blueprint_grid {
   background: #fffef6;
@@ -2416,6 +2430,9 @@ body.page-template-template-practice .hero-panel {
   background-color: #00a65b;
   background-blend-mode: multiply;
   filter: opacity(0.9); }
+  @media all and (max-width: 500px) {
+    body.page-template-template-practice .hero-panel {
+      background-position: 20% 10%; } }
   body.page-template-template-practice .hero-panel:before {
     content: '';
     position: absolute;
@@ -2432,6 +2449,9 @@ body.page-template-template-practice .hero-panel {
     background-size: cover;
     background-color: #73509a;
     background-blend-mode: overlay; }
+    @media all and (max-width: 500px) {
+      body.page-template-template-practice .hero-panel.purple {
+        background-position: 20% 10%; } }
     body.page-template-template-practice .hero-panel.purple:before {
       background-color: #73509a;
       opacity: 0.6; }
@@ -2441,6 +2461,9 @@ body.page-template-template-practice .hero-panel {
     background-size: cover;
     background-color: #005498;
     background-blend-mode: multiply; }
+    @media all and (max-width: 500px) {
+      body.page-template-template-practice .hero-panel.navy {
+        background-position: 20% 10%; } }
     body.page-template-template-practice .hero-panel.navy:before {
       background-color: #005498;
       opacity: 0.4; }
@@ -3974,12 +3997,16 @@ footer {
     font-size: 12px; }
     @media all and (max-width: 480px) {
       footer .lower-footer-content {
-        padding-bottom: 45px; } }
+        padding-bottom: 45px;
+        text-align: center; } }
   footer .footer-content {
     padding: 40px 0 50px; }
     @media all and (max-width: 736px) {
       footer .footer-content {
         padding: 30px 0; } }
+    @media all and (max-width: 479px) {
+      footer .footer-content {
+        text-align: center; } }
     footer .footer-content .footer-logo a {
       display: block;
       outline: none;
@@ -3995,6 +4022,9 @@ footer {
           display: -moz-flex;
           display: -ms-flexbox;
           display: flex; } }
+      @media all and (max-width: 479px) {
+        footer .footer-content .footer-logo a {
+          text-align: center; } }
     footer .footer-content .logo {
       width: 230px;
       height: 62px;
@@ -4025,6 +4055,10 @@ footer {
           -ms-grid-row-align: center;
               align-self: center;
           -ms-flex-item-align: center; } }
+      @media all and (max-width: 479px) {
+        footer .footer-content .sub-logo {
+          margin: 10px 0 0;
+          display: block; } }
   footer .footer-nav {
     padding: 12px 0 0;
     display: -webkit-box;
@@ -4051,6 +4085,9 @@ footer {
         justify-content: flex-start;
         -ms-flex-pack: start;
         padding-top: 15px; } }
+    @media all and (max-width: 479px) {
+      footer .footer-nav {
+        display: block; } }
     footer .footer-nav .links li {
       display: inline-block;
       margin: 0 18px 0 0;
@@ -4068,6 +4105,10 @@ footer {
         footer .footer-nav .links li {
           font-size: 11px;
           margin: 0 10px 0 0; } }
+      @media all and (max-width: 479px) {
+        footer .footer-nav .links li {
+          font-size: 9px;
+          margin: 0 3px 0 0; } }
       footer .footer-nav .links li:not(:last-child):after {
         content: '/';
         color: #003e6b; }
@@ -4079,10 +4120,21 @@ footer {
         @media all and (max-width: 736px) {
           footer .footer-nav .links li a {
             margin: 0 10px 0 0; } }
+        @media all and (max-width: 479px) {
+          footer .footer-nav .links li a {
+            margin: 0 6px 0 0; } }
         footer .footer-nav .links li a:hover {
           opacity: 0.8; }
       footer .footer-nav .links li:last-child {
         margin: 0 10px 0 0; }
+        @media all and (max-width: 479px) {
+          footer .footer-nav .links li:last-child {
+            margin: 0; }
+            footer .footer-nav .links li:last-child a {
+              margin: 0; } }
+    @media all and (max-width: 479px) {
+      footer .footer-nav ul.social {
+        margin-top: 10px; } }
     footer .footer-nav ul.social li {
       display: inline-block;
       margin: 0 24px 0 0; }

@@ -10,6 +10,9 @@ body.home {
 			background-size: cover;
 			background-color:#005498;
 			background-blend-mode: screen;
+			@media all and (max-width: 500px) {
+				background-position: 20% 10% ;
+			}
 			&:before {
 				content:'';
 				position: absolute;
@@ -25,7 +28,7 @@ body.home {
 		&#home_panel2 {
 			background-image: url('../images/home_hero2.jpg');
 			background-position: top center ;
-			background-size: 100% auto;
+			background-size: cover;
 			background-color:#005498;
 			background-blend-mode: multiply;
 			filter:opacity(0.95);
@@ -91,6 +94,10 @@ body.home {
 					font-size: 0.35em;
 					position: relative;
 					top: -11px;
+					@media all and (max-width: 500px) {
+						display: block;
+						top: -3px;
+					}
 				}
 				@media all and (max-width: 736px) {
 					font-size: 30px;
@@ -396,7 +403,7 @@ body.home {
 				padding: 0 40px;
 			}
 			@media all and (max-width: 600px) {
-				padding: 0 40px 0 20px;
+				padding: 0 20px 0 20px;
 			}
 			&.blueprint_steps {
 				padding: 0 20px 30px;
@@ -413,9 +420,14 @@ body.home {
 				margin: 0;
 				line-height: 1em;
 				padding: 22px 30px 8px;
-						@media all and (max-width: 736px) {
-							font-size: 20px;
-						}
+				@media all and (max-width: 736px) {
+					font-size: 20px;
+				}
+				@media all and (max-width: 500px) {
+					font-size: 18px;
+					display: block;
+					padding: 15px 10px 8px;
+				}
 			}
 			> p, .top p {
 				font-size: 24px;
@@ -643,7 +655,7 @@ body.home {
 				opacity:0.6;
 			}
 			@media all and (max-width: 800px) {
-				right: 10px;
+				display:none;
 			}
 
 		}
@@ -810,8 +822,10 @@ body.home {
 				margin: 0 0 55px;
 				line-height: 1em;
 				padding: 22px 30px 8px;
-				@media all and (max-width: 736px) {
-					font-size: 20px;
+				@media all and (max-width: 500px) {
+					font-size: 18px;
+					display: block;
+					padding: 15px 10px 8px;
 				}
 
 			}
