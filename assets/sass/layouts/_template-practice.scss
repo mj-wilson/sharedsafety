@@ -1142,6 +1142,9 @@ body.page-template-template-practice {
 			    .cell.header a span {
 			    	font-size: 9px;
 			    }
+				&.gold .cell:not(.header) a {
+					padding: 0 7px;
+				}
 			}
 			.col1 {
 				min-width: 90px;

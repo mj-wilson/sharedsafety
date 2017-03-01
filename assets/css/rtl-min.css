@@ -81,10 +81,12 @@ body.home header{background:0;height:auto}body.home header #mini_logo.home{posit
 body.home header #mini_logo.home a{display:block;width:24px;height:56px;background:url(../images/sprites.svg) 0 0 no-repeat;outline:0;transition:opacity .3s}
 body.home header #mini_logo.home a:hover{opacity:.7}body.home header #mini_logo.not_home{display:none}
 body:not(.home) header#masthead{background:#00a9e0;height:54px;text-align:center;padding:13px 0 0;box-shadow:2px 2px 12px 1px rgba(0,0,0,0.3)}
-body:not(.home) header#masthead #mini_logo.home{display:none}body:not(.home) header#masthead #mini_logo{display:inline-block}
+@media all and (max-width:480px){body:not(.home) header#masthead{text-align:left;padding:13px 20px 0}
+}body:not(.home) header#masthead #mini_logo.home{display:none}body:not(.home) header#masthead #mini_logo{display:inline-block}
 body:not(.home) header#masthead #mini_logo a{display:inline-block;border:2px solid #f25a2b;border-radius:1px;color:#fffef6;font-family:"Biryani",sans-serif;font-weight:900;text-transform:uppercase;font-size:12px;letter-spacing:.175em;height:28px;line-height:28px;padding:0 10px;text-decoration:none}
 body:not(.home) header#masthead #mini_logo a span{font-weight:400;font-size:.65em;position:relative;top:-1px;margin:0 2px}
 @media all and (max-width:800px){body:not(.home) header#masthead #mini_logo a{font-size:10px}
+}@media all and (max-width:480px){body:not(.home) header#masthead #mini_logo a{font-size:9px;padding:0 7px}
 }body:not(.home) header#masthead #primary-nav{text-align:left;position:absolute;right:40px;top:20px}
 @media all and (max-width:800px){body:not(.home) header#masthead #primary-nav{right:20px}
 }body:not(.home) header#masthead #primary-nav .nav-toggle-button{width:22px;right:0}
@@ -298,7 +300,8 @@ body.home #home_panel4 ul.steps li a p{width:calc(100% - 380px);margin:0;font-we
 .blueprint_grid .column_container .col.purple .icon-inner{background:#73509a}.blueprint_grid .column_container .col.purple .icon-inner:before{content:'';width:24px;height:30px;display:block;margin:0 auto 0;background:url(../images/sprites.svg) 0 -80px no-repeat;background-size:80px auto;position:relative;top:6px}
 .blueprint_grid .column_container .col.navy{color:#005498}.blueprint_grid .column_container .col.navy .cell:not(.header) a:hover{background:#005498;color:#fffef6}
 .blueprint_grid .column_container .col.navy .icon-inner{background:#005498}.blueprint_grid .column_container .col.navy .icon-inner:before{content:'';width:16px;height:27px;display:block;margin:0 auto 0;background:url(../images/sprites.svg) 0 -110px no-repeat;background-size:80px auto;position:relative;top:6px}
-.blueprint_grid .column_container .col.gold{color:#f3ae14}.blueprint_grid .column_container .col.gold .cell:not(.header) a:hover{background:#f3ae14;color:#fffef6}
+.blueprint_grid .column_container .col.gold{color:#f3ae14}.blueprint_grid .column_container .col.gold .cell:not(.header) a{padding:0 6px}
+.blueprint_grid .column_container .col.gold .cell:not(.header) a:hover{background:#f3ae14;color:#fffef6}
 .blueprint_grid .column_container .col.gold .icon-inner{background:#f3ae14}.blueprint_grid .column_container .col.gold .icon-inner:before{content:'';width:30px;height:28px;display:block;margin:0 0 0 8px;background:url(../images/sprites.svg) 0 -139px no-repeat;background-size:80px auto;position:relative;top:7px}
 .blueprint_grid .column_container .col.teal{color:#00a0a2}.blueprint_grid .column_container .col.teal .cell:not(.header) a:hover{background:#00a0a2;color:#fffef6}
 .blueprint_grid .column_container .col.teal .icon-inner{background:#00a0a2}.blueprint_grid .column_container .col.teal .icon-inner:before{content:'';width:30px;width:30px;height:32px;display:block;margin:0 0 0 7px;background:url(../images/sprites.svg) 0 -168px no-repeat;background-size:80px auto;position:relative;top:5px}
@@ -505,6 +508,7 @@ body.page-template-template-practice .step_panel .step_content .modal .modal-con
 .grid-overlay .overlay-header .download-btn:after{margin-left:8px}}.grid-overlay .overlay-content{width:100%}
 .grid-overlay .blueprint_grid{box-shadow:none;max-width:1000px}@media all and (max-width:650px){.grid-overlay .blueprint_grid{width:100%;margin:0}
 }.grid-overlay .blueprint_grid .column_container .col .cell{font-size:12px}.grid-overlay .blueprint_grid .column_container .col .cell.header a span{font-size:9px}
+.grid-overlay .blueprint_grid .column_container .col.gold .cell:not(.header) a{padding:0 7px}
 .grid-overlay .blueprint_grid .column_container .col1{min-width:90px}.grid-overlay .blueprint_grid .column_container .col1 .cell{padding:0;font-family:"Catamaran",sans-serif;font-weight:900;font-size:9px;letter-spacing:.05em;text-transform:uppercase}
 .page-wrapper.purple header#secondary{background:#73509a}.page-wrapper.purple .sticky_subnav{background:#9d7db9}
 .page-wrapper.purple .sticky_subnav .section_header{color:#73509a}.page-wrapper.purple .step_panel .step_nav li .step_label{color:#73509a}

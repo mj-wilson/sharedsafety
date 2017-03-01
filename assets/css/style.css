@@ -887,6 +887,10 @@ body:not(.home) header#masthead {
   text-align: center;
   padding: 13px 0 0;
   box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.3); }
+  @media all and (max-width: 480px) {
+    body:not(.home) header#masthead {
+      text-align: left;
+      padding: 13px 20px 0; } }
   body:not(.home) header#masthead #mini_logo.home {
     display: none; }
   body:not(.home) header#masthead #mini_logo {
@@ -914,6 +918,10 @@ body:not(.home) header#masthead {
       @media all and (max-width: 800px) {
         body:not(.home) header#masthead #mini_logo a {
           font-size: 10px; } }
+      @media all and (max-width: 480px) {
+        body:not(.home) header#masthead #mini_logo a {
+          font-size: 9px;
+          padding: 0 7px; } }
   body:not(.home) header#masthead #primary-nav {
     text-align: left;
     position: absolute;
@@ -2291,6 +2299,8 @@ body.home #home_panel5 .blueprint_overview {
             top: 6px; }
       .blueprint_grid .column_container .col.gold {
         color: #f3ae14; }
+        .blueprint_grid .column_container .col.gold .cell:not(.header) a {
+          padding: 0 6px; }
         .blueprint_grid .column_container .col.gold .cell:not(.header) a:hover {
           background: #f3ae14;
           color: #fffef6; }
@@ -3390,6 +3400,8 @@ body.page-template-template-practice .step_panel {
       font-size: 12px; }
     .grid-overlay .blueprint_grid .column_container .col .cell.header a span {
       font-size: 9px; }
+    .grid-overlay .blueprint_grid .column_container .col.gold .cell:not(.header) a {
+      padding: 0 7px; }
     .grid-overlay .blueprint_grid .column_container .col1 {
       min-width: 90px; }
       .grid-overlay .blueprint_grid .column_container .col1 .cell {

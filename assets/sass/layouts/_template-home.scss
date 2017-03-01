@@ -999,6 +999,9 @@ body.home {
 			&.gold {
 				color: $gold;
 				.cell:not(.header) {
+					a {
+						padding: 0 6px;
+					}
 					a:hover {
 						background: $gold;
 						color: $wheat;

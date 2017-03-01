@@ -209,6 +209,11 @@ body:not(.home) {
         text-align: center;
         padding: 13px 0 0;
         box-shadow: 2px 2px 12px 1px rgba(#000,0.3);
+        @media all and (max-width: 480px) {
+            text-align: left;
+            padding: 13px 20px 0;
+        }
+
         #mini_logo.home {
             display: none;
         }
@@ -238,6 +243,11 @@ body:not(.home) {
                 @media all and (max-width: 800px) {
                     font-size:10px;
                 }
+                @media all and (max-width: 480px) {
+                    font-size:9px;
+                    padding: 0 7px;
+               }
+
             }
         }
        #primary-nav {
