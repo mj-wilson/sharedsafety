@@ -400,7 +400,7 @@ body.page-template-template-practice .sticky_subnav{background:#a4d4a4;position:
 body.page-template-template-practice .sticky_subnav .section_header span{font-weight:800;font-size:12px}
 @media all and (max-width:736px){body.page-template-template-practice .sticky_subnav .section_header{font-size:14px}
 }@media all and (max-width:600px){body.page-template-template-practice .sticky_subnav .section_header{line-height:2em}
-}body.page-template-template-practice .step_panel{position:relative;padding:180px 0 0}
+}body.page-template-template-practice .step_panel{position:relative;padding:145px 0 0}
 @media all and (max-width:736px){body.page-template-template-practice .step_panel{padding-top:120px}
 }body.page-template-template-practice .step_panel.active .sticky_subnav{opacity:1;z-index:9998}
 body.page-template-template-practice .step_panel.active .step_nav{opacity:1;z-index:999}
@@ -486,8 +486,9 @@ body.page-template-template-practice .step_panel .step_content .cols .stats p a:
 body.page-template-template-practice .step_panel .step_content .cols h4{font-family:"Biryani",sans-serif;font-weight:900;font-size:15px;line-height:1.1em;letter-spacing:.125em;text-transform:uppercase;margin:10px 0 18px}
 @media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .cols h4{font-size:16px;margin:30px 0 10px}
 }body.page-template-template-practice .step_panel .step_content .cols .btn{display:block;font-family:"Biryani",sans-serif;font-weight:900;font-size:15px;line-height:1.1em;letter-spacing:.125em;text-transform:uppercase;margin:0 0 35px;width:182px;text-align:center;border:3px solid #00a65b;border-radius:2px;color:inherit;text-decoration:none;height:45px;line-height:45px;cursor:pointer;transition:background .3s}
+body.page-template-template-practice .step_panel .step_content .cols .btn:last-child{margin:0}
 body.page-template-template-practice .step_panel .step_content .cols .btn:hover{background:#00a65b}
-@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .cols .btn{display:inline-block;margin-right:10px;font-size:14px;width:auto;height:32px;line-height:32px;padding:0 20px}
+@media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .cols .btn{display:inline-block;margin-right:10px;margin-bottom:0;font-size:14px;width:auto;height:32px;line-height:32px;padding:0 20px}
 }body.page-template-template-practice .step_panel .step_content .modal{display:none}
 body.page-template-template-practice .step_panel .step_content .modal .modal-backdrop{position:fixed;top:0;right:0;left:0;bottom:0;background:rgba(0,166,91,0.97);z-index:9999}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container{position:fixed;top:0;right:0;left:0;bottom:0;z-index:9999;color:#fffef6;overflow:auto}

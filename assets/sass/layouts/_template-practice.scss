@@ -432,7 +432,7 @@ body.page-template-template-practice {
 	}
 	.step_panel {
 		position: relative;
-		padding: 180px 0 0px;
+		padding: 145px 0 0px;
 		@media all and (max-width: 736px) {
 			padding-top: 120px;
 		}
@@ -899,12 +899,16 @@ body.page-template-template-practice {
 					line-height: 45px;
 					cursor: pointer;
 					@include transition(background 0.3s);
+					&:last-child {
+						margin:0;
+					}
 					&:hover {
 						background: $green;
 					}
 					@media all and (max-width: 736px) {
 						display: inline-block;
 						margin-right: 10px;
+						margin-bottom: 0;
 						font-size: 14px;
 						width: auto;
 						height: 32px;

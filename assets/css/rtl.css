@@ -2830,7 +2830,7 @@ body.page-template-template-practice .sticky_subnav {
 
 body.page-template-template-practice .step_panel {
   position: relative;
-  padding: 180px 0 0px; }
+  padding: 145px 0 0px; }
   @media all and (max-width: 736px) {
     body.page-template-template-practice .step_panel {
       padding-top: 120px; } }
@@ -3233,12 +3233,15 @@ body.page-template-template-practice .step_panel {
         line-height: 45px;
         cursor: pointer;
         transition: background 0.3s; }
+        body.page-template-template-practice .step_panel .step_content .cols .btn:last-child {
+          margin: 0; }
         body.page-template-template-practice .step_panel .step_content .cols .btn:hover {
           background: #00a65b; }
         @media all and (max-width: 736px) {
           body.page-template-template-practice .step_panel .step_content .cols .btn {
             display: inline-block;
             margin-right: 10px;
+            margin-bottom: 0;
             font-size: 14px;
             width: auto;
             height: 32px;
