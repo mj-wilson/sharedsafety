@@ -2431,6 +2431,12 @@ p a, body:not(.home) ul:not(.no_shadow) li:not(.menu-item) a {
   animation-fill-mode: both;
   animation-name: fadeInLeft; }
 
+@-moz-document url-prefix() {
+  .scene_element--fadeinright {
+    -moz-animation: none !important; }
+  .scene_element--fadeinleft {
+    -moz-animation: none !important; } }
+
 a {
   outline: none; }
 
