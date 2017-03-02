@@ -22,6 +22,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" type="image/x-icon">
 
+	<meta name="google-site-verification" content="MoLu8HxoyKt_MYKd3_-ugYodhMYiK_sofTLWVwgo0ww" />	    
     
     <?php wp_head(); ?>
 <script>
