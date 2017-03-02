@@ -87,7 +87,9 @@ jQuery(function( $ ) {
     $( '.breadcrumb a' ).attr( 'href', target );
 
   }
-
+  setTimeout(function(){ 
+    $( '.page-wrapper' ).removeClass( 'scene_element--fadeinright' ).removeClass( 'scene_element--fadeinleft' );
+  }, 3000);
 
 
 });

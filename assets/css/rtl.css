@@ -3134,7 +3134,7 @@ body.page-template-template-practice .step_panel {
       body.page-template-template-practice .step_panel .step_content .cols .questions {
         background: #00a65b;
         border-radius: 3px;
-        padding: 50px 50px 20px; }
+        padding: 45px 45px 20px; }
         @media all and (max-width: 736px) {
           body.page-template-template-practice .step_panel .step_content .cols .questions {
             padding: 25px 20px 20px 40px; } }
@@ -3142,11 +3142,11 @@ body.page-template-template-practice .step_panel {
           color: #a4d4a4;
           font-family: "Biryani", sans-serif;
           font-weight: 900;
-          font-size: 20px;
+          font-size: 19px;
           line-height: 1.1em;
           letter-spacing: 0.125em;
           text-transform: uppercase;
-          margin: 0 0 30px; }
+          margin: 0 0 25px; }
           @media all and (max-width: 736px) {
             body.page-template-template-practice .step_panel .step_content .cols .questions h3 {
               font-size: 18px;
@@ -3860,8 +3860,14 @@ body.page-template-template-practice .step_panel {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex; }
+    @media all and (max-width: 500px) {
+      .signup_form form {
+        display: block; } }
   .signup_form input.email {
     height: 33px; }
+    @media all and (max-width: 500px) {
+      .signup_form input.email {
+        margin-bottom: 20px; } }
   .signup_form label.error {
     position: absolute;
     color: red;
@@ -3869,6 +3875,11 @@ body.page-template-template-practice .step_panel {
     bottom: -30px;
     text-transform: uppercase;
     font-size: 11px; }
+    @media all and (max-width: 500px) {
+      .signup_form label.error {
+        bottom: auto;
+        top: 30px;
+        font-size: 9px; } }
   .signup_form input[type=submit] {
     background: #00a9e0;
     border-radius: 0;
@@ -3889,6 +3900,9 @@ body.page-template-template-practice .step_panel {
     -ms-flex-negative: 0; }
     .signup_form input[type=submit]:hover {
       background: #7fd3ef; }
+    @media all and (max-width: 500px) {
+      .signup_form input[type=submit] {
+        width: 100%; } }
   .signup_form:after::after {
     clear: both;
     content: "";
@@ -3931,7 +3945,8 @@ form.frm-show-form .form-field {
       height: 7px;
       background: url(../images/sprites.svg) 0 -800px no-repeat;
       z-index: 999;
-      position: absolute; }
+      position: absolute;
+      z-index: -1; }
   form.frm-show-form .form-field textarea {
     width: calc( 66.67% - 10px);
     font-size: 13px;
@@ -3978,6 +3993,9 @@ form.frm-show-form .frm_primary_label {
       position: relative;
       left: 6px;
       top: 0; } }
+    @media all and (max-width: 736px) and (max-width: 500px) {
+      form.frm-show-form .frm_submit .frm_button_submit {
+        width: calc(100% - 12px); } }
 
 .frm_message p {
   color: #00a9e0;

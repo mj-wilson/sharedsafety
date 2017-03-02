@@ -467,9 +467,9 @@ body.page-template-template-practice .step_panel .step_content .intro_paragraph.
 }body.page-template-template-practice .step_panel .step_content .cols .right ul li{font-size:15px;line-height:1.4em;margin:0 0 10px;position:relative;padding:0 0 0 13px}
 @media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .cols .right ul li{font-size:14px}
 }body.page-template-template-practice .step_panel .step_content .cols .right ul li:before{content:'\2022';color:#00a65b;position:absolute;left:0;top:0}
-body.page-template-template-practice .step_panel .step_content .cols .questions{background:#00a65b;border-radius:3px;padding:50px 50px 20px}
+body.page-template-template-practice .step_panel .step_content .cols .questions{background:#00a65b;border-radius:3px;padding:45px 45px 20px}
 @media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .cols .questions{padding:25px 20px 20px 40px}
-}body.page-template-template-practice .step_panel .step_content .cols .questions h3{color:#a4d4a4;font-family:"Biryani",sans-serif;font-weight:900;font-size:20px;line-height:1.1em;letter-spacing:.125em;text-transform:uppercase;margin:0 0 30px}
+}body.page-template-template-practice .step_panel .step_content .cols .questions h3{color:#a4d4a4;font-family:"Biryani",sans-serif;font-weight:900;font-size:19px;line-height:1.1em;letter-spacing:.125em;text-transform:uppercase;margin:0 0 25px}
 @media all and (max-width:736px){body.page-template-template-practice .step_panel .step_content .cols .questions h3{font-size:18px;margin:0 0 20px}
 }body.page-template-template-practice .step_panel .step_content .cols .questions ul li{font-family:"Roboto Slab",serif;font-weight:300;font-size:15px;line-height:1.4em;color:#fffef6;margin:0 0 25px;position:relative}
 body.page-template-template-practice .step_panel .step_content .cols .questions ul li span{font-weight:300 !important}
@@ -606,15 +606,18 @@ body.page-template-template-practice .step_panel .step_content .modal .modal-con
 @media all and (max-width:736px){.get-involved section h2{font-size:15px}.get-involved section p{font-size:14px}
 }.signup_form_thanks{color:#00a9e0;font-family:"Nunito Sans",sans-serif;font-size:19px;line-height:1.5;font-style:italic;letter-spacing:.01em;font-weight:400;padding:10px 0 0}
 .signup_form{position:relative;max-width:615px;margin-bottom:20px}.signup_form form{display:-webkit-box;display:-moz-box;display:box;display:-moz-flex;display:-ms-flexbox;display:flex}
-.signup_form input.email{height:33px}.signup_form label.error{position:absolute;color:red;left:0;bottom:-30px;text-transform:uppercase;font-size:11px}
-.signup_form input[type=submit]{background:#00a9e0;border-radius:0;border:0;font-family:"Biryani",sans-serif;font-weight:900;font-size:15px;text-transform:uppercase;letter-spacing:.1em;color:#fff;height:33px;line-height:38px;padding:0 30px;min-width:0;text-align:center;transition:all 150ms ease;flex-shrink:0;-ms-flex-negative:0}
-.signup_form input[type=submit]:hover{background:#7fd3ef}.signup_form:after::after{clear:both;content:"";display:table}
+@media all and (max-width:500px){.signup_form form{display:block}}.signup_form input.email{height:33px}
+@media all and (max-width:500px){.signup_form input.email{margin-bottom:20px}}.signup_form label.error{position:absolute;color:red;left:0;bottom:-30px;text-transform:uppercase;font-size:11px}
+@media all and (max-width:500px){.signup_form label.error{bottom:auto;top:30px;font-size:9px}
+}.signup_form input[type=submit]{background:#00a9e0;border-radius:0;border:0;font-family:"Biryani",sans-serif;font-weight:900;font-size:15px;text-transform:uppercase;letter-spacing:.1em;color:#fff;height:33px;line-height:38px;padding:0 30px;min-width:0;text-align:center;transition:all 150ms ease;flex-shrink:0;-ms-flex-negative:0}
+.signup_form input[type=submit]:hover{background:#7fd3ef}@media all and (max-width:500px){.signup_form input[type=submit]{width:100%}
+}.signup_form:after::after{clear:both;content:"";display:table}
 .frm_forms{padding-top:20px}form.frm-show-form fieldset{margin:0 -6px}form.frm-show-form .frm_hidden{display:none}
 form.frm-show-form .form-field{width:100%;padding:0 6px 20px}form.frm-show-form .form-field.frm_none_container label{display:none}
 form.frm-show-form .form-field.frm_inline{float:left}form.frm-show-form .form-field.frm_sixth{width:calc(100% / 6)}
 form.frm-show-form .form-field.frm_third{width:calc(100% / 3)}form.frm-show-form .form-field.frm_two_thirds{width:calc(100% * (2 / 3))}
 form.frm-show-form .form-field.frm_half{width:50%}form.frm-show-form .form-field.last{padding-bottom:0}
-form.frm-show-form .form-field.frm_dropdown{position:relative}form.frm-show-form .form-field.frm_dropdown:after{content:'';display:block;top:13px;right:20px;width:11px;height:7px;background:url(../images/sprites.svg) 0 -800px no-repeat;z-index:999;position:absolute}
+form.frm-show-form .form-field.frm_dropdown{position:relative}form.frm-show-form .form-field.frm_dropdown:after{content:'';display:block;top:13px;right:20px;width:11px;height:7px;background:url(../images/sprites.svg) 0 -800px no-repeat;z-index:999;position:absolute;z-index:-1}
 form.frm-show-form .form-field textarea{width:calc(66.67% - 10px);font-size:13px;text-transform:none}
 form.frm-show-form .form-field select{text-transform:uppercase;border-radius:0;-webkit-appearance:none;font-family:"Nunito Sans",sans-serif;font-weight:800;font-size:13px;letter-spacing:.1em}
 form.frm-show-form .frm_submit{position:relative}form.frm-show-form .frm_submit .frm_button_submit{position:absolute;left:66.67%;top:-33px}
@@ -623,6 +626,7 @@ form.frm-show-form .frm_primary_label{color:#00a9e0;font-family:"Nunito Sans",sa
 form.frm-show-form .form-field.frm_sixth,form.frm-show-form .form-field.frm_third,form.frm-show-form .form-field.frm_two_thirds,form.frm-show-form .form-field.frm_half{width:100%}
 form.frm-show-form .form-field.last{padding-bottom:20px}form.frm-show-form .form-field textarea{width:100%}
 form.frm-show-form .frm_submit{position:relative}form.frm-show-form .frm_submit .frm_button_submit{position:relative;left:6px;top:0}
+}@media all and (max-width:736px) and (max-width:500px){form.frm-show-form .frm_submit .frm_button_submit{width:calc(100% - 12px)}
 }.frm_message p{color:#00a9e0;font-family:"Nunito Sans",sans-serif;font-size:19px;line-height:1.5;font-style:italic;letter-spacing:.01em;font-weight:400;padding-bottom:25px;margin:0}
 footer{margin:0 auto;width:100%;color:#fffef6;background:#00a9e0;font-size:15px;line-height:1em;overflow:hidden}
 footer .content{display:-webkit-box;display:-moz-box;display:box;display:-moz-flex;display:-ms-flexbox;display:flex;box-pack:justify;-moz-justify-content:space-between;-ms-justify-content:space-between;-o-justify-content:space-between;justify-content:space-between;-ms-flex-pack:justify;padding:0 50px}
