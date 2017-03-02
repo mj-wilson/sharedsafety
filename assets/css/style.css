@@ -3272,7 +3272,7 @@ body.page-template-template-practice .step_panel {
           overflow: auto; }
           @media all and (max-width: 1000px) {
             body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content {
-              padding: 30px 40px 0 20px; } }
+              padding: 30px 40px 30px 20px; } }
           body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h3 {
             color: #a4d4a4;
             font-family: "Biryani", sans-serif;

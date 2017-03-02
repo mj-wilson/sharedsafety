@@ -493,7 +493,7 @@ body.page-template-template-practice .step_panel .step_content .cols .btn:hover{
 body.page-template-template-practice .step_panel .step_content .modal .modal-backdrop{position:fixed;top:0;right:0;left:0;bottom:0;background:rgba(0,166,91,0.97);z-index:9999}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container{position:fixed;top:0;right:0;left:0;bottom:0;z-index:9999;color:#fffef6;overflow:auto}
 body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content{position:relative;max-width:960px;padding:50px 0;margin:auto;overflow:auto}
-@media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content{padding:30px 40px 0 20px}
+@media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content{padding:30px 40px 30px 20px}
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h3{color:#a4d4a4;font-family:"Biryani",sans-serif;font-weight:900;font-size:13px;line-height:1.1em;letter-spacing:.125em;text-transform:uppercase;margin:0 0 15px}
 @media all and (max-width:1000px){body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h3{font-size:13px}
 }body.page-template-template-practice .step_panel .step_content .modal .modal-container .modal-content h1{color:#fffef6;font-family:"Biryani",sans-serif;font-weight:900;font-size:18px;line-height:1.1em;letter-spacing:.1em;text-transform:uppercase;margin:0 0 40px}
