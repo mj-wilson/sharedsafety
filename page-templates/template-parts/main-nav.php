@@ -23,7 +23,7 @@
 
 			while ($query -> have_posts()) : $query -> the_post();
 			
-				$download_link = get_field( 'blueprint_overview_pdf' ); ?>
+				$download_link = get_field( 'site_blueprint_pdf' ); ?>
 				<div class="download-pdf"><a target="_blank" href="<?php echo $download_link; ?>">download blueprint pdf</a></div>
 
 	    	<?php endwhile; ?>
